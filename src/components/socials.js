@@ -1,12 +1,26 @@
 import React from "react";
-import { SOCIAL_DATA } from "../static/constants";
+import { SOCIAL_DATA, ITEM } from "../static/constants";
+import { motion, AnimatePresence } from "framer-motion";
 
-const Socials = () => {
+const Socials = ({ go }) => {
   return (
     <ul className="socials">
-      {SOCIAL_DATA.map((s, i) => (
-        <li key={i}>{s.name}</li>
-      ))}
+      <AnimatePresence>
+        {go &&
+          SOCIAL_DATA.map((s, i) => (
+            <span className="pc">
+              <motion.li
+                variants={ITEM}
+                initial="hidden"
+                animate="visible"
+                custom={i}
+                key={i}
+              >
+                {s.name}
+              </motion.li>
+            </span>
+          ))}
+      </AnimatePresence>
     </ul>
   );
 };

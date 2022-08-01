@@ -1,13 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SOCIAL_DATA, ITEM } from "../static/constants";
 import Socials from "../components/socials";
 
 export default function Home() {
   const [go, setGo] = useState(false);
+
+  useEffect(() => {
+    let x = setTimeout(() => {
+      setGo(true);
+    }, 2000);
+    return () => clearTimeout(x);
+  }, []);
   return (
     <div className="ind">
-      <p onClick={() => setGo(true)}>Start Animation</p>
       <footer className="footer">
         <div className="grid">
           <div className="paragraph">
@@ -79,7 +85,7 @@ export default function Home() {
             </AnimatePresence>
           </div>
 
-          <Socials />
+          <Socials go={go} />
           <div className="socialsTwo">123123</div>
         </div>
       </footer>
