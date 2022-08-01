@@ -86,7 +86,36 @@ export default function Home() {
           </div>
 
           <Socials go={go} />
-          <div className="socialsTwo">123123</div>
+          <div className="freelance">
+            <AnimatePresence>
+              {go && (
+                <>
+                  <span className="pc">
+                    <motion.span
+                      variants={ITEM}
+                      initial="hidden"
+                      animate="visible"
+                      custom={0}
+                      className="p"
+                    >
+                      Available for Freelance
+                    </motion.span>
+                  </span>
+                  <span className="pc">
+                    <motion.span
+                      variants={ITEM}
+                      initial="hidden"
+                      animate="visible"
+                      custom={1}
+                      className="p"
+                    >
+                      Projects Aug'22
+                    </motion.span>
+                  </span>
+                </>
+              )}
+            </AnimatePresence>
+          </div>
         </div>
       </footer>
     </div>
