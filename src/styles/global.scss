@@ -1,8 +1,8 @@
 $bg: #e1dfdd;
 $min_width: 320px;
 $max_width: 1200px;
-$min_font: 13px;
-$max_font: 18px;
+$min_font: 12px;
+$max_font: 20px;
 
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);
@@ -77,10 +77,19 @@ html {
 }
 .p {
   line-height: 1;
+  // @include fluid-type($min_width, $max_width, 25px, 30px);
   overflow: hidden;
   display: block;
   max-height: max-content;
   font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.pc {
+  position: relative;
+  height: max-content;
+  overflow: hidden;
+  display: block;
 }
 
 .footer {
