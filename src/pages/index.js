@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { SOCIAL_DATA, ITEM } from "../static/constants";
+import {
+  SOCIAL_DATA,
+  ITEM,
+  ITEM_TITLE,
+} from "../static/constants";
 import SmoothScroll from "../components/hocs/SmoothScroll";
 import Socials from "../components/socials";
 import NowPlaying from "../components/nowplaying";
@@ -14,22 +18,84 @@ export default function Home() {
     }, 2000);
     return () => clearTimeout(x);
   }, []);
+
   return (
     <SmoothScroll>
       <div className="ind">
         <header className="header">
-          <p>
-            Hello I'm Sam <span> / </span>Creative Developer{" "}
-            <span> / </span> Born in the UK <span> / </span>{" "}
-            Raised in Ireland
-            <span> / </span>
-            Available for Freelance
-            <span> / </span>
-            <br />
-            From tiny experiments to large scale consumer
-            products; I've made it.
-          </p>
-          <a className="header__a">hello@samsvk.com</a>
+          <div>
+            <AnimatePresence>
+              {go && (
+                <>
+                  <span className="line">
+                    <motion.span
+                      variants={ITEM}
+                      initial="hidden"
+                      animate="visible"
+                      custom={{ i: 1, a: 72 }}
+                      className="h"
+                    >
+                      Hello I'm Sam{" "}
+                      <span className="slash"> / </span>
+                      Creative Developer
+                      <span className="slash"> / </span>
+                      Born
+                    </motion.span>
+                  </span>
+                  <span className="line">
+                    <motion.span
+                      variants={ITEM}
+                      initial="hidden"
+                      animate="visible"
+                      custom={{ i: 2, a: 72 }}
+                      className="h"
+                    >
+                      in the UK{" "}
+                      <span className="slash"> / </span> Raised
+                      in Ireland
+                      <span className="slash"> / </span>
+                      Available for
+                    </motion.span>
+                  </span>
+                  <span className="line">
+                    <motion.span
+                      variants={ITEM}
+                      initial="hidden"
+                      animate="visible"
+                      custom={{ i: 3, a: 72 }}
+                      className="h"
+                    >
+                      Freelance @ August 2022
+                      <span className="slash"> / </span>
+                      From tiny
+                    </motion.span>
+                  </span>
+                  <span className="line">
+                    <motion.span
+                      variants={ITEM}
+                      initial="hidden"
+                      animate="visible"
+                      custom={{ i: 4, a: 72 }}
+                      className="h"
+                    >
+                      experiments to large scale consumer
+                    </motion.span>
+                  </span>
+                  <span className="line">
+                    <motion.span
+                      variants={ITEM}
+                      initial="hidden"
+                      animate="visible"
+                      custom={{ i: 4, a: 72 }}
+                      className="h"
+                    >
+                      products; I've made it.
+                    </motion.span>
+                  </span>
+                </>
+              )}
+            </AnimatePresence>
+          </div>
         </header>
 
         <footer className="footer">
@@ -43,7 +109,7 @@ export default function Home() {
                         variants={ITEM}
                         initial="hidden"
                         animate="visible"
-                        custom={0}
+                        custom={{ i: 1, a: 20 }}
                         className="p"
                       >
                         Samuel graduated in Digital Design and
@@ -55,7 +121,7 @@ export default function Home() {
                         variants={ITEM}
                         initial="hidden"
                         animate="visible"
-                        custom={1}
+                        custom={{ i: 2, a: 20 }}
                         className="p"
                       >
                         passionate creative. Self-taught in
@@ -67,7 +133,7 @@ export default function Home() {
                         variants={ITEM}
                         initial="hidden"
                         animate="visible"
-                        custom={2}
+                        custom={{ i: 3, a: 20 }}
                         className="p"
                       >
                         Samuel spent the past years building
@@ -79,7 +145,7 @@ export default function Home() {
                         variants={ITEM}
                         initial="hidden"
                         animate="visible"
-                        custom={3}
+                        custom={{ i: 4, a: 20 }}
                         className="p"
                       >
                         and development strategy. All that
@@ -91,7 +157,7 @@ export default function Home() {
                         variants={ITEM}
                         initial="hidden"
                         animate="visible"
-                        custom={4}
+                        custom={{ i: 5, a: 20 }}
                         className="p"
                       >
                         ambition drives him to grow brands and

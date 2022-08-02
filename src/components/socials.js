@@ -13,7 +13,7 @@ const Socials = ({ go }) => {
                 variants={ITEM}
                 initial="hidden"
                 animate="visible"
-                custom={i}
+                custom={{ i, a: 20 }}
                 key={i}
               >
                 {s.name}

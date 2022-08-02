@@ -36,7 +36,7 @@ export default function NowPlaying({ go }) {
                   variants={ITEM}
                   initial="hidden"
                   animate="visible"
-                  custom={3}
+                  custom={{ i: 3, a: 20 }}
                   className="p"
                   style={{ opacity: 0.5 }}
                 >
@@ -53,7 +53,7 @@ export default function NowPlaying({ go }) {
                   variants={ITEM}
                   initial="hidden"
                   animate="visible"
-                  custom={4}
+                  custom={{ i: 4, a: 20 }}
                   className="p"
                   style={{ marginTop: "0.15rem" }}
                 >

@@ -1,10 +1,10 @@
 export const ITEM = {
-  hidden: (i) => ({
-    y: 20,
+  hidden: ({ i, a }) => ({
+    y: a,
     x: 0,
     // opacity: 0,
   }),
-  visible: (i) => ({
+  visible: ({ i }) => ({
     // opacity: 1,
     y: 0,
     x: 0,
@@ -15,7 +15,6 @@ export const ITEM = {
     },
   }),
 };
-
 export const SOCIAL_DATA = [
   { name: "Email" },
   { name: "Twitch" },
