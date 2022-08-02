@@ -23,3 +23,7 @@ export const SOCIAL_DATA = [
   { name: "Twitch" },
   { name: "Instagram" },
 ];
+
+export function getWindow() {
+  return typeof window !== "undefined" ? window : null;
+}

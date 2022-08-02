@@ -47,9 +47,9 @@ $max_font: 16.5px;
   box-sizing: border-box;
 }
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   background: $bg;
-  overflow-x: hidden;
+  color: rgba(23, 23, 23, 0.95);
 }
 html {
   box-sizing: border-box;
@@ -79,7 +79,7 @@ html {
   overflow: hidden;
   display: block;
   max-height: max-content;
-  font-weight: 400;
+  font-weight: 500;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -89,16 +89,15 @@ html {
   overflow: hidden;
   display: block;
 }
-
 .footer {
   bottom: 0;
   right: 0;
   width: 100%;
   position: absolute;
+  opacity: 0.8;
 }
-
 .grid {
-  padding: 2rem;
+  padding: 2rem 4rem;
   display: grid;
   width: 100%;
   min-width: 90vw;
@@ -106,7 +105,7 @@ html {
 }
 .paragraph {
   max-width: max-content;
-  grid-column: span 8 / span 8;
+  grid-column: span 7;
 }
 .socials {
   height: 100%;
@@ -114,9 +113,11 @@ html {
   flex-direction: column;
   justify-content: space-evenly;
   list-style: none;
-  grid-column: span 2 / span 2;
+  grid-column: span 3;
+  gap: 0.15rem;
   & > span {
     & > li {
+      font-weight: 500;
       position: relative;
       max-width: max-content;
       &:hover {
@@ -132,7 +133,7 @@ html {
         width: 0%;
         background: RGBA(0, 0, 0, 0.8);
         position: absolute;
-        height: 0.5px;
+        height: 1px;
         left: 0;
         bottom: 0;
       }
