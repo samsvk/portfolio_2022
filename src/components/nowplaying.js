@@ -23,6 +23,13 @@ export default function NowPlaying() {
   //   return () => clearTimeout(timeout);
   // }, []);
 
-  console.log(data?.data);
-  return <div className="">{data?.data.title}</div>;
+  return (
+    <>
+      {data?.data?.isPlaying ? (
+        <div>{data?.data?.title}</div>
+      ) : (
+        <div>Not Playing</div>
+      )}
+    </>
+  );
 }

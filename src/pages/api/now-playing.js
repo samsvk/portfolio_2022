@@ -3,20 +3,18 @@ export default async function handler(req, res) {
   const response = await getNowPlaying();
 
   if (response.status === 204 || response.status > 400) {
-    return new Response(JSON.stringify({ isPlaying: false }), {
-      status: 200,
-      headers: {
-        "content-type": "application/json",
+    res.status(200).send({
+      data: {
+        isPlaying: false,
       },
     });
   }
   const song = await response.json();
 
   if (song.item === null) {
-    return new Response(JSON.stringify({ isPlaying: false }), {
-      status: 200,
-      headers: {
-        "content-type": "application/json",
+    res.status(200).send({
+      data: {
+        isPlaying: false,
       },
     });
   }
