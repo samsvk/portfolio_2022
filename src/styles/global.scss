@@ -98,6 +98,7 @@ html {
   height: max-content;
   overflow: hidden;
   display: block;
+  max-width: max-content;
 }
 .footer {
   bottom: 0;
@@ -152,4 +153,23 @@ html {
 }
 .freelance {
   grid-column: span 3;
+}
+
+/*spotify styling*/
+@keyframes cssmarquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.song {
+  display: block;
+  overflow: hidden;
+  max-width: 200px;
+  width: 100%;
+  text-align: center;
+  transform: translateX(100%);
+  animation: cssmarquee 10s linear infinite;
 }

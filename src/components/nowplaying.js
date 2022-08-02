@@ -56,8 +56,12 @@ export default function NowPlaying({ go }) {
                   animate="visible"
                   custom={1}
                   className="p"
+                  style={{ marginTop: "0.15rem" }}
                 >
-                  {data?.data?.title}
+                  <span className="song">
+                    {data?.data?.title} - {data?.data?.artist} (
+                    {data?.data?.album})
+                  </span>
                 </motion.span>
               </span>
             </>
