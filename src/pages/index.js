@@ -89,7 +89,7 @@ export default function Home() {
             </div>
 
             <Socials go={go} />
-            <div className="freelance">
+            <div className="music">
               <NowPlaying go={go} />
             </div>
           </div>

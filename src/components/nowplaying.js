@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import useSWR, { SWRConfig } from "swr";
 import fetcher from "../static/constants";
 import { motion, AnimatePresence } from "framer-motion";
@@ -59,8 +58,9 @@ export default function NowPlaying({ go }) {
                   style={{ marginTop: "0.15rem" }}
                 >
                   <span className="song">
-                    {data?.data?.title} - {data?.data?.artist} (
-                    {data?.data?.album})
+                    <span className="song__title">
+                      {data?.data?.title} - {data?.data?.artist}
+                    </span>
                   </span>
                 </motion.span>
               </span>
@@ -68,7 +68,29 @@ export default function NowPlaying({ go }) {
           )}
         </AnimatePresence>
       ) : (
-        <div>Not Playing</div>
+        <AnimatePresence>
+          {go && (
+            <>
+              <span className="pc">
+                <motion.span
+                  variants={ITEM}
+                  initial="hidden"
+                  animate="visible"
+                  custom={0}
+                  className="p"
+                  style={{ opacity: 0.5 }}
+                >
+                  <GrSpotify
+                    style={{
+                      verticalAlign: "middle",
+                    }}
+                  />{" "}
+                  Not Listening
+                </motion.span>
+              </span>
+            </>
+          )}
+        </AnimatePresence>
       )}
     </>
   );

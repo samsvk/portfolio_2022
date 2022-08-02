@@ -151,25 +151,39 @@ html {
     }
   }
 }
-.freelance {
+.music {
+  display: flex;
+  justify-items: flex-end;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  flex-grow: 1;
   grid-column: span 3;
 }
 
 /*spotify styling*/
-@keyframes cssmarquee {
+@keyframes marquee {
   0% {
-    transform: translateX(100%);
+    left: 100%;
   }
   100% {
-    transform: translateX(-100%);
+    left: -100%;
   }
 }
+
 .song {
   display: block;
   overflow: hidden;
-  max-width: 200px;
-  width: 100%;
+  height: 22px;
+  position: relative;
+  @include fluid-type($min_width, $max_width, 12px, 15px);
   text-align: center;
-  transform: translateX(100%);
-  animation: cssmarquee 10s linear infinite;
+  &__title {
+    overflow: hidden;
+    max-width: 25ch;
+    display: block;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
