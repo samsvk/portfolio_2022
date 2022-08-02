@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const Socials = ({ go }) => {
   return (
     <ul className="socials">
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
         {go &&
           SOCIAL_DATA.map((s, i) => (
             <span className="pc" key={i}>
