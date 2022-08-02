@@ -17,6 +17,21 @@ export default function Home() {
   return (
     <SmoothScroll>
       <div className="ind">
+        <header className="header">
+          <p>
+            Hello I'm Sam <span> / </span>Creative Developer{" "}
+            <span> / </span> Born in the UK <span> / </span>{" "}
+            Raised in Ireland
+            <span> / </span>
+            Available for Freelance
+            <span> / </span>
+            <br />
+            From tiny experiments to large scale consumer
+            products; I've made it.
+          </p>
+          <a className="header__a">hello@samsvk.com</a>
+        </header>
+
         <footer className="footer">
           <div className="grid">
             <div className="paragraph">

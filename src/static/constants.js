@@ -17,11 +17,11 @@ export const ITEM = {
 };
 
 export const SOCIAL_DATA = [
-  { name: "Twitter" },
+  { name: "Email" },
+  { name: "Twitch" },
   { name: "Github" },
   { name: "Spotify" },
-  { name: "Twitch" },
-  { name: "Instagram" },
+  { name: "Twitter" },
 ];
 
 export function getWindow() {

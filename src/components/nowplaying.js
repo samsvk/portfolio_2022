@@ -36,7 +36,7 @@ export default function NowPlaying({ go }) {
                   variants={ITEM}
                   initial="hidden"
                   animate="visible"
-                  custom={0}
+                  custom={3}
                   className="p"
                   style={{ opacity: 0.5 }}
                 >
@@ -53,13 +53,19 @@ export default function NowPlaying({ go }) {
                   variants={ITEM}
                   initial="hidden"
                   animate="visible"
-                  custom={1}
+                  custom={4}
                   className="p"
                   style={{ marginTop: "0.15rem" }}
                 >
                   <span className="song">
                     <span className="song__title">
-                      {data?.data?.title} - {data?.data?.artist}
+                      <a
+                        href={`${data?.data?.songUrl}`}
+                        target="_blank"
+                      >
+                        {data?.data?.title} -{" "}
+                        {data?.data?.artist}
+                      </a>
                     </span>
                   </span>
                 </motion.span>
@@ -76,7 +82,7 @@ export default function NowPlaying({ go }) {
                   variants={ITEM}
                   initial="hidden"
                   animate="visible"
-                  custom={0}
+                  custom={4}
                   className="p"
                   style={{ opacity: 0.5 }}
                 >
