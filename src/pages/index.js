@@ -90,7 +90,7 @@ export default function Home() {
 
             <Socials go={go} />
             <div className="freelance">
-              <NowPlaying />
+              <NowPlaying go={go} />
             </div>
           </div>
         </footer>
