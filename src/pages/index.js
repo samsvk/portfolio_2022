@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { SOCIAL_DATA, ITEM } from "../static/constants";
 import SmoothScroll from "../components/hocs/SmoothScroll";
 import Socials from "../components/socials";
+import NowPlaying from "../components/nowplaying";
 
 export default function Home() {
   const [go, setGo] = useState(false);
@@ -89,34 +90,7 @@ export default function Home() {
 
             <Socials go={go} />
             <div className="freelance">
-              <AnimatePresence>
-                {go && (
-                  <>
-                    <span className="pc">
-                      <motion.span
-                        variants={ITEM}
-                        initial="hidden"
-                        animate="visible"
-                        custom={0}
-                        className="p"
-                      >
-                        Available for Freelance
-                      </motion.span>
-                    </span>
-                    <span className="pc">
-                      <motion.span
-                        variants={ITEM}
-                        initial="hidden"
-                        animate="visible"
-                        custom={1}
-                        className="p"
-                      >
-                        Projects Aug'22
-                      </motion.span>
-                    </span>
-                  </>
-                )}
-              </AnimatePresence>
+              <NowPlaying />
             </div>
           </div>
         </footer>

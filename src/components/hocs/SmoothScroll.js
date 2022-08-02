@@ -36,7 +36,7 @@ const SmoothScroll = ({ children }) => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full overflow-hidden">
+    <div className="scroll">
       <div ref={scrollingContainerRef}>{children}</div>
     </div>
   );

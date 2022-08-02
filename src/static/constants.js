@@ -27,3 +27,8 @@ export const SOCIAL_DATA = [
 export function getWindow() {
   return typeof window !== "undefined" ? window : null;
 }
+
+export default async function fetcher(input, init) {
+  const res = await fetch(input, init);
+  return res.json();
+}

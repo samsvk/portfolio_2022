@@ -8,7 +8,7 @@ const Socials = ({ go }) => {
       <AnimatePresence>
         {go &&
           SOCIAL_DATA.map((s, i) => (
-            <span className="pc">
+            <span className="pc" key={i}>
               <motion.li
                 variants={ITEM}
                 initial="hidden"

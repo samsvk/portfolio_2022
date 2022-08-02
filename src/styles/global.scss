@@ -1,3 +1,11 @@
+.scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
 $bg: #e1dfdd;
 $min_width: 320px;
 $max_width: 1200px;
@@ -50,6 +58,8 @@ body {
   font-family: "Inter", sans-serif;
   background: $bg;
   color: rgba(23, 23, 23, 0.95);
+  height: 100%;
+  width: 100%;
 }
 html {
   box-sizing: border-box;
