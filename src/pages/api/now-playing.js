@@ -3,20 +3,26 @@ export default async function handler(req, res) {
   const response = await getNowPlaying();
 
   if (response.status === 204 || response.status > 400) {
-    res.status(200).send({
-      data: {
-        isPlaying: false,
-      },
-    });
+    res
+      .status(200)
+      .setHeader("Content-Type", "application/json")
+      .send({
+        data: {
+          isPlaying: false,
+        },
+      });
   }
   const song = await response.json();
 
   if (song.item === null) {
-    res.status(200).send({
-      data: {
-        isPlaying: false,
-      },
-    });
+    res
+      .status(200)
+      .setHeader("Content-Type", "application/json")
+      .send({
+        data: {
+          isPlaying: false,
+        },
+      });
   }
 
   const isPlaying = song.is_playing;
@@ -28,14 +34,17 @@ export default async function handler(req, res) {
   const albumImageUrl = song.item.album.images[0].url;
   const songUrl = song.item.external_urls.spotify;
 
-  res.status(200).send({
-    data: {
-      album,
-      albumImageUrl,
-      artist,
-      isPlaying,
-      songUrl,
-      title,
-    },
-  });
+  res
+    .status(200)
+    .setHeader("Content-Type", "application/json")
+    .send({
+      data: {
+        album,
+        albumImageUrl,
+        artist,
+        isPlaying,
+        songUrl,
+        title,
+      },
+    });
 }
