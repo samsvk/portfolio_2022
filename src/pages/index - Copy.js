@@ -25,25 +25,6 @@ export default function Home() {
             <AnimatePresence>
               {go && (
                 <>
-                  <motion.span
-                    className="sam"
-                    initial={{
-                      top: "50%",
-                      left: "50%",
-                      transform: "translate(-50%, -50%)",
-                    }}
-                    animate={{
-                      top: "0",
-                      left: "0%",
-                      transform: "translate(0%, 0%)",
-                      transition: {
-                        ease: [0.16, 0.42, 0.5, 1.06],
-                        duration: 0.5,
-                      },
-                    }}
-                  >
-                    Hello I'm Sam
-                  </motion.span>
                   <span className="line">
                     <motion.span
                       variants={ITEM}
@@ -52,13 +33,13 @@ export default function Home() {
                       custom={{ i: 1, a: 72 }}
                       className="h"
                     >
+                      Hello I'm Sam
                       <span className="slash"> / </span>
                       Creative Developer
                       <span className="slash"> / </span>
                       Born
                     </motion.span>
                   </span>
-
                   <span className="line">
                     <motion.span
                       variants={ITEM}
