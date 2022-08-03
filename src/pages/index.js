@@ -19,9 +19,9 @@ export default function Home() {
   return (
     <SmoothScroll>
       <Intro />
-      <div className="ind">
-        <header className="header">
-          <div>
+      <div className="wrap">
+        <div className="ind">
+          <header className="header">
             <AnimatePresence>
               {go && (
                 <>
@@ -93,10 +93,10 @@ export default function Home() {
                 </>
               )}
             </AnimatePresence>
-          </div>
-        </header>
+          </header>
 
-        <Footer />
+          <Footer />
+        </div>
       </div>
     </SmoothScroll>
   );
