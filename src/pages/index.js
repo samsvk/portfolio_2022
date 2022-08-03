@@ -25,38 +25,6 @@ export default function Home() {
             <AnimatePresence>
               {go && (
                 <>
-                  <motion.span
-                    className="sam"
-                    initial={{
-                      top: "50%",
-                      left: "50%",
-                      transform: "translate(-50%, -50%)",
-                    }}
-                    animate={{
-                      top: "0",
-                      left: "0%",
-                      transform: "translate(0%, 0%)",
-                      transition: {
-                        ease: [0.16, 0.42, 0.5, 1.06],
-                        duration: 0.5,
-                      },
-                    }}
-                  >
-                    <motion.span
-                      initial={{
-                        transform: "scale(0.5)",
-                      }}
-                      animate={{
-                        transform: "scale(1)",
-                        transition: {
-                          ease: [0.16, 0.42, 0.5, 1.06],
-                          duration: 0.5,
-                        },
-                      }}
-                    >
-                      Hello I'm Sam{"\u00A0"}
-                    </motion.span>
-                  </motion.span>
                   <span className="line">
                     <motion.span
                       variants={ITEM}
@@ -65,7 +33,7 @@ export default function Home() {
                       custom={{ i: 1, a: 72 }}
                       className="h"
                     >
-                      {" "}
+                      Hello I'm Sam
                       <span className="slash"> / </span>
                       Creative Developer
                       <span className="slash"> / </span>
@@ -119,18 +87,7 @@ export default function Home() {
                       custom={{ i: 4, a: 72 }}
                       className="h"
                     >
-                      products;
-                    </motion.span>
-                  </span>{" "}
-                  <span className="line">
-                    <motion.span
-                      variants={ITEM}
-                      initial="hidden"
-                      animate="visible"
-                      custom={{ i: 5, a: 72 }}
-                      className="h"
-                    >
-                      I've made it.
+                      products; I've made it.
                     </motion.span>
                   </span>
                 </>

@@ -16,29 +16,15 @@ const Intro = () => {
       <motion.div
         className="box"
         initial={{ y: 0 }}
-        onTransitionEnd={{ display: "none" }}
         animate={{
           y: "-100%",
           transition: {
             duration: 0.25,
-            delay: 0.5,
+            delay: 50,
             ease: "easeInOut",
           },
         }}
-      />
-      <motion.div
-        className="box b"
-        initial={{ x: 0 }}
-        onTransitionEnd={{ display: "none" }}
-        animate={{
-          x: "100%",
-          transition: {
-            duration: 0.25,
-            delay: 1,
-            ease: "easeInOut",
-          },
-        }}
-      />
+      ></motion.div>
     </>
   );
 };
