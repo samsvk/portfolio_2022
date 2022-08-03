@@ -42,7 +42,20 @@ export default function Home() {
                       },
                     }}
                   >
-                    Hello I'm Sam
+                    <motion.span
+                      initial={{
+                        transform: "scale(0.5)",
+                      }}
+                      animate={{
+                        transform: "scale(1)",
+                        transition: {
+                          ease: [0.16, 0.42, 0.5, 1.06],
+                          duration: 0.5,
+                        },
+                      }}
+                    >
+                      Hello I'm Sam{"\u00A0"}
+                    </motion.span>
                   </motion.span>
                   <span className="line">
                     <motion.span
@@ -52,13 +65,13 @@ export default function Home() {
                       custom={{ i: 1, a: 72 }}
                       className="h"
                     >
+                      {" "}
                       <span className="slash"> / </span>
                       Creative Developer
                       <span className="slash"> / </span>
                       Born
                     </motion.span>
                   </span>
-
                   <span className="line">
                     <motion.span
                       variants={ITEM}
@@ -106,7 +119,18 @@ export default function Home() {
                       custom={{ i: 4, a: 72 }}
                       className="h"
                     >
-                      products; I've made it.
+                      products;
+                    </motion.span>
+                  </span>{" "}
+                  <span className="line">
+                    <motion.span
+                      variants={ITEM}
+                      initial="hidden"
+                      animate="visible"
+                      custom={{ i: 5, a: 72 }}
+                      className="h"
+                    >
+                      I've made it.
                     </motion.span>
                   </span>
                 </>
