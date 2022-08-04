@@ -17,6 +17,13 @@ export default function Home() {
       clearTimeout(x);
     };
   }, []);
+  const text = `Lama Lama is a creative digital agency. We
+  deliver digital changes for companies with
+  a conscience and brands with a heart. We
+  embrace a fluid approach, and use our
+  expertise to create longevity and value for
+  our clients. Together with them we hope to
+  make the world a little better.`;
 
   return (
     <SmoothScroll>
@@ -35,10 +42,8 @@ export default function Home() {
                       custom={{ i: 1, a: 62 }}
                       className="h"
                     >
-                      Crafting visual
+                      Lama Lama is a creative digital agency.
                     </motion.span>
-                  </span>
-                  <span className="line">
                     <motion.span
                       variants={ITEM}
                       initial="hidden"
@@ -46,11 +51,9 @@ export default function Home() {
                       custom={{ i: 2, a: 62 }}
                       className="h"
                     >
-                      personalities for
+                      We deliver digital changes for companies
+                      with a conscience and brands with a heart.
                     </motion.span>
-                  </span>
-
-                  <span className="line">
                     <motion.span
                       variants={ITEM}
                       initial="hidden"
@@ -58,7 +61,19 @@ export default function Home() {
                       custom={{ i: 3, a: 62 }}
                       className="h"
                     >
-                      digital-first brands
+                      We embrace a fluid approach, and use our
+                      expertise to create longevity and value for
+                      our clients.
+                    </motion.span>
+                    <motion.span
+                      variants={ITEM}
+                      initial="hidden"
+                      animate="visible"
+                      custom={{ i: 4, a: 62 }}
+                      className="h"
+                    >
+                      Together with them we hope to make the 1
+                      world a little better.
                     </motion.span>
                   </span>
                 </>

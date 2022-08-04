@@ -6,53 +6,53 @@
   @return $value / ($value * 0 + 1);
 }
 
-@mixin fluid-type(
-  $min-vw,
-  $max-vw,
-  $min-font-size,
-  $max-font-size
-) {
-  $u1: unit($min-vw);
-  $u2: unit($max-vw);
-  $u3: unit($min-font-size);
-  $u4: unit($max-font-size);
+// @mixin fluid-type(
+//   $min-vw,
+//   $max-vw,
+//   $min-font-size,
+//   $max-font-size
+// ) {
+//   $u1: unit($min-vw);
+//   $u2: unit($max-vw);
+//   $u3: unit($min-font-size);
+//   $u4: unit($max-font-size);
 
-  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
-    & {
-      font-size: $min-font-size;
-      @media screen and (min-width: $min-vw) {
-        font-size: calc(
-          #{$min-font-size} + #{strip-unit(
-              $max-font-size - $min-font-size
-            )} *
-            (
-              (100vw - #{$min-vw}) / #{strip-unit(
-                  $max-vw - $min-vw
-                )}
-            )
-        );
-      }
+//   @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+//     & {
+//       font-size: $min-font-size;
+//       @media screen and (min-width: $min-vw) {
+//         font-size: calc(
+//           #{$min-font-size} + #{strip-unit(
+//               $max-font-size - $min-font-size
+//             )} *
+//             (
+//               (100vw - #{$min-vw}) / #{strip-unit(
+//                   $max-vw - $min-vw
+//                 )}
+//             )
+//         );
+//       }
 
-      @media screen and (min-width: $max-vw) {
-        font-size: $max-font-size;
-      }
-    }
-  }
-}
+//       @media screen and (min-width: $max-vw) {
+//         font-size: $max-font-size;
+//       }
+//     }
+//   }
+// }
 
-$min_width: 300px;
-$max_width: 1000px;
-$min_font: 9.6px;
-$max_font: 18px;
+// $min_width: 300px;
+// $max_width: 1000px;
+// $min_font: 9.6px;
+// $max_font: 18px;
 
-html {
-  @include fluid-type(
-    $min_width,
-    $max_width,
-    $min_font,
-    $max_font
-  );
-}
+// html {
+//   @include fluid-type(
+//     $min_width,
+//     $max_width,
+//     $min_font,
+//     $max_font
+//   );
+// }
 
 a {
   color: inherit;
@@ -103,31 +103,35 @@ html {
   margin: 0 auto;
 }
 .header {
-  margin-top: 30vh;
   padding: 2rem 0;
-  width: 100%;
-  max-width: max-content;
-  max-width: 100%;
+  // max-width: max-content;
+  max-width: 80%;
   line-height: 1.05;
   letter-spacing: -2px;
   font-weight: 400;
   font-size: 6.3em;
   letter-spacing: -0.167rem;
   line-height: 6rem;
+  font-size: 2.5em;
+  width: 100%;
+  max-width: 100%;
+  @media (min-width: 1000px) {
+    font-size: 4.375em;
+    width: 80%;
+  }
 }
 .h {
-  display: block;
-  max-height: max-content;
   font-weight: 400;
   max-width: 100%;
-  white-space: nowrap;
+  line-height: 1;
+  white-space: normal;
   & > .slash {
     font-weight: 400;
   }
 }
 .line {
-  // overflow-y: hidden;
-  display: block;
+  line-height: 1;
+  display: inline-block;
 }
 .p {
   line-height: 1.3;
@@ -136,7 +140,7 @@ html {
   max-height: max-content;
   font-weight: 400;
   overflow: hidden;
-  white-space: nowrap;
+  // white-space: nowrap;
 }
 .pc {
   position: relative;
@@ -146,6 +150,8 @@ html {
   max-width: max-content;
 }
 .footer {
+  // bottom: 0;
+  // position: absolute;
   right: 0;
   width: 100%;
   opacity: 0.8;
