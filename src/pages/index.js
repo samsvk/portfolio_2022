@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ITEM } from "../static/constants";
 import SmoothScroll from "../components/hocs/SmoothScroll";
-
+import { BiArrowBack } from "react-icons/bi";
 import Intro from "../components/intro";
 import Footer from "../components/footer";
 
@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     let x = setTimeout(() => {
       setGo(true);
-    }, 1500);
+    }, 700);
     return () => clearTimeout(x);
   }, []);
 
@@ -30,14 +30,13 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 1, a: 72 }}
+                      custom={{ i: 1, a: 75 }}
                       className="h"
                     >
                       Hello I'm Sam
                       <span className="slash"> / </span>
-                      Creative Developer
-                      <span className="slash"> / </span>
-                      Born
+                      23.02.1999 (23){" "}
+                      <span className="slash"> / </span>Creative
                     </motion.span>
                   </span>
                   <span className="line">
@@ -45,14 +44,25 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 2, a: 72 }}
+                      custom={{ i: 2, a: 75 }}
                       className="h"
                     >
-                      in the UK{" "}
+                      Developer in the UK{" "}
                       <span className="slash"> / </span> Raised
-                      in Ireland
+                      in Ireland{" "}
                       <span className="slash"> / </span>
-                      Available for
+                    </motion.span>
+                  </span>
+
+                  <span className="line">
+                    <motion.span
+                      variants={ITEM}
+                      initial="hidden"
+                      animate="visible"
+                      custom={{ i: 3, a: 75 }}
+                      className="h"
+                    >
+                      Available for Freelance @ (Oct 2022)
                     </motion.span>
                   </span>
                   <span className="line">
@@ -60,12 +70,19 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 3, a: 72 }}
+                      custom={{ i: 4, a: 75 }}
                       className="h"
                     >
-                      Freelance @ August 2022
-                      <span className="slash"> / </span>
-                      From tiny
+                      <span className="slash">
+                        {" "}
+                        <BiArrowBack
+                          style={{
+                            verticalAlign: "middle",
+                            transform: "rotate(180deg)",
+                          }}
+                        />{" "}
+                      </span>{" "}
+                      From tiny experiments to large scale
                     </motion.span>
                   </span>
                   <span className="line">
@@ -73,21 +90,10 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 4, a: 72 }}
+                      custom={{ i: 4, a: 75 }}
                       className="h"
                     >
-                      experiments to large scale consumer
-                    </motion.span>
-                  </span>
-                  <span className="line">
-                    <motion.span
-                      variants={ITEM}
-                      initial="hidden"
-                      animate="visible"
-                      custom={{ i: 4, a: 72 }}
-                      className="h"
-                    >
-                      products; I've made it.
+                      consumer products; I've made it.
                     </motion.span>
                   </span>
                 </>

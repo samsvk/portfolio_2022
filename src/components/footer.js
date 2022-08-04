@@ -10,7 +10,7 @@ const Footer = () => {
   useEffect(() => {
     let x = setTimeout(() => {
       setGo(true);
-    }, 2600);
+    }, 1200);
     return () => clearTimeout(x);
   }, []);
 
