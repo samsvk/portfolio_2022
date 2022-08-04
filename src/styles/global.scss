@@ -304,9 +304,31 @@ html {
     &--item {
       transform: translateY(90%);
       height: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
       background: brown;
       &--text {
-        @include fluid-type($min_width, $max_width, 50px, 50px);
+        display: grid;
+        height: max-content;
+        overflow: hidden;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        @include fluid-type($min_width, $max_width, 72px, 72px);
+        .roll {
+          display: grid;
+          overflow: hidden;
+          position: relative;
+          height: max-content;
+          &:nth-child(1) {
+            transform: translateY(-20%);
+          }
+          &:nth-child(2) {
+            transform: translateY(-18%);
+          }
+          &:nth-child(3) {
+            transform: translateY(-17%);
+          }
+        }
       }
     }
   }

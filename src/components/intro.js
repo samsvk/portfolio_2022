@@ -31,7 +31,20 @@ const Intro = () => {
             initial={{ bottom: 0 }}
             animate={{ bottom: "0%" }}
           >
-            <span className="box__child--item--text">0</span>
+            <div className="box__child--item--text">
+              <div className="roll">
+                <span className="roll__item">0</span>
+                <span className="roll__second">1</span>
+              </div>
+              <div className="roll">
+                <span className="roll__first">0</span>
+                <span className="roll__second">1</span>
+              </div>
+              <div className="roll">
+                <span className="roll__first">0</span>
+                <span className="roll__second">1</span>
+              </div>
+            </div>
           </motion.div>
         </div>
       </motion.div>
