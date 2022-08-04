@@ -30,10 +30,10 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 1, a: 75 }}
+                      custom={{ i: 1, a: 80 }}
                       className="h"
                     >
-                      Hello I'm Sam
+                      Hello I&apos;m Sam
                       <span className="slash"> / </span>
                       23.02.1999 (23){" "}
                       <span className="slash"> / </span>Creative
@@ -44,7 +44,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 2, a: 75 }}
+                      custom={{ i: 2, a: 80 }}
                       className="h"
                     >
                       Developer in the UK{" "}
@@ -59,7 +59,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 3, a: 75 }}
+                      custom={{ i: 3, a: 80 }}
                       className="h"
                     >
                       Available for Freelance @ (Oct 2022)
@@ -70,7 +70,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 4, a: 75 }}
+                      custom={{ i: 4, a: 80 }}
                       className="h"
                     >
                       <span className="slash">
@@ -90,10 +90,10 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 4, a: 75 }}
+                      custom={{ i: 5, a: 80 }}
                       className="h"
                     >
-                      consumer products; I've made it.
+                      consumer products&rsquo; I&apos;ve made it.
                     </motion.span>
                   </span>
                 </>

@@ -78,7 +78,7 @@ const Footer = () => {
                     className="p"
                   >
                     ambition drives him to grow brands and
-                    products to it's full potential.
+                    products to it&apos;s full potential.
                   </motion.span>
                 </span>
               </>

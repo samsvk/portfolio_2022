@@ -55,13 +55,13 @@ export default function NowPlaying({ go }) {
                   animate="visible"
                   custom={{ i: 4, a: 20 }}
                   className="p"
-                  style={{ marginTop: "0.15rem" }}
                 >
                   <span className="song">
                     <span className="song__title">
                       <a
                         href={`${data?.data?.songUrl}`}
                         target="_blank"
+                        rel="noreferrer"
                       >
                         {data?.data?.title} -{" "}
                         {data?.data?.artist}

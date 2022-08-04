@@ -15,10 +15,10 @@ export const ITEM = {
 };
 export const SOCIAL_DATA = [
   { name: "Email" },
-  { name: "Twitch" },
   { name: "Github" },
   { name: "Spotify" },
   { name: "Twitter" },
+  { name: "Projects" },
 ];
 
 export function getWindow() {

@@ -1,7 +1,7 @@
 .wrap {
   padding: 0 2rem;
   @media screen and (max-width: 990px) {
-    padding: 0 0.5rem;
+    padding: 0 0.8rem;
   }
 }
 a {
@@ -23,7 +23,7 @@ a {
 $bg: #e1dfdd;
 $min_width: 320px;
 $max_width: 1920px;
-$min_font: 12px;
+$min_font: 11px;
 $max_font: 16.5px;
 
 @function strip-unit($value) {
@@ -105,17 +105,20 @@ html {
   width: 100%;
   max-width: max-content;
   max-width: 100%;
-  line-height: 1.1;
-  letter-spacing: -5px;
+  line-height: 1.2;
+  letter-spacing: -2px;
   font-weight: 500;
   position: relative;
-  @include fluid-type($min_width, $max_width, 20px, 82px);
-  @media screen and (max-width: 990px) {
-    letter-spacing: -2px;
+  @include fluid-type($min_width, $max_width, 18px, 80px);
+  @media (min-width: 880px) {
+    line-height: 1;
+    letter-spacing: -3px;
+  }
+  @media (max-width: 990px) {
+    padding-top: 3.5rem;
   }
 }
 .h {
-  // overflow: hidden;
   margin-top: -0.35rem;
   display: block;
   max-height: max-content;
@@ -155,16 +158,26 @@ html {
   width: 100%;
   position: absolute;
   opacity: 0.8;
+  @media (max-width: 990px) {
+    position: relative;
+  }
 }
 .grid {
   padding: 2rem 0;
   display: grid;
   width: 90%;
   grid-template-columns: repeat(14, minmax(0, 1fr));
+  @media (max-width: 990px) {
+    width: 100%;
+  }
 }
 .paragraph {
   max-width: max-content;
   grid-column: span 7;
+  @media (max-width: 990px) {
+    grid-column: span 14;
+    margin-bottom: 0.5rem;
+  }
 }
 .socials {
   height: 100%;
@@ -174,6 +187,14 @@ html {
   justify-content: flex-end;
   list-style: none;
   grid-column: span 3;
+  @media (max-width: 1100px) {
+    grid-column: span 2;
+  }
+  @media (max-width: 990px) {
+    grid-column: span 14;
+    padding: 1rem 0;
+  }
+
   & > span {
     &:not(:last-child) {
       margin-bottom: 0.1rem;
@@ -210,24 +231,16 @@ html {
   flex-direction: column;
   flex-grow: 1;
   grid-column: span 3;
-}
-
-/*spotify styling*/
-@keyframes marquee {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: -100%;
+  @media (max-width: 990px) {
+    grid-column: span 14;
   }
 }
 
 .song {
   display: block;
   overflow: hidden;
-  height: 22px;
   position: relative;
-  @include fluid-type($min_width, $max_width, 12px, 15px);
+  @include fluid-type($min_width, $max_width, 11px, 15px);
   text-align: center;
   &__title {
     overflow: hidden;
@@ -254,4 +267,28 @@ html {
   position: fixed;
   z-index: 1000;
   background: RGB(23, 23, 23);
+}
+
+.btn {
+  margin-top: 2rem;
+  background: transparent;
+  border: 0;
+  border: 2px solid RGBA(23, 23, 23, 1);
+  border-radius: 50px;
+  padding: 1rem 5rem;
+  font-family: inherit;
+  @include fluid-type(
+    $min_width,
+    $max_width,
+    $min_font,
+    $max_font
+  );
+  line-height: 1.35;
+  overflow: hidden;
+  display: block;
+  max-height: max-content;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0.8;
 }
