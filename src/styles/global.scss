@@ -292,4 +292,22 @@ html {
   position: fixed;
   z-index: 1000;
   background: RGB(23, 23, 23);
+  &__child {
+    z-index: 100;
+    right: 0;
+    height: 100%;
+    background: orange;
+    color: $bg;
+    width: 200px;
+    position: absolute;
+    min-height: 100vh;
+    &--item {
+      transform: translateY(90%);
+      height: 100%;
+      background: brown;
+      &--text {
+        @include fluid-type($min_width, $max_width, 50px, 50px);
+      }
+    }
+  }
 }

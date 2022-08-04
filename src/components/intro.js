@@ -24,7 +24,17 @@ const Intro = () => {
             ease: "easeInOut",
           },
         }}
-      ></motion.div>
+      >
+        <div className="box__child">
+          <motion.div
+            className="box__child--item"
+            initial={{ bottom: 0 }}
+            animate={{ bottom: "0%" }}
+          >
+            <span className="box__child--item--text">0</span>
+          </motion.div>
+        </div>
+      </motion.div>
     </>
   );
 };
