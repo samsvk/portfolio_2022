@@ -32,13 +32,10 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 1, a: 85 }}
+                      custom={{ i: 1, a: 62 }}
                       className="h"
                     >
-                      Hello I&apos;m Sam
-                      <span className="slash"> / </span>
-                      23.02.1999 (23){" "}
-                      <span className="slash"> / </span>Creative
+                      Crafting visual
                     </motion.span>
                   </span>
                   <span className="line">
@@ -46,13 +43,10 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 2, a: 85 }}
+                      custom={{ i: 2, a: 62 }}
                       className="h"
                     >
-                      Developer in the UK{" "}
-                      <span className="slash"> / </span> Raised
-                      in Ireland{" "}
-                      <span className="slash"> / </span>
+                      personalities for
                     </motion.span>
                   </span>
 
@@ -61,48 +55,16 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 3, a: 85 }}
+                      custom={{ i: 3, a: 62 }}
                       className="h"
                     >
-                      Available for Freelance @ (Oct 2022)
-                    </motion.span>
-                  </span>
-                  <span className="line">
-                    <motion.span
-                      variants={ITEM}
-                      initial="hidden"
-                      animate="visible"
-                      custom={{ i: 4, a: 85 }}
-                      className="h"
-                    >
-                      <span className="slash">
-                        {" "}
-                        <BiArrowBack
-                          style={{
-                            verticalAlign: "middle",
-                            transform: "rotate(180deg)",
-                          }}
-                        />{" "}
-                      </span>{" "}
-                      From tiny experiments to large scale
-                    </motion.span>
-                  </span>
-                  <span className="line">
-                    <motion.span
-                      variants={ITEM}
-                      initial="hidden"
-                      animate="visible"
-                      custom={{ i: 5, a: 85 }}
-                      className="h"
-                    >
-                      consumer products&rsquo; I&apos;ve made it.
+                      digital-first brands
                     </motion.span>
                   </span>
                 </>
               )}
             </AnimatePresence>
           </header>
-
           <Footer />
         </div>
       </div>

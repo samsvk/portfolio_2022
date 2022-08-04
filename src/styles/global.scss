@@ -2,21 +2,58 @@
   box-sizing: border-box;
 }
 
-html {
-  box-sizing: border-box;
-  height: 100%;
-  text-rendering: optimizeLegibility;
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
 }
 
-.wrap {
-  padding: 0 2rem;
-  @media screen and (max-width: 990px) {
-    padding: 0 2rem;
-  }
-  @media screen and (max-width: 500px) {
-    padding: 0 0.8rem;
+@mixin fluid-type(
+  $min-vw,
+  $max-vw,
+  $min-font-size,
+  $max-font-size
+) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(
+          #{$min-font-size} + #{strip-unit(
+              $max-font-size - $min-font-size
+            )} *
+            (
+              (100vw - #{$min-vw}) / #{strip-unit(
+                  $max-vw - $min-vw
+                )}
+            )
+        );
+      }
+
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
   }
 }
+
+$min_width: 300px;
+$max_width: 1000px;
+$min_font: 9.6px;
+$max_font: 18px;
+
+html {
+  @include fluid-type(
+    $min_width,
+    $max_width,
+    $min_font,
+    $max_font
+  );
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -45,7 +82,8 @@ $bg: #e1dfdd;
   color: $bg;
 }
 body {
-  font-family: "Rubik", sans-serif;
+  // font-family: "Rubik", sans-serif;
+  font-family: "Roboto", sans-serif;
   background: $bg;
   color: rgba(23, 23, 23, 0.95);
   height: 100%;
@@ -58,45 +96,37 @@ html {
 }
 
 .ind {
-  max-height: 100vh;
-  max-width: 100vh;
-  min-width: 100vw;
-  min-height: 100vh;
-  width: 100%;
-  height: 100%;
   position: relative;
+  padding: 0rem 2rem;
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
 }
 .header {
+  margin-top: 30vh;
   padding: 2rem 0;
   width: 100%;
   max-width: max-content;
   max-width: 100%;
-  line-height: 1;
+  line-height: 1.05;
   letter-spacing: -2px;
   font-weight: 400;
-  position: relative;
-  @media (min-width: 990px) {
-    font-size: 4.5vw;
-  }
-  @media (max-width: 990px) {
-    font-size: 5.3vw;
-  }
-  @media (max-width: 550px) {
-    font-size: 5.6vw;
-  }
+  font-size: 6.3em;
+  letter-spacing: -0.167rem;
+  line-height: 6rem;
 }
 .h {
   display: block;
   max-height: max-content;
+  font-weight: 400;
   max-width: 100%;
   white-space: nowrap;
   & > .slash {
     font-weight: 400;
   }
 }
-
 .line {
-  overflow-y: hidden;
+  // overflow-y: hidden;
   display: block;
 }
 .p {
@@ -116,24 +146,9 @@ html {
   max-width: max-content;
 }
 .footer {
-  bottom: 0;
   right: 0;
   width: 100%;
-  position: absolute;
   opacity: 0.8;
-  @media (min-width: 990px) {
-    font-size: 0.9vw;
-  }
-  @media (max-width: 990px) {
-    font-size: 2vw;
-    bottom: 1rem;
-  }
-  @media (max-width: 550px) {
-    font-size: 2vw;
-  }
-  @media (max-width: 420px) {
-    font-size: 2.94vw;
-  }
 }
 .grid {
   padding: 2rem 0;
