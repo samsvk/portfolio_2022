@@ -125,6 +125,7 @@ html {
   max-width: 100%;
   line-height: 1;
   white-space: normal;
+  height: max-content;
   & > .slash {
     font-weight: 400;
   }
@@ -140,7 +141,6 @@ html {
   max-height: max-content;
   font-weight: 400;
   overflow: hidden;
-  // white-space: nowrap;
 }
 .pc {
   position: relative;
