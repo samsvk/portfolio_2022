@@ -33,7 +33,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 1, a: 70 }}
+                      custom={{ i: 1, a: "110%", d: true }}
                       className="h"
                     >
                       I'm Sam (23),{"\u00A0"}
@@ -44,7 +44,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 4, a: 70 }}
+                      custom={{ i: 2, a: "110%", d: true }}
                       className="h"
                     >
                       a digital developer,
@@ -55,7 +55,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 4, a: 70 }}
+                      custom={{ i: 3, a: "110%", d: true }}
                       className="h"
                     >
                       based in Europe
