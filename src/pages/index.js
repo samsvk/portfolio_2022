@@ -47,7 +47,7 @@ export default function Home() {
                       custom={{ i: 2, a: 70 }}
                       className="h"
                     >
-                      I'm{"\u00A0"}
+                      I&apos;m{"\u00A0"}
                     </motion.span>{" "}
                   </span>
                   <span className="line">
@@ -315,7 +315,7 @@ export default function Home() {
                       custom={{ i: 23, a: 70 }}
                       className="h"
                     >
-                      I've{"\u00A0"}
+                      I&apos;ve{"\u00A0"}
                     </motion.span>{" "}
                   </span>
                   <span className="line">
