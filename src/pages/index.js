@@ -18,7 +18,6 @@ export default function Home() {
     };
   }, []);
 
-  const text = `Hello I'm Sam 23.02.1999(23) Creative Developer in the UK Available for Freelance  (@Oct 2022) From tiny experiments to large scale consumer products; I've made it. Hello I'm Sam 23.02.1999(23) Creative Developer in the UK Available for Freelance  (@Oct 2022) From tiny experiments to large scale consumer products; I've made it. `;
   return (
     <SmoothScroll>
       <Intro />

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ITEM } from "../static/constants";
 import { GrSpotify } from "react-icons/gr";
 
-export default function NowPlaying({ go }) {
+export default function NowPlaying() {
   const { data } = useSWR("/api/now-playing", fetcher, {
     loadingTimeout: 5000,
     errorRetryCount: 30000,
@@ -28,75 +28,41 @@ export default function NowPlaying({ go }) {
   return (
     <>
       {data?.data?.isPlaying ? (
-        <AnimatePresence>
-          {go && (
-            <>
-              <span className="pc">
-                <motion.span
-                  variants={ITEM}
-                  initial="hidden"
-                  animate="visible"
-                  custom={{ i: 5, a: 20, d: false }}
-                  className="p"
-                  style={{ opacity: 0.5 }}
+        <>
+          <span className="p" style={{ opacity: 0.5 }}>
+            <GrSpotify
+              style={{
+                verticalAlign: "middle",
+              }}
+            />{" "}
+            Now Playing:
+          </span>
+
+          <span className="p">
+            <span className="song">
+              <span className="song__title">
+                <a
+                  href={`${data?.data?.songUrl}`}
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <GrSpotify
-                    style={{
-                      verticalAlign: "middle",
-                    }}
-                  />{" "}
-                  Now Playing:
-                </motion.span>
+                  {data?.data?.title} - {data?.data?.artist}
+                </a>
               </span>
-              <span className="pc">
-                <motion.span
-                  variants={ITEM}
-                  initial="hidden"
-                  animate="visible"
-                  custom={{ i: 6, a: 20, d: false }}
-                  className="p"
-                >
-                  <span className="song">
-                    <span className="song__title">
-                      <a
-                        href={`${data?.data?.songUrl}`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        {data?.data?.title} -{" "}
-                        {data?.data?.artist}
-                      </a>
-                    </span>
-                  </span>
-                </motion.span>
-              </span>
-            </>
-          )}
-        </AnimatePresence>
+            </span>
+          </span>
+        </>
       ) : (
-        <AnimatePresence>
-          {go && (
-            <>
-              <span className="pc">
-                <motion.span
-                  variants={ITEM}
-                  initial="hidden"
-                  animate="visible"
-                  custom={4}
-                  className="p"
-                  style={{ opacity: 0.5 }}
-                >
-                  <GrSpotify
-                    style={{
-                      verticalAlign: "middle",
-                    }}
-                  />{" "}
-                  Not Listening
-                </motion.span>
-              </span>
-            </>
-          )}
-        </AnimatePresence>
+        <>
+          <span className="p" style={{ opacity: 0.5 }}>
+            <GrSpotify
+              style={{
+                verticalAlign: "middle",
+              }}
+            />{" "}
+            Not Listening
+          </span>
+        </>
       )}
     </>
   );
