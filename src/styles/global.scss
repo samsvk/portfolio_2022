@@ -84,10 +84,21 @@ $bg: #e1dfdd;
 body {
   background: $bg;
   // font-family: "League Spartan", sans-serif;
-  font-family: "IBM Plex Sans", sans-serif;
+  // font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: rgba(23, 23, 23, 0.9);
   height: 100%;
   width: 100%;
+  font-size: 14.5px;
+  @media (max-width: 377px) {
+    font-size: 11px;
+  }
+  @media (min-width: 660px) {
+    font-size: 14.5px;
+  }
+  @media (min-width: 1000px) {
+    font-size: 16.5px;
+  }
 }
 html {
   box-sizing: border-box;
@@ -97,42 +108,44 @@ html {
 
 .ind {
   position: relative;
-  padding: 0rem 2rem;
-  // max-width: 1800px;
   width: 100%;
   margin: 0 auto;
   height: 100vh;
   width: 100vw;
-  // background: orange;
+  max-width: 1800px;
 }
 .header {
   padding: 3rem 0;
   max-width: 80%;
   letter-spacing: -0.2rem;
-  line-height: 1;
   font-size: 2.5em;
   width: 100%;
-  font-size: 3em;
   max-width: 100%;
+  font-size: 2.2em;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 660px) {
+    font-size: 3em;
+    width: 100%;
+  }
   @media (min-width: 1000px) {
-    font-size: 4.93em;
+    font-size: 8em;
     width: 85%;
   }
 }
 .h {
   font-weight: 500;
   max-width: 100%;
-  line-height: 0.9;
+  line-height: 1;
   white-space: normal;
   display: inline-flex;
-
   height: 100%;
   & > .slash {
     font-weight: 400;
   }
 }
 .line {
-  margin-top: -2rem;
+  margin-top: -0.5rem;
   display: inline-block;
   overflow: hidden;
   position: relative;
@@ -140,7 +153,6 @@ html {
 }
 .p {
   // line-height: 1.3;
-  font-size: 16.5px;
   font-weight: 400;
   overflow: hidden;
   display: block;
@@ -148,19 +160,23 @@ html {
   overflow: hidden;
 }
 .pc {
+  line-height: 1.1;
   position: relative;
   height: max-content;
   overflow: hidden;
-  display: block;
+  display: inline-block;
   max-width: max-content;
 }
 .footer {
   bottom: 0;
-  position: absolute;
   right: 0;
   width: 100%;
   opacity: 0.8;
   padding: 0 2rem;
+  @media (max-width: 660px) {
+    padding: 0 0.8rem;
+    padding-bottom: 1rem;
+  }
 }
 .grid {
   padding: 2rem 0;
@@ -176,6 +192,7 @@ html {
 }
 .paragraph {
   max-width: max-content;
+  display: inline-block;
   flex: 1;
 }
 .socials {
@@ -201,7 +218,6 @@ html {
       margin-bottom: 0.1rem;
     }
     & > li {
-      font-size: 16.5px;
       font-weight: 400;
       position: relative;
       max-width: max-content;
@@ -240,14 +256,13 @@ html {
   position: relative;
   text-align: center;
   line-height: 1.3;
-  font-size: 16.5px;
   font-weight: 400;
   &__title {
     overflow: hidden;
     max-width: 25ch;
     display: block;
     line-height: 1.3;
-    font-size: 16.5px;
+
     font-weight: 400;
     width: 100%;
     text-overflow: ellipsis;

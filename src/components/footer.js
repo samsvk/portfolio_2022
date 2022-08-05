@@ -18,72 +18,17 @@ const Footer = () => {
     <footer className="footer">
       <div className="grid">
         <div className="paragraph">
-          <AnimatePresence>
-            {go && (
-              <>
-                <span className="pc">
-                  <motion.span
-                    variants={ITEM}
-                    initial="hidden"
-                    animate="visible"
-                    custom={{ i: 1, a: 20, d: true }}
-                    className="p"
-                  >
-                    Samuel graduated in Digital Design and
-                    Development and is now a{" "}
-                  </motion.span>
-                </span>
-                <span className="pc">
-                  <motion.span
-                    variants={ITEM}
-                    initial="hidden"
-                    animate="visible"
-                    custom={{ i: 2, a: 20, d: true }}
-                    className="p"
-                  >
-                    passionate creative. Self-taught in modern
-                    web technologies,
-                  </motion.span>
-                </span>
-                <span className="pc">
-                  <motion.span
-                    variants={ITEM}
-                    initial="hidden"
-                    animate="visible"
-                    custom={{ i: 3, a: 20, d: true }}
-                    className="p"
-                  >
-                    Samuel spent the past years building industry
-                    experience in design
-                  </motion.span>
-                </span>
-                <span className="pc">
-                  <motion.span
-                    variants={ITEM}
-                    initial="hidden"
-                    animate="visible"
-                    custom={{ i: 4, a: 20, d: true }}
-                    className="p"
-                  >
-                    and development strategy. All that empowered
-                    by his passion and
-                  </motion.span>
-                </span>
-                <span className="pc">
-                  <motion.span
-                    variants={ITEM}
-                    initial="hidden"
-                    animate="visible"
-                    custom={{ i: 5, a: 20, d: true }}
-                    className="p"
-                  >
-                    ambition drives him to grow brands and
-                    products to it&apos;s full potential.
-                  </motion.span>
-                </span>
-              </>
-            )}
-          </AnimatePresence>
+          <span className="pc">
+            <span className="p">
+              Samuel graduated in Digital Design and Development
+              and is now a passionate creative. Self-taught in
+              modern web technologies, Samuel spent the past
+              years building industry experience in design and
+              development strategy. All that empowered by his
+              passion and ambition drives him to grow brands and
+              products to it&apos;s full potential.
+            </span>
+          </span>
         </div>
 
         <Socials go={go} />
