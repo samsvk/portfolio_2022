@@ -6,9 +6,9 @@ const Intro = () => {
     <>
       <motion.div
         className="box"
-        initial={{ x: 0 }}
+        initial={{ y: 0 }}
         animate={{
-          x: "100%",
+          y: "100%",
           transition: {
             delay: 0.6,
             duration: 1,

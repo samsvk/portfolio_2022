@@ -10,7 +10,7 @@ const Footer = () => {
   useEffect(() => {
     let x = setTimeout(() => {
       setGo(true);
-    }, 1600);
+    }, 1400);
     return () => clearTimeout(x);
   }, []);
 
@@ -26,7 +26,7 @@ const Footer = () => {
                     variants={ITEM}
                     initial="hidden"
                     animate="visible"
-                    custom={{ i: 1, a: 20 }}
+                    custom={{ i: 1, a: 20, d: true }}
                     className="p"
                   >
                     Samuel graduated in Digital Design and
@@ -38,7 +38,7 @@ const Footer = () => {
                     variants={ITEM}
                     initial="hidden"
                     animate="visible"
-                    custom={{ i: 2, a: 20 }}
+                    custom={{ i: 2, a: 20, d: true }}
                     className="p"
                   >
                     passionate creative. Self-taught in modern
@@ -50,7 +50,7 @@ const Footer = () => {
                     variants={ITEM}
                     initial="hidden"
                     animate="visible"
-                    custom={{ i: 3, a: 20 }}
+                    custom={{ i: 3, a: 20, d: true }}
                     className="p"
                   >
                     Samuel spent the past years building industry
@@ -62,7 +62,7 @@ const Footer = () => {
                     variants={ITEM}
                     initial="hidden"
                     animate="visible"
-                    custom={{ i: 4, a: 20 }}
+                    custom={{ i: 4, a: 20, d: true }}
                     className="p"
                   >
                     and development strategy. All that empowered
@@ -74,7 +74,7 @@ const Footer = () => {
                     variants={ITEM}
                     initial="hidden"
                     animate="visible"
-                    custom={{ i: 5, a: 20 }}
+                    custom={{ i: 5, a: 20, d: true }}
                     className="p"
                   >
                     ambition drives him to grow brands and

@@ -2,16 +2,14 @@ export const ITEM = {
   hidden: ({ i, a }) => ({
     y: a,
     x: 0,
-    opacity: 0,
   }),
-  visible: ({ i }) => ({
+  visible: ({ i, a, d }) => ({
     y: 0,
     x: 0,
-    opacity: 1,
     transition: {
       ease: [0.16, 0.42, 0.5, 1.06],
-      duration: 0.5,
-      delay: i * 0.18,
+      duration: 0.6,
+      delay: d ? i * 0.08 : null,
     },
   }),
 };
