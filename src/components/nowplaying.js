@@ -36,7 +36,7 @@ export default function NowPlaying({ go }) {
                   variants={ITEM}
                   initial="hidden"
                   animate="visible"
-                  custom={{ i: 3, a: 20, d: false }}
+                  custom={{ i: 5, a: 20, d: false }}
                   className="p"
                   style={{ opacity: 0.5 }}
                 >
@@ -53,7 +53,7 @@ export default function NowPlaying({ go }) {
                   variants={ITEM}
                   initial="hidden"
                   animate="visible"
-                  custom={{ i: 4, a: 20, d: false }}
+                  custom={{ i: 6, a: 20, d: false }}
                   className="p"
                 >
                   <span className="song">

@@ -1,11 +1,13 @@
 export const ITEM = {
   hidden: ({ i, a }) => ({
     y: a,
+
     x: 0,
   }),
   visible: ({ i, a, d }) => ({
     y: 0,
     x: 0,
+
     transition: {
       ease: [0.16, 0.42, 0.5, 1.06],
       duration: 0.6,

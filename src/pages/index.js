@@ -18,6 +18,7 @@ export default function Home() {
     };
   }, []);
 
+  const text = `Hello I'm Sam 23.02.1999(23) Creative Developer in the UK Available for Freelance  (@Oct 2022) From tiny experiments to large scale consumer products; I've made it. Hello I'm Sam 23.02.1999(23) Creative Developer in the UK Available for Freelance  (@Oct 2022) From tiny experiments to large scale consumer products; I've made it. `;
   return (
     <SmoothScroll>
       <Intro />
@@ -32,7 +33,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 1, a: 82 }}
+                      custom={{ i: 1, a: 70 }}
                       className="h"
                     >
                       Hello{"\u00A0"}
@@ -43,7 +44,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 2, a: 82 }}
+                      custom={{ i: 2, a: 70 }}
                       className="h"
                     >
                       I'm{"\u00A0"}
@@ -54,7 +55,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 3, a: 82 }}
+                      custom={{ i: 3, a: 70 }}
                       className="h"
                     >
                       Sam
@@ -66,7 +67,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 4, a: 82 }}
+                      custom={{ i: 4, a: 70 }}
                       className="h"
                     >
                       23.
@@ -77,7 +78,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 5, a: 82 }}
+                      custom={{ i: 5, a: 70 }}
                       className="h"
                     >
                       02.
@@ -88,7 +89,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 6, a: 82 }}
+                      custom={{ i: 6, a: 70 }}
                       className="h"
                     >
                       1999
@@ -99,7 +100,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 6, a: 82 }}
+                      custom={{ i: 6, a: 70 }}
                       className="h"
                     >
                       (23)
@@ -111,7 +112,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 7, a: 82 }}
+                      custom={{ i: 7, a: 70 }}
                       className="h"
                     >
                       Creative{"\u00A0"}
@@ -122,7 +123,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 8, a: 82 }}
+                      custom={{ i: 8, a: 70 }}
                       className="h"
                     >
                       Developer{"\u00A0"}
@@ -133,7 +134,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 9, a: 82 }}
+                      custom={{ i: 9, a: 70 }}
                       className="h"
                     >
                       in{"\u00A0"}
@@ -144,7 +145,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 10, a: 82 }}
+                      custom={{ i: 10, a: 70 }}
                       className="h"
                     >
                       the{"\u00A0"}
@@ -155,7 +156,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 11, a: 82 }}
+                      custom={{ i: 11, a: 70 }}
                       className="h"
                     >
                       UK
@@ -167,7 +168,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 12, a: 82 }}
+                      custom={{ i: 12, a: 70 }}
                       className="h"
                     >
                       Available{"\u00A0"}
@@ -178,7 +179,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 13, a: 82 }}
+                      custom={{ i: 13, a: 70 }}
                       className="h"
                     >
                       for{"\u00A0"}
@@ -189,7 +190,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 14, a: 82 }}
+                      custom={{ i: 14, a: 70 }}
                       className="h"
                     >
                       Freelance{"\u00A0"}
@@ -200,7 +201,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 14, a: 82 }}
+                      custom={{ i: 14, a: 70 }}
                       className="h"
                     >
                       {"\u00A0"}
@@ -211,7 +212,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 15, a: 82 }}
+                      custom={{ i: 15, a: 70 }}
                       className="h"
                     >
                       (@Oct 2022)
@@ -223,7 +224,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 16, a: 82 }}
+                      custom={{ i: 16, a: 70 }}
                       className="h"
                     >
                       From{"\u00A0"}
@@ -234,7 +235,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 17, a: 82 }}
+                      custom={{ i: 17, a: 70 }}
                       className="h"
                     >
                       tiny{"\u00A0"}
@@ -245,7 +246,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 18, a: 82 }}
+                      custom={{ i: 18, a: 70 }}
                       className="h"
                     >
                       experiments{"\u00A0"}
@@ -256,7 +257,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 19, a: 82 }}
+                      custom={{ i: 19, a: 70 }}
                       className="h"
                     >
                       to{"\u00A0"}
@@ -267,7 +268,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 19, a: 82 }}
+                      custom={{ i: 19, a: 70 }}
                       className="h"
                     >
                       large{"\u00A0"}
@@ -278,7 +279,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 20, a: 82 }}
+                      custom={{ i: 20, a: 70 }}
                       className="h"
                     >
                       scale{"\u00A0"}
@@ -289,7 +290,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 21, a: 82 }}
+                      custom={{ i: 21, a: 70 }}
                       className="h"
                     >
                       consumer{"\u00A0"}
@@ -300,7 +301,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 22, a: 82 }}
+                      custom={{ i: 22, a: 70 }}
                       className="h"
                     >
                       products;{"\u00A0"}
@@ -311,7 +312,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 23, a: 82 }}
+                      custom={{ i: 23, a: 70 }}
                       className="h"
                     >
                       I've{"\u00A0"}
@@ -322,7 +323,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 24, a: 82 }}
+                      custom={{ i: 24, a: 70 }}
                       className="h"
                     >
                       made{"\u00A0"}
@@ -333,7 +334,7 @@ export default function Home() {
                       variants={ITEM}
                       initial="hidden"
                       animate="visible"
-                      custom={{ i: 25, a: 82 }}
+                      custom={{ i: 25, a: 70 }}
                       className="h"
                     >
                       it.{"\u00A0"}
