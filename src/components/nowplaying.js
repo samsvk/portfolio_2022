@@ -29,8 +29,8 @@ export default function NowPlaying() {
     <>
       {data?.data?.isPlaying ? (
         <>
-          <div className="song">
-            <div>
+          <div className="song opac">
+            <div style={{ opacity: 0.5 }}>
               <GrSpotify
                 style={{
                   verticalAlign: "middle",
@@ -44,21 +44,23 @@ export default function NowPlaying() {
                 target="_blank"
                 rel="noreferrer"
               >
-                {data?.data?.title}
+                {data?.data?.title} - {data?.data?.artist}
               </a>
             </div>
           </div>
         </>
       ) : (
         <>
-          <span className="p" style={{ opacity: 0.5 }}>
-            <GrSpotify
-              style={{
-                verticalAlign: "middle",
-              }}
-            />{" "}
-            Not Listening
-          </span>
+          <div className="song opac">
+            <div style={{ opacity: 0.5 }}>
+              <GrSpotify
+                style={{
+                  verticalAlign: "middle",
+                }}
+              />
+              {"\u00A0"}Not Playing{"\u00A0"}
+            </div>
+          </div>
         </>
       )}
     </>
