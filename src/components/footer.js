@@ -32,9 +32,7 @@ const Footer = () => {
         </div>
 
         <Socials go={go} />
-        <div className="music">
-          <NowPlaying go={go} />
-        </div>
+        <NowPlaying go={go} />
       </div>
     </footer>
   );

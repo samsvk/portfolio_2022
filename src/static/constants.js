@@ -20,7 +20,6 @@ export const SOCIAL_DATA = [
   { name: "Github" },
   { name: "Spotify" },
   { name: "Twitter" },
-  { name: "Projects" },
 ];
 
 export function getWindow() {

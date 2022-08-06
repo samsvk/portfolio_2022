@@ -29,28 +29,25 @@ export default function NowPlaying() {
     <>
       {data?.data?.isPlaying ? (
         <>
-          <span className="p" style={{ opacity: 0.5 }}>
-            <GrSpotify
-              style={{
-                verticalAlign: "middle",
-              }}
-            />{" "}
-            Now Playing:
-          </span>
-
-          <span className="p">
-            <span className="song">
-              <span className="song__title">
-                <a
-                  href={`${data?.data?.songUrl}`}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {data?.data?.title} - {data?.data?.artist}
-                </a>
-              </span>
-            </span>
-          </span>
+          <div className="song">
+            <div>
+              <GrSpotify
+                style={{
+                  verticalAlign: "middle",
+                }}
+              />
+              {"\u00A0"}Now Playing:{"\u00A0"}
+            </div>
+            <div className="song__title">
+              <a
+                href={`${data?.data?.songUrl}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {data?.data?.title}
+              </a>
+            </div>
+          </div>
         </>
       ) : (
         <>
