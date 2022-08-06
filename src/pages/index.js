@@ -25,43 +25,41 @@ export default function Home() {
         <div className="ind">
           <header className="header">
             <AnimatePresence>
-              {go && (
-                <>
-                  <span className="line">
-                    <motion.span
-                      variants={ITEM}
-                      initial="hidden"
-                      animate="visible"
-                      custom={{ i: 1, a: "110%", d: true }}
-                      className="h"
-                    >
-                      I'm Sam (23),{"\u00A0"}
-                    </motion.span>{" "}
-                  </span>
-                  <span className="line">
-                    <motion.span
-                      variants={ITEM}
-                      initial="hidden"
-                      animate="visible"
-                      custom={{ i: 2, a: "110%", d: true }}
-                      className="h"
-                    >
-                      a digital developer,
-                    </motion.span>{" "}
-                  </span>
-                  <span className="line">
-                    <motion.span
-                      variants={ITEM}
-                      initial="hidden"
-                      animate="visible"
-                      custom={{ i: 3, a: "110%", d: true }}
-                      className="h"
-                    >
-                      based in Europe
-                    </motion.span>{" "}
-                  </span>
-                </>
-              )}
+              <>
+                <span className="line">
+                  <motion.span
+                    variants={ITEM}
+                    initial={"hidden"}
+                    animate={go && "visible"}
+                    custom={{ i: 1, a: "200%", d: true }}
+                    className="h"
+                  >
+                    I'm Samuel (23),{"\u00A0"}
+                  </motion.span>{" "}
+                </span>
+                <span className="line">
+                  <motion.span
+                    variants={ITEM}
+                    initial="hidden"
+                    animate={go && "visible"}
+                    custom={{ i: 2, a: "200%", d: true }}
+                    className="h"
+                  >
+                    a digital developer,
+                  </motion.span>{" "}
+                </span>
+                <span className="line">
+                  <motion.span
+                    variants={ITEM}
+                    initial="hidden"
+                    animate={go && "visible"}
+                    custom={{ i: 3, a: "200%", d: true }}
+                    className="h"
+                  >
+                    based in Edinburgh.
+                  </motion.span>{" "}
+                </span>
+              </>
             </AnimatePresence>
           </header>
           <Footer />

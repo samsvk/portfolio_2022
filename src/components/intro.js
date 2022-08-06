@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const Intro = () => {
   return (
     <>
-      <motion.div
+      {/* <motion.div
         className="box"
         initial={{ y: 0 }}
         animate={{
@@ -15,7 +15,7 @@ const Intro = () => {
             ease: [0.83, 0, 0.17, 1],
           },
         }}
-      ></motion.div>
+      ></motion.div> */}
     </>
   );
 };
