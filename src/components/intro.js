@@ -15,11 +15,11 @@ const Intro = () => {
 
   const T = {
     hidden: { y: "100%", background: "orange" },
-    show: ({ duration }) => ({
+    show: ({ duration, delay }) => ({
       y: "0%",
       background: "green",
       transition: {
-        delay: 0.5,
+        delay,
         ease: "easeInOut",
         duration,
       },
@@ -28,7 +28,7 @@ const Intro = () => {
       background: "red",
       y: "-100%",
       transition: {
-        delay: 0.6,
+        delay: 1,
         ease: "easeInOut",
         duration: 1,
       },
@@ -47,10 +47,44 @@ const Intro = () => {
                   initial={"hidden"}
                   animate={"show"}
                   exit={"invisible"}
-                  custom={{ duration: 1 }}
+                  custom={{ duration: 1, delay: 1 }}
                   className="absolute top-0"
                 >
                   0
+                </motion.span>
+              </>
+            )}
+          </AnimatePresence>
+
+          <AnimatePresence exitBeforeEnter>
+            {active === 1 && (
+              <>
+                <motion.span
+                  variants={T}
+                  initial={"hidden"}
+                  animate={"show"}
+                  exit={"invisible"}
+                  custom={{ duration: 1, delay: 1 }}
+                  className="absolute top-0"
+                >
+                  1
+                </motion.span>
+              </>
+            )}
+          </AnimatePresence>
+
+          <AnimatePresence exitBeforeEnter>
+            {active === 2 && (
+              <>
+                <motion.span
+                  variants={T}
+                  initial={"hidden"}
+                  animate={"show"}
+                  exit={"invisible"}
+                  custom={{ duration: 1, delay: 1 }}
+                  className="absolute top-0"
+                >
+                  2
                 </motion.span>
               </>
             )}
