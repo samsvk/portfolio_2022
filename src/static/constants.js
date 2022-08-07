@@ -9,12 +9,13 @@ export const ITEM = {
     x: 0,
 
     transition: {
-      ease: [0.16, 0.42, 0.5, 1.06],
-      duration: 0.6,
-      delay: d ? i * 0.09 : null,
+      ease: "easeInOut",
+      duration: 0.7,
+      delay: d ? i * 0.03 : null,
     },
   }),
 };
+
 export const SOCIAL_DATA = [
   { name: "Email" },
   { name: "Github" },
