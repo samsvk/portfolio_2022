@@ -1,7 +1,6 @@
 export const ITEM = {
   hidden: ({ i, a }) => ({
     y: a,
-
     x: 0,
   }),
   visible: ({ i, a, d }) => ({
