@@ -49,7 +49,79 @@ const Intro = () => {
                   animate={"show"}
                   exit={"invisible"}
                   custom={{ duration: 1, delay: 1 }}
+                  className="absolute top-0 left-0 w-full opacity-0"
+                >
+                  0
+                </motion.span>
+              </>
+            )}
+          </AnimatePresence>
+
+          <AnimatePresence exitBeforeEnter>
+            {active === 1 && (
+              <>
+                <motion.span
+                  variants={T}
+                  initial={"hidden"}
+                  animate={"show"}
+                  exit={"invisible"}
+                  custom={{ duration: 1, delay: 1 }}
+                  className="absolute top-0 left-0 w-full opacity-0"
+                >
+                  3
+                </motion.span>
+              </>
+            )}
+          </AnimatePresence>
+
+          <AnimatePresence exitBeforeEnter>
+            {active === 2 && (
+              <>
+                <motion.span
+                  variants={T}
+                  initial={"hidden"}
+                  animate={"show"}
+                  exit={"invisible"}
+                  custom={{ duration: 1, delay: 1 }}
+                  className="absolute top-0 left-0 w-full opacity-0"
+                >
+                  6
+                </motion.span>
+              </>
+            )}
+          </AnimatePresence>
+          <AnimatePresence exitBeforeEnter>
+            {active === 3 && (
+              <>
+                <motion.span
+                  variants={T}
+                  initial={"hidden"}
+                  animate={"show"}
+                  exit={"invisible"}
+                  custom={{ duration: 1, delay: 1 }}
                   className="absolute top-0 left-0 w-full"
+                >
+                  1
+                </motion.span>
+              </>
+            )}
+          </AnimatePresence>
+        </div>
+      </span>
+
+      <span className="relative inline-block overflow-hidden text-start text-main-default tracking-tighter leading-[0.9] align-text-top">
+        <div className="relative flex flex-col items-start justify-start whitespace-nowrap w-max">
+          <span className="opacity-[0]">0</span>
+          <AnimatePresence exitBeforeEnter>
+            {active === 0 && (
+              <>
+                <motion.span
+                  variants={T}
+                  initial={"hidden"}
+                  animate={"show"}
+                  exit={"invisible"}
+                  custom={{ duration: 1, delay: 1 }}
+                  className="absolute top-0 left-0 w-full opacity-0"
                 >
                   0
                 </motion.span>
@@ -68,7 +140,7 @@ const Intro = () => {
                   custom={{ duration: 1, delay: 1 }}
                   className="absolute top-0 left-0 w-full"
                 >
-                  1
+                  3
                 </motion.span>
               </>
             )}
@@ -85,7 +157,23 @@ const Intro = () => {
                   custom={{ duration: 1, delay: 1 }}
                   className="absolute top-0 left-0 w-full"
                 >
-                  2
+                  6
+                </motion.span>
+              </>
+            )}
+          </AnimatePresence>
+          <AnimatePresence exitBeforeEnter>
+            {active === 3 && (
+              <>
+                <motion.span
+                  variants={T}
+                  initial={"hidden"}
+                  animate={"show"}
+                  exit={"invisible"}
+                  custom={{ duration: 1, delay: 1 }}
+                  className="absolute top-0 left-0 w-full"
+                >
+                  0
                 </motion.span>
               </>
             )}
@@ -124,7 +212,7 @@ const Intro = () => {
                   custom={{ duration: 1, delay: 1 }}
                   className="absolute top-0 left-0 w-full"
                 >
-                  1
+                  3
                 </motion.span>
               </>
             )}
@@ -141,7 +229,23 @@ const Intro = () => {
                   custom={{ duration: 1, delay: 1 }}
                   className="absolute top-0 left-0 w-full"
                 >
-                  2
+                  6
+                </motion.span>
+              </>
+            )}
+          </AnimatePresence>
+          <AnimatePresence exitBeforeEnter>
+            {active === 3 && (
+              <>
+                <motion.span
+                  variants={T}
+                  initial={"hidden"}
+                  animate={"show"}
+                  exit={"invisible"}
+                  custom={{ duration: 1, delay: 1 }}
+                  className="absolute top-0 left-0 w-full"
+                >
+                  0
                 </motion.span>
               </>
             )}
