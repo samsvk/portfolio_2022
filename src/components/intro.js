@@ -36,10 +36,10 @@ const Intro = () => {
   };
 
   return (
-    <div className="flex items-center justify-center max-w-full max-h-full min-h-screen min-w-screen">
-      <span className="relative inline-block overflow-hidden text-start text-[70px] text-main-default tracking-tighter leading-[0.9] align-text-top">
-        <div className="relative flex flex-col items-start justify-start whitespace-nowrap bg-main-default w-max">
-          <span>0</span>
+    <div className="flex items-center justify-center max-w-full max-h-full min-h-screen min-w-screen  text-[145px]">
+      <span className="relative inline-block overflow-hidden text-start text-main-default tracking-tighter leading-[0.9] align-text-top">
+        <div className="relative flex flex-col items-start justify-start whitespace-nowrap w-max">
+          <span className="opacity-[0]">0</span>
           <AnimatePresence exitBeforeEnter>
             {active === 0 && (
               <>
@@ -93,9 +93,9 @@ const Intro = () => {
         </div>
       </span>
 
-      <span className="relative inline-block overflow-hidden text-start text-[70px] text-main-default tracking-tighter leading-[0.9] align-text-top">
-        <div className="relative flex flex-col items-start justify-start whitespace-nowrap bg-main-default w-max">
-          <span>0</span>
+      <span className="relative inline-block overflow-hidden text-start text-main-default tracking-tighter leading-[0.9] align-text-top">
+        <div className="relative flex flex-col items-start justify-start whitespace-nowrap w-max">
+          <span className="opacity-[0]">0</span>
           <AnimatePresence exitBeforeEnter>
             {active === 0 && (
               <>
