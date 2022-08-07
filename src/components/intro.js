@@ -4,7 +4,7 @@ import { ITEM } from "../static/constants";
 import { useState } from "react";
 
 const Intro = () => {
-  const [active, setActive] = useState(-1);
+  const [active, setActive] = useState(0);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -14,9 +14,9 @@ const Intro = () => {
   }, [active]);
 
   const T = {
-    hidden: { y: 0 },
+    hidden: { y: "100%", color: "white" },
     show: {
-      y: "-100%",
+      y: "0%",
       transition: {
         delay: 1,
         ease: "easeInOut",
@@ -24,7 +24,7 @@ const Intro = () => {
       },
     },
     invisible: {
-      y: "-300%",
+      y: "-100%",
       transition: {
         delay: 0.6,
         ease: "easeInOut",
@@ -36,30 +36,46 @@ const Intro = () => {
   return (
     <div className="flex items-center justify-center max-w-full max-h-full min-h-screen min-w-screen">
       <span className="relative inline-block overflow-hidden text-start text-[70px] text-main-default tracking-tighter leading-[0.9] align-text-top">
-        <div className="relative grid grid-cols-3 grid-rows-3 whitespace-nowrap">
-          <AnimatePresence>
+        <div className="relative flex flex-col whitespace-nowrap h-[150px] bg-main-default w-[120px]">
+          <AnimatePresence exitBeforeEnter>
             {active === 0 && (
               <>
                 <motion.span
                   variants={T}
-                  intiial={"hidden"}
+                  initial={"hidden"}
                   animate={"show"}
-                  //   exit={"invisible"}
+                  exit={"invisible"}
                 >
                   0
                 </motion.span>
               </>
             )}
           </AnimatePresence>
-          <AnimatePresence>
+
+          <AnimatePresence exitBeforeEnter>
             {active === 1 && (
               <>
                 <motion.span
                   variants={T}
-                  intiial={"hidden"}
+                  initial={"hidden"}
                   animate={"show"}
+                  exit={"invisible"}
                 >
                   1
+                </motion.span>
+              </>
+            )}
+          </AnimatePresence>
+          <AnimatePresence exitBeforeEnter>
+            {active === 2 && (
+              <>
+                <motion.span
+                  variants={T}
+                  initial={"hidden"}
+                  animate={"show"}
+                  exit={"invisible"}
+                >
+                  2
                 </motion.span>
               </>
             )}
