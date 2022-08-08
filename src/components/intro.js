@@ -48,8 +48,10 @@ const Intro = () => {
         transition: {
           ease: [0.83, 0, 0.17, 1],
           duration: 1,
-          // delay: 3.5,
           delay: 4,
+        },
+        transitionEnd: {
+          display: "none",
         },
       }}
       className="flex items-center justify-center max-w-full max-h-full min-h-screen min-w-screen fixed bg-stone-200 min-w-full z-50 text-[16px]"
@@ -88,6 +90,7 @@ const Intro = () => {
           y: ["90vh", "90vh", "66vh", "33vh", "6vh"],
           times: [0, 1, 2, 3, 4],
           transition: {
+            ease: [0.62, 0.05, 0.01, 0.99],
             duration: 4,
           },
         }}
@@ -105,7 +108,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 1, delay: 0 }}
+                      custom={{ duration: 0.4, delay: 0 }}
                       className="absolute top-0 left-0 w-full opacity-0 will-change-transform"
                     >
                       0
@@ -121,7 +124,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 1, delay: 0 }}
+                      custom={{ duration: 0.4, delay: 0 }}
                       className="absolute top-0 left-0 w-full opacity-0 will-change-transform"
                     >
                       3
@@ -137,7 +140,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 1, delay: 0 }}
+                      custom={{ duration: 0.4, delay: 0 }}
                       className="absolute top-0 left-0 w-full opacity-0 will-change-transform"
                     >
                       6
@@ -153,7 +156,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={{ opacity: 0 }}
-                      custom={{ duration: 1, delay: 0 }}
+                      custom={{ duration: 0.4, delay: 0 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
                       1
@@ -174,7 +177,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 1, delay: 0 }}
+                      custom={{ duration: 0.4, delay: 0 }}
                       className="absolute top-0 left-0 w-full opacity-0 will-change-transform"
                     >
                       0
@@ -190,7 +193,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 1, delay: 0 }}
+                      custom={{ duration: 0.4, delay: 0.1 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
                       3
@@ -206,7 +209,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 1, delay: 0 }}
+                      custom={{ duration: 0.4, delay: 0.1 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
                       6
@@ -222,7 +225,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={{ opacity: 0 }}
-                      custom={{ duration: 1, delay: 0 }}
+                      custom={{ duration: 0.4, delay: 0.1 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
                       0
@@ -250,7 +253,7 @@ const Intro = () => {
                         },
                       }}
                       exit={"invisible"}
-                      custom={{ duration: 1, delay: 0 }}
+                      custom={{ duration: 0.4, delay: 0 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
                       0
@@ -266,7 +269,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 1, delay: 0 }}
+                      custom={{ duration: 0.4, delay: 0.2 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
                       3
@@ -282,7 +285,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 1, delay: 0 }}
+                      custom={{ duration: 0.4, delay: 0.2 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
                       6
@@ -298,7 +301,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={{ opacity: 0 }}
-                      custom={{ duration: 1, delay: 0 }}
+                      custom={{ duration: 0.4, delay: 0.15 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
                       0
