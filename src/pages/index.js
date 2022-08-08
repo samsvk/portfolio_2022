@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     let x = setTimeout(() => {
       setGo(true);
-    }, 3900);
+    }, 1000);
     return () => {
       clearTimeout(x);
     };
@@ -20,10 +20,10 @@ export default function Home() {
 
   return (
     <SmoothScroll>
-      <Intro />
-      <div className="max-w-[1800px] w-full mx-auto py-12 min-h-screen h-full relative">
+      {/* <Intro /> */}
+      <div className="max-w-[1800px] w-full mx-auto py-12  h-full relative">
         {/* <Navbar /> */}
-        <header className="text-[35px] lg:text-[70px] text-main-default tracking-tighter leading-[0.9] align-text-top lg:max-w-[80%] max-w-[100%]">
+        <header className="text-[35px] lg:text-[66px] text-main-default tracking-tighter leading-[0.9] align-text-top lg:max-w-[87%] max-w-[100%]">
           <span className="relative inline-block overflow-hidden text-start">
             <motion.span
               variants={ITEM}
@@ -65,7 +65,7 @@ export default function Home() {
               custom={{ i: 4, a: "200%", d: true }}
               className="inline-flex max-w-full align-text-top text-start will-change-transform"
             >
-              Campbell,{"\u00A0"}
+              Campbell.{"\u00A0"}
             </motion.span>{" "}
           </span>
           <span className="relative inline-block overflow-hidden text-start">
@@ -76,7 +76,7 @@ export default function Home() {
               custom={{ i: 5, a: "200%", d: true }}
               className="inline-flex max-w-full align-text-top text-start will-change-transform"
             >
-              a{"\u00A0"}
+              A{"\u00A0"}
             </motion.span>{" "}
           </span>
           <span className="relative inline-block overflow-hidden text-start">

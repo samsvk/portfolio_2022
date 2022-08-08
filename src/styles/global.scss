@@ -11,8 +11,10 @@
   body {
     // font-family: "Public Sans", sans-serif;
     font-family: "Inter", sans-serif;
+    // font-family: "Open Sans", sans-serif;
+    // font-family: "IBM Plex Sans", sans-serif;
   }
 }
 body {
-  @apply w-full h-full bg-stone-200 text-neutral-900 scroll-smooth;
+  @apply w-full h-full bg-stone-100 scroll-smooth;
 }
