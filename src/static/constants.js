@@ -8,23 +8,8 @@ export const ITEM = {
     x: 0,
     transition: {
       ease: [0.075, 0.82, 0.165, 1],
-      duration: 1.3,
-      delay: d ? i * 0.08 : null,
-    },
-  }),
-};
-
-export const SMALL = {
-  hidden: ({ i, a }) => ({
-    y: a,
-    x: 0,
-  }),
-  visible: ({ i, a, d }) => ({
-    y: 0,
-    x: 0,
-    transition: {
-      ease: "easeInOut",
-      duration: 0.6,
+      // ease: "easeInOut",
+      duration: 1.1,
       delay: d ? i * 0.08 : null,
     },
   }),
