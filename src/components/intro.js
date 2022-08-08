@@ -48,14 +48,52 @@ const Intro = () => {
         transition: {
           ease: [0.83, 0, 0.17, 1],
           duration: 1,
-          delay: 3.5,
-          // delay: 1000,
+          // delay: 3.5,
+          delay: 4,
         },
       }}
       className="flex items-center justify-center max-w-full max-h-full min-h-screen min-w-screen fixed bg-stone-200 min-w-full z-50 text-[16px]"
     >
-      <div className="flex items-center justify-center">
-        <div className="text-main-default text-[64px] font-[300] tracking-tight flex items-center justify-center">
+      <div>
+        <h2 className="absolute left-10 top-10 uppercase font-[600] text-[28px] tracking-tight  text-main-default align-text-top text-start leading-[1] flex items-start justify-start">
+          <AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: 1,
+                transition: {
+                  delay: 0.3,
+                  duration: 1,
+                  ease: "easeInOut",
+                },
+              }}
+              exit={{ opacity: 0 }}
+              className="flex items-center justify-center"
+            >
+              <div className="flex flex-col ml-4">
+                <span className="inline-flex max-w-full align-text-top text-start will-change-transform">
+                  Sam Campbell
+                </span>
+                <span className="inline-flex max-w-full align-text-top text-start will-change-transform">
+                  PORTFOLIO ©2022
+                </span>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        </h2>
+      </div>
+      <motion.div
+        initial={{ y: "95%" }}
+        animate={{
+          y: ["90vh", "90vh", "66vh", "33vh", "6vh"],
+          times: [0, 1, 2, 3, 4],
+          transition: {
+            duration: 4,
+          },
+        }}
+        className="absolute h-full bottom-10 right-10"
+      >
+        <div className="text-[140px] text-main-default tracking-tighter leading-[0.9] align-text-top flex items-center justify-center">
           <span className="relative inline-block overflow-hidden text-start leading-[0.9] align-text-top">
             <div className="relative flex flex-col items-start justify-start whitespace-nowrap w-max text-end">
               <span className="opacity-[0]">0</span>
@@ -67,7 +105,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 0.3, delay: 0 }}
+                      custom={{ duration: 1, delay: 0 }}
                       className="absolute top-0 left-0 w-full opacity-0 will-change-transform"
                     >
                       0
@@ -83,7 +121,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 0.4, delay: 0.15 }}
+                      custom={{ duration: 1, delay: 0 }}
                       className="absolute top-0 left-0 w-full opacity-0 will-change-transform"
                     >
                       3
@@ -99,7 +137,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 0.4, delay: 0.1 }}
+                      custom={{ duration: 1, delay: 0 }}
                       className="absolute top-0 left-0 w-full opacity-0 will-change-transform"
                     >
                       6
@@ -115,7 +153,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={{ opacity: 0 }}
-                      custom={{ duration: 0.4, delay: 0.1 }}
+                      custom={{ duration: 1, delay: 0 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
                       1
@@ -136,7 +174,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 0.4, delay: 0.1 }}
+                      custom={{ duration: 1, delay: 0 }}
                       className="absolute top-0 left-0 w-full opacity-0 will-change-transform"
                     >
                       0
@@ -152,7 +190,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 0.4, delay: 0.15 }}
+                      custom={{ duration: 1, delay: 0 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
                       3
@@ -168,7 +206,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 0.4, delay: 0.15 }}
+                      custom={{ duration: 1, delay: 0 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
                       6
@@ -184,7 +222,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={{ opacity: 0 }}
-                      custom={{ duration: 0.4, delay: 0.15 }}
+                      custom={{ duration: 1, delay: 0 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
                       0
@@ -205,7 +243,6 @@ const Intro = () => {
                       initial={{ opacity: 0 }}
                       animate={{
                         opacity: 1,
-
                         transition: {
                           delay: 0.3,
                           duration: 1,
@@ -213,10 +250,10 @@ const Intro = () => {
                         },
                       }}
                       exit={"invisible"}
-                      custom={{ duration: 0.3, delay: 0.1 }}
+                      custom={{ duration: 1, delay: 0 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
-                      1
+                      0
                     </motion.span>
                   </>
                 )}
@@ -229,7 +266,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 0.5, delay: 0.2 }}
+                      custom={{ duration: 1, delay: 0 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
                       3
@@ -245,7 +282,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={"invisible"}
-                      custom={{ duration: 0.5, delay: 0.2 }}
+                      custom={{ duration: 1, delay: 0 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
                       6
@@ -261,7 +298,7 @@ const Intro = () => {
                       initial={"hidden"}
                       animate={"show"}
                       exit={{ opacity: 0 }}
-                      custom={{ duration: 0.5, delay: 0.2 }}
+                      custom={{ duration: 1, delay: 0 }}
                       className="absolute top-0 left-0 w-full will-change-transform"
                     >
                       0
@@ -272,38 +309,7 @@ const Intro = () => {
             </div>
           </span>
         </div>
-        <div>
-          <h2 className="uppercase font-[600] text-[24px] tracking-tight  text-main-default align-text-top text-start leading-[1.2] flex items-start justify-start">
-            <AnimatePresence>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{
-                  opacity: 1,
-                  transition: {
-                    delay: 0.3,
-                    duration: 1,
-                    ease: "easeInOut",
-                  },
-                }}
-                exit={{ opacity: 0 }}
-                className="flex items-center justify-center"
-              >
-                <span className="text-[64px] align-text-top text-start font-[300] pr-2">
-                  %
-                </span>
-                <div className="flex flex-col ml-4">
-                  <span className="inline-flex max-w-full align-text-top text-start will-change-transform">
-                    Sam Campbell
-                  </span>
-                  <span className="inline-flex max-w-full align-text-top text-start will-change-transform">
-                    PORTFOLIO ©2022
-                  </span>
-                </div>
-              </motion.div>
-            </AnimatePresence>
-          </h2>
-        </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
