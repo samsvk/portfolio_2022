@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     let x = setTimeout(() => {
       setGo(true);
-    }, 2000);
+    }, 4000);
     return () => {
       clearTimeout(x);
     };

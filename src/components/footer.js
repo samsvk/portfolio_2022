@@ -8,7 +8,7 @@ const Footer = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 3, duration: 1, ease: "easeInOut" },
+        transition: { delay: 5, duration: 1, ease: "easeInOut" },
       }}
       className="absolute bottom-[3rem] flex gap-8 mt-20"
     >

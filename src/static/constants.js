@@ -6,7 +6,6 @@ export const ITEM = {
   visible: ({ i, a, d }) => ({
     y: 0,
     x: 0,
-
     transition: {
       ease: [0.075, 0.82, 0.165, 1],
       duration: 1.3,
