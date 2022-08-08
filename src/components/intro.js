@@ -57,7 +57,7 @@ const Intro = () => {
       className="flex items-center justify-center max-w-full max-h-full min-h-screen min-w-screen fixed bg-stone-200 min-w-full z-50 text-[16px]"
     >
       <div>
-        <h2 className="absolute left-10 top-10 uppercase font-[600] text-[28px] tracking-tight  text-main-default align-text-top text-start leading-[1] flex items-start justify-start">
+        <h2 className="absolute left-10 top-10 uppercase font-normal text-[70px] tracking-tight  text-main-default align-text-top text-start leading-[1] flex items-start justify-start">
           <AnimatePresence>
             <motion.div
               initial={{ opacity: 0 }}
@@ -87,7 +87,7 @@ const Intro = () => {
       <motion.div
         initial={{ y: "95%" }}
         animate={{
-          y: ["90vh", "90vh", "66vh", "33vh", "6vh"],
+          y: ["87vh", "87vh", "66vh", "33vh", "6vh"],
           times: [0, 1, 2, 3, 4],
           transition: {
             ease: [0.62, 0.05, 0.01, 0.99],
