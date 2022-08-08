@@ -18,7 +18,12 @@ const Footer = () => {
         </h2>
         <ul className="list-none text-main-secondary text-[14px] font-[600] tracking-tight">
           {SOCIAL_DATA.map(({ name }, i) => (
-            <li key={i}>{name}</li>
+            <li
+              className="relative max-w-max after:duration-150 hover:after:w-full hover:cursor-pointer after:absolute after:w-0 after:left-0 after:bottom-0 after:h-[1px] after:bg-main-secondary/40"
+              key={i}
+            >
+              {name}
+            </li>
           ))}
         </ul>
       </div>
@@ -27,13 +32,13 @@ const Footer = () => {
           Status
         </h2>
         <p className="list-none text-main-secondary text-[14px] font-[600] tracking-tight">
-          I'm Chillin' 😎
+          I&apos;m Chillin&apos; 😎
         </p>
         <h2 className="text-[14px] font-[600] tracking-tight  py-2">
           Availability
         </h2>
         <p className="list-none text-main-secondary text-[14px] font-[600] tracking-tight">
-          Available for Freelance Projects in October'22
+          Available for Freelance Projects in October&apos;22
         </p>
         <h2 className="text-[14px] font-[600] tracking-tight py-2">
           Role

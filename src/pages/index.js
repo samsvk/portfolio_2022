@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     let x = setTimeout(() => {
       setGo(true);
-    }, 4000);
+    }, 3900);
     return () => {
       clearTimeout(x);
     };
@@ -43,7 +43,7 @@ export default function Home() {
               custom={{ i: 2, a: "200%", d: true }}
               className="inline-flex max-w-full align-text-top text-start will-change-transform"
             >
-              I'm{"\u00A0"}
+              I&apos;m{"\u00A0"}
             </motion.span>{" "}
           </span>
           <span className="relative inline-block overflow-hidden text-start">
@@ -302,25 +302,7 @@ export default function Home() {
             </span>
           </div>
         </header>
-        {/* <header className="text-[64px] text-main-default tracking-tighter leading-[1] max-w-[80%]">
-          <div className="relative overflow-hidden">
-            <motion.p
-              className="inline-flex max-w-full"
-              variants={ITEM}
-              initial="hidden"
-              animate={go && "visible"}
-              custom={{ i: 3, a: "200%", d: true }}
-            >
-              Hello, I'm Sam Campbell (23.02.1999). A digital
-              designer & developer based in Edinburgh. I love
-              creating meaningful visual identities and timeless
-              scaleable solutions.
-            </motion.p>
-          </div>
 
-          <div className="relative overflow-hidden">
-          </div>
-        </header> */}
         <Footer />
       </div>
     </SmoothScroll>
