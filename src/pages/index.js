@@ -23,51 +23,9 @@ export default function Home() {
       {/* <Intro /> */}
       <div className="max-w-[1800px] w-full mx-auto py-12  h-full relative">
         {/* <Navbar /> */}
+
+        <Footer />
         <header className="text-[35px] lg:text-[66px] text-main-default tracking-tighter leading-[0.9] align-text-top lg:max-w-[87%] max-w-[100%]">
-          <span className="relative inline-block overflow-hidden text-start">
-            <motion.span
-              variants={ITEM}
-              initial="hidden"
-              animate={go && "visible"}
-              custom={{ i: 1, a: "200%", d: true }}
-              className="inline-flex max-w-full align-text-top text-start will-change-transform"
-            >
-              Hello,{"\u00A0"}
-            </motion.span>{" "}
-          </span>
-          <span className="relative inline-block overflow-hidden text-start ">
-            <motion.span
-              variants={ITEM}
-              initial="hidden"
-              animate={go && "visible"}
-              custom={{ i: 2, a: "200%", d: true }}
-              className="inline-flex max-w-full align-text-top text-start will-change-transform"
-            >
-              I&apos;m{"\u00A0"}
-            </motion.span>{" "}
-          </span>
-          <span className="relative inline-block overflow-hidden text-start">
-            <motion.span
-              variants={ITEM}
-              initial="hidden"
-              animate={go && "visible"}
-              custom={{ i: 3, a: "200%", d: true }}
-              className="inline-flex max-w-full align-text-top text-start will-change-transform"
-            >
-              Sam{"\u00A0"}
-            </motion.span>{" "}
-          </span>
-          <span className="relative inline-block overflow-hidden text-start">
-            <motion.span
-              variants={ITEM}
-              initial="hidden"
-              animate={go && "visible"}
-              custom={{ i: 4, a: "200%", d: true }}
-              className="inline-flex max-w-full align-text-top text-start will-change-transform"
-            >
-              Campbell.{"\u00A0"}
-            </motion.span>{" "}
-          </span>
           <span className="relative inline-block overflow-hidden text-start">
             <motion.span
               variants={ITEM}
@@ -302,8 +260,6 @@ export default function Home() {
             </span>
           </div>
         </header>
-
-        <Footer />
       </div>
     </SmoothScroll>
   );

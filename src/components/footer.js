@@ -1,6 +1,7 @@
 import React from "react";
 import { SOCIAL_DATA, WORK_DATA } from "../static/constants";
 import { motion } from "framer-motion";
+import NowPlaying from "./nowplaying";
 
 const Footer = () => {
   return (
@@ -14,10 +15,10 @@ const Footer = () => {
           ease: "easeInOut",
         },
       }}
-      className="flex gap-y-8 mt-20 max-w-[100%]"
+      className="flex flex-row-reverse gap-y-8 max-w-[100%]"
     >
-      <div className="flex flex-col flex-[2] py-8 font-[400]">
-        123
+      <div className="flex flex-col flex-[2] py-3 font-[400] items-end">
+        <NowPlaying />
       </div>
       <div className="flex-[1.5] flex flex-col w-full">
         <div className="flex w-full flex-row gap-x-20 py-3 font-[400]">
@@ -46,7 +47,7 @@ const Footer = () => {
               Email
             </h2>
             <p className=" duration-150 max-w-max hover:cursor-pointer hover:opacity-25 tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
-              hello@samsvk.com
+              Hello@samsvk.com
             </p>
           </div>
           <div className="flex-1">
@@ -55,10 +56,7 @@ const Footer = () => {
             </h2>
             <ul className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
               {WORK_DATA.map(({ name }, i) => (
-                <li
-                  className="relative duration-150 max-w-max hover:cursor-pointer hover:opacity-25"
-                  key={i}
-                >
+                <li className="relative max-w-max" key={i}>
                   {name}
                 </li>
               ))}
@@ -69,12 +67,12 @@ const Footer = () => {
         <div className="flex w-full flex-row gap-x-20 py-3 font-[400]">
           <div className="flex-1">
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
-              Others
+              Socials
             </h2>
             <ul className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
               {SOCIAL_DATA.map(({ name }, i) => (
                 <li
-                  className="relative duration-150 max-w-max hover:cursor-pointer hover:opacity-25"
+                  className="relative underline duration-150 max-w-max hover:cursor-pointer hover:opacity-25"
                   key={i}
                 >
                   {name}

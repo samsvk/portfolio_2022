@@ -14,6 +14,22 @@ export const ITEM = {
   }),
 };
 
+export const SMALL = {
+  hidden: ({ i, a }) => ({
+    y: a,
+    x: 0,
+  }),
+  visible: ({ i, a, d }) => ({
+    y: 0,
+    x: 0,
+    transition: {
+      ease: "easeInOut",
+      duration: 0.6,
+      delay: d ? i * 0.08 : null,
+    },
+  }),
+};
+
 export const SOCIAL_DATA = [
   { name: "Github" },
   { name: "Spotify" },

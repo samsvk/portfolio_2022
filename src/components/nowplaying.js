@@ -29,16 +29,16 @@ export default function NowPlaying() {
     <>
       {data?.data?.isPlaying ? (
         <>
-          <div className="song opac">
-            <div style={{ opacity: 0.5 }}>
+          <div className="flex flex-col items-end justify-center">
+            <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start flex items-center justify-center">
               <GrSpotify
                 style={{
                   verticalAlign: "middle",
                 }}
               />
               {"\u00A0"}Now Playing:{"\u00A0"}
-            </div>
-            <div className="song__title">
+            </h2>
+            <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
               <a
                 href={`${data?.data?.songUrl}`}
                 target="_blank"
@@ -46,20 +46,21 @@ export default function NowPlaying() {
               >
                 {data?.data?.title} - {data?.data?.artist}
               </a>
-            </div>
+            </p>
           </div>
         </>
       ) : (
         <>
-          <div className="song opac">
-            <div style={{ opacity: 0.5 }}>
+          <div className="flex flex-col items-end justify-center">
+            <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start flex items-center justify-center">
               <GrSpotify
                 style={{
                   verticalAlign: "middle",
                 }}
               />
               {"\u00A0"}Not Playing{"\u00A0"}
-            </div>
+            </h2>
+            <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal"></p>
           </div>
         </>
       )}
