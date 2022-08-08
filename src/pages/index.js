@@ -23,7 +23,7 @@ export default function Home() {
       <Intro />
       <div className="max-w-[1800px] w-full mx-auto py-12 min-h-screen h-full relative">
         {/* <Navbar /> */}
-        <header className="text-[70px] text-main-default tracking-tighter leading-[0.9] align-text-top max-w-[80%]">
+        <header className="text-[35px] lg:text-[70px] text-main-default tracking-tighter leading-[0.9] align-text-top lg:max-w-[80%] max-w-[100%]">
           <span className="relative inline-block overflow-hidden text-start">
             <motion.span
               variants={ITEM}

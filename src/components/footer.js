@@ -28,20 +28,14 @@ const Footer = () => {
         </ul>
       </div>
       <div className="flex flex-col flex-1 py-2 border-t-2 border-main-secondary/20">
-        <h2 className="text-[14px] font-[600] tracking-tight py-2">
-          Status
-        </h2>
-        <p className="list-none text-main-secondary text-[14px] font-[600] tracking-tight">
-          I&apos;m Chillin&apos; 😎
-        </p>
         <h2 className="text-[14px] font-[600] tracking-tight  py-2">
-          Availability
+          Available
         </h2>
         <p className="list-none text-main-secondary text-[14px] font-[600] tracking-tight">
-          Available for Freelance Projects in October&apos;22
+          October&apos;22 for Freelance
         </p>
         <h2 className="text-[14px] font-[600] tracking-tight py-2">
-          Role
+          Roles
         </h2>
         <p className="list-none text-main-secondary text-[14px] font-[600] tracking-tight">
           Design, Development and SEO
