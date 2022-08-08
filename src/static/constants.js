@@ -7,10 +7,9 @@ export const ITEM = {
     y: 0,
     x: 0,
     transition: {
-      ease: [0.075, 0.82, 0.165, 1],
-      // ease: "easeInOut",
-      duration: 1.1,
-      delay: d ? i * 0.08 : null,
+      ease: [0.34, 0.53, 0.37, 1.02],
+      duration: 0.5,
+      delay: d ? i * 0.015 : null,
     },
   }),
 };
