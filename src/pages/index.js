@@ -5,6 +5,7 @@ import SmoothScroll from "../components/hocs/SmoothScroll";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import Intro from "../components/intro";
+import { BsArrowRight } from "react-icons/bs";
 
 export default function Home() {
   const [go, setGo] = useState(false);
@@ -297,10 +298,85 @@ export default function Home() {
                 custom={{ i: 28, a: "150%", d: true }}
                 className="inline-flex max-w-full align-text-top text-start will-change-transform"
               >
-                Scotland.{"\u00A0"}
+                Scotland{"\u00A0"}
               </motion.span>{" "}
             </span>
+            <span className="relative inline-block overflow-hidden text-start">
+              <motion.span
+                variants={ITEM}
+                initial="hidden"
+                animate={go && "visible"}
+                custom={{ i: 29, a: "150%", d: true }}
+                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+              >
+                <BsArrowRight />
+                {"\u00A0"}
+              </motion.span>{" "}
+            </span>
+            <span className="relative inline-block overflow-hidden text-start">
+              <motion.span
+                variants={ITEM}
+                initial="hidden"
+                animate={go && "visible"}
+                custom={{ i: 30, a: "150%", d: true }}
+                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+              >
+                Works(5),
+              </motion.span>
+            </span>
+            <span className="relative inline-block overflow-hidden text-start">
+              <motion.span
+                variants={ITEM}
+                initial="hidden"
+                animate={go && "visible"}
+                custom={{ i: 31, a: "150%", d: true }}
+                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+              >
+                Featured(3),
+              </motion.span>
+            </span>
+            <span className="relative inline-block overflow-hidden text-start">
+              <motion.span
+                variants={ITEM}
+                initial="hidden"
+                animate={go && "visible"}
+                custom={{ i: 32, a: "150%", d: true }}
+                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+              >
+                Awards(2).
+              </motion.span>
+            </span>
           </div>
+          <span className="relative inline-block overflow-hidden text-start">
+            <motion.span
+              variants={ITEM}
+              initial="hidden"
+              animate={go && "visible"}
+              custom={{ i: 33, a: "150%", d: true }}
+              className="inline-flex max-w-full align-text-top text-start will-change-transform"
+            >
+              <button
+                className="group float-left mt-5 text-main-default tracking-tighter leading-[0.9] align-text-top overflow-hidden
+                duration-150 max-w-max hover:cursor-pointer hover:opacity-25"
+              >
+                <span className="">Explore my work</span>
+                <motion.span
+                  initial={{ x: "-100%" }}
+                  animate={{
+                    x: "0",
+                    transition: {
+                      ease: [0.86, 0, 0.07, 1],
+                      duration: 0.65,
+                      delay: 1.3,
+                    },
+                  }}
+                  className="h-[1.5px] w-full bg-main-default block mt-2 group-hover:cursor-pointer group-hover:w-0 first-letter:
+                  group-hover:ease-[cubic-bezier(0.86, 0, 0.07, 1)] duration-[0.65s]
+                  "
+                />
+              </button>
+            </motion.span>
+          </span>
         </header>
       </div>
     </SmoothScroll>

@@ -10,7 +10,7 @@ const Footer = () => {
       animate={{
         opacity: 1,
         transition: {
-          delay: 1.5,
+          delay: 2,
           duration: 1,
           ease: "easeInOut",
         },
