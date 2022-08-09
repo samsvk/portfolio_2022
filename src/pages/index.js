@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ITEM,
@@ -10,6 +10,7 @@ import {
 import Footer from "../components/footer";
 import Intro from "../components/intro";
 import { BsArrowRight } from "react-icons/bs";
+import { GoPrimitiveDot } from "react-icons/go";
 
 export default function Home() {
   const [go, setGo] = useState(false);
@@ -27,6 +28,47 @@ export default function Home() {
     <div className="max-w-[1800px] px-5 md:px-5 w-full mx-auto py-8 h-full relative min-h-screen flex flex-col-reverse lg:flex-col">
       <Footer />
       <header className="flex flex-col flex-start lg:justify-end h-full flex-1 text-[26px] md:text-[44px] lg:text-[60px] text-main-default tracking-tighter leading-[0.9] align-text-top lg:max-w-[85%] max-w-[100%] font-[300]">
+        <div className="inline-flex mb-2 ml-1">
+          <h2 className="mr-3 text-[14px] font-[400] tracking-tight text-main-secondary  leading-normal align-text-top text-start mb-1">
+            Selected Works:
+          </h2>
+          <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal flex gap-1.5">
+            {PROJECT_DATA.map((p, i) => (
+              <span
+                content={`${p.tech.map((t) => t).join(", ")}`}
+                className={`hover:after:opacity-100 after:duration-200 after:opacity-0 relative inline-block group text-start 
+                after:bg-stone-100 after:rounded-lg 
+                after:py-1 after:z-40 after:px-2.5 after:absolute 
+                after:h-max after:w-max 
+                after:top-[-2rem]
+                after:left-[50%]
+                after:translate-x-[-50%]
+                after:content-[attr(content)]
+                after:drop-shadow-md
+                underline
+                after:tracking-tight after:text-[14px] after:font-[400] after:align-text-top after:text-start after:list-none after:text-main-default after:leading-normal`}
+                key={i}
+              >
+                <li
+                  className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:opacity-25 text-main-default flex items-center"
+                  key={i}
+                >
+                  {PROJECT_DATA[PROJECT_DATA.length - 1].name ===
+                  p.name ? (
+                    <>{p.name}</>
+                  ) : (
+                    <>
+                      {p.name}
+                      {
+                        <GoPrimitiveDot className="ml-1.5 text-center align-middle scale-50" />
+                      }
+                    </>
+                  )}
+                </li>
+              </span>
+            ))}
+          </ul>
+        </div>
         <div className="self-start justify-self-start lg:self-end lg:justify-self-end">
           <span className="relative inline-block overflow-hidden text-start">
             <motion.span
@@ -292,129 +334,7 @@ export default function Home() {
               Edinburgh.{"\u00A0"}
             </motion.span>{" "}
           </span>
-          {/* <span className="relative inline-block overflow-hidden text-start">
-            <motion.span
-              variants={ITEM}
-              initial="hidden"
-              animate={go && "visible"}
-              custom={{ i: 28, a: "150%", d: true }}
-              className="inline-flex max-w-full align-text-top text-start will-change-transform"
-            >
-              Scotland.
-            </motion.span>{" "}
-          </span> */}
-          {/* <span className="relative inline-block overflow-hidden text-start">
-              <motion.span
-                variants={ITEM}
-                initial="hidden"
-                animate={go && "visible"}
-                custom={{ i: 29, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
-              >
-                <BsArrowRight />
-                {"\u00A0"}
-              </motion.span>{" "}
-            </span>
-            <span className="relative inline-block overflow-hidden text-start">
-              <motion.span
-                variants={ITEM}
-                initial="hidden"
-                animate={go && "visible"}
-                custom={{ i: 30, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
-              >
-                <button
-                  className="group float-left text-main-default tracking-tighter leading-[0.9] align-text-top overflow-hidden
-                duration-500 max-w-max hover:cursor-pointer hover:opacity-25  text-[30px] md:text-[35px] lg:text-[60px]"
-                >
-                  <span className="">Explore my work</span>
-                  <motion.span
-                    initial={{ x: "-100%" }}
-                    animate={{
-                      x: "0",
-                      transition: {
-                        ease: [0.86, 0, 0.07, 1],
-                        duration: 0.65,
-                        delay: 1.3,
-                      },
-                    }}
-                    className="h-[2px] w-full bg-main-default block mt-1 lg:mt-2 group-hover:cursor-pointer group-hover:w-0 first-letter:
-                  group-hover:ease-[cubic-bezier(0.86, 0, 0.07, 1)] duration-[0.65s]
-                  "
-                  />
-                </button>
-              </motion.span>
-            </span> */}
         </div>
-        <div className="inline-flex gap-3">
-          {PROJECT_DATA.map((p, i) => (
-            <span
-              content={`${p.tech.map((t) => t).join(", ")}`}
-              className={`hover:after:opacity-100 after:duration-200 after:opacity-0 relative inline-block group text-start 
-              after:top-[-.5rem] after:left-0 after:mr-auto after:bg-stone-100 after:rounded-lg 
-               after:py-1 after:z-40 after:px-2.5 after:absolute after:h-max after:w-max 
-              after:content-[attr(content)]
-              after:drop-shadow-md
-               after:tracking-tight after:text-[14px] after:font-[500] after:align-text-top after:text-start  after:list-none after:text-main-default after:leading-normal
-            </p>
-              `}
-              key={i}
-            >
-              {/* <div className="opacity-0 group-hover:opacity-100 absolute top-[-2rem] w-max flex flex-row bg-orange-500">
-                {p.tech.map((item) => item).join(", ")}
-              </div> */}
-              <motion.span
-                variants={ITEM}
-                initial="hidden"
-                animate={go && "visible"}
-                custom={{ i: 27 + i + 1, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
-              >
-                <button
-                  className="group float-left mt-5 text-main-default tracking-tighter leading-[0.9] align-text-top overflow-hidden
-                duration-300 max-w-max hover:cursor-pointer hover:opacity-25"
-                >
-                  <span className="inline-block align-text-top text-start">
-                    {PROJECT_DATA[PROJECT_DATA.length - 1]
-                      .name === p.name
-                      ? `${p.name}.`
-                      : `${p.name},`}
-                  </span>
-                </button>
-              </motion.span>
-            </span>
-          ))}
-        </div>
-        {/* <span className="relative inline-block overflow-hidden text-start">
-          <motion.span
-          variants={ITEM}
-          initial="hidden"
-          animate={go && "visible"}
-          custom={{ i: 33, a: "150%", d: true }}
-          className="inline-flex max-w-full align-text-top text-start will-change-transform"
-          >
-            <button
-              className="group float-left mt-5 text-main-default tracking-tighter leading-[0.9] align-text-top overflow-hidden
-                duration-150 max-w-max hover:cursor-pointer hover:opacity-25"
-            >
-              <span className="">Hush</span>
-              <motion.span
-                initial={{ x: "-100%" }}
-                animate={{
-                  x: "0",
-                  transition: {
-                    ease: [0.86, 0, 0.07, 1],
-                    duration: 0.65,
-                    delay: 1.3,
-                  },
-                }}
-                className="h-[1.5px] w-full bg-main-default block mt-2 group-hover:cursor-pointer group-hover:w-0 first-letter:
-                  group-hover:ease-[cubic-bezier(0.86, 0, 0.07, 1)] duration-[0.65s]
-                  "
-              />
-            </button>
-          </motion.span>
-        </span> */}
       </header>
     </div>
   );

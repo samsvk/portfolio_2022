@@ -57,7 +57,7 @@ const Footer = () => {
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
               Previously
             </h2>
-            <ul className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
+            <ul className="tracking-tight text-[14px] align-text-top text-start list-nonetext-main-default leading-normal  text-main-default">
               {WORK_DATA.map(({ name }, i) => (
                 <li className="relative max-w-max" key={i}>
                   {name}
@@ -75,7 +75,7 @@ const Footer = () => {
             <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal">
               {SOCIAL_DATA.map(({ name }, i) => (
                 <li
-                  className="relative underline duration-500 max-w-max hover:cursor-pointer hover:opacity-25"
+                  className="relative underline duration-500 max-w-max hover:cursor-pointer hover:opacity-25 text-main-default"
                   key={i}
                 >
                   {name}
