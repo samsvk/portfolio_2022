@@ -351,7 +351,8 @@ export default function Home() {
             <span
               content={`${p.tech.map((t) => t)}`}
               className={`hover:after:opacity-100 after:duration-200 after:opacity-0 relative inline-block group text-start 
-              after:top-[-.5rem] after:left-0 after:mr-auto after:bg-white after:rounded-full after:py-2 after:z-40 after:px-6 after:absolute after:h-max after:w-max 
+              after:top-[-.5rem] after:left-0 after:mr-auto after:bg-stone-100 after:rounded-lg after:border-main-default after:border
+               after:py-0.5 after:z-40 after:px-2 after:absolute after:h-max after:w-max 
               after:content-[attr(content)]
               after:drop-shadow-sm
                after:tracking-tight after:text-[14px] after:font-[500] after:align-text-top after:text-start  after:list-none after:text-main-default after:leading-normal
