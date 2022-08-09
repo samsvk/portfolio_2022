@@ -29,7 +29,7 @@ export default function NowPlaying() {
     <>
       {data?.data?.isPlaying ? (
         <>
-          <div className="flex flex-col items-end justify-center">
+          <div className="flex flex-col items-start justify-center lg:items-end">
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start flex items-center justify-center">
               <GrSpotify
                 style={{
