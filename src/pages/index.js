@@ -350,9 +350,13 @@ export default function Home() {
           {PROJECT_DATA.map((p, i) => (
             <span
               content={`${p.tech.map((t) => t)}`}
-              className={`hover:after:opacity-100 after:duration-150 after:opacity-0 relative inline-block group text-start 
-              after:top-[-3rem] after:left-0 after:bg-stone-200 after:rounded-full after:py-3 after:z-40 after:px-10 after:absolute after:h-max after:w-max 
+              className={`hover:after:opacity-100 after:duration-200 after:opacity-0 relative inline-block group text-start 
+              after:top-[-.5rem] after:left-0 after:mr-auto after:bg-white after:rounded-full after:py-2 after:z-40 after:px-6 after:absolute after:h-max after:w-max 
               after:content-[attr(content)]
+              after:drop-shadow-sm
+               after:tracking-tight after:text-[14px] after:font-[500] after:align-text-top after:text-start  after:list-none after:text-main-default after:leading-normal
+            
+            </p>
               `}
               key={i}
             >
