@@ -36,7 +36,7 @@ const Footer = () => {
             </h2>
             <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
               Looking to continue my growth in a cultivating and
-              creative environment - as such I'm is open to
+              creative environment - as such I&apos;m is open to
               full-time employment offers in the UK or US.
             </p>
           </div>
