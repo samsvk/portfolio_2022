@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ITEM, SOCIAL_DATA, SLASH } from "../static/constants";
+import {
+  ITEM,
+  SOCIAL_DATA,
+  SLASH,
+  PROJECT_DATA,
+} from "../static/constants";
 // import SmoothScroll from "../components/hocs/SmoothScroll";
 import Footer from "../components/footer";
 import Intro from "../components/intro";
@@ -284,10 +289,10 @@ export default function Home() {
               custom={{ i: 27, a: "150%", d: true }}
               className="inline-flex max-w-full align-text-top text-start will-change-transform"
             >
-              Edinburgh,{"\u00A0"}
+              Edinburgh.{"\u00A0"}
             </motion.span>{" "}
           </span>
-          <span className="relative inline-block overflow-hidden text-start">
+          {/* <span className="relative inline-block overflow-hidden text-start">
             <motion.span
               variants={ITEM}
               initial="hidden"
@@ -297,7 +302,7 @@ export default function Home() {
             >
               Scotland.
             </motion.span>{" "}
-          </span>
+          </span> */}
           {/* <span className="relative inline-block overflow-hidden text-start">
               <motion.span
                 variants={ITEM}
@@ -341,36 +346,64 @@ export default function Home() {
               </motion.span>
             </span> */}
         </div>
-        {/* <span className="relative inline-block overflow-hidden text-start">
-            <motion.span
-              variants={ITEM}
-              initial="hidden"
-              animate={go && "visible"}
-              custom={{ i: 33, a: "150%", d: true }}
-              className="inline-flex max-w-full align-text-top text-start will-change-transform"
+        <div className="inline-flex gap-3">
+          {PROJECT_DATA.map((p, i) => (
+            <span
+              className="relative inline-block overflow-hidden text-start"
+              key={i}
             >
-              <button
-                className="group float-left mt-5 text-main-default tracking-tighter leading-[0.9] align-text-top overflow-hidden
-                duration-150 max-w-max hover:cursor-pointer hover:opacity-25"
+              <motion.span
+                variants={ITEM}
+                initial="hidden"
+                animate={go && "visible"}
+                custom={{ i: 33, a: "150%", d: true }}
+                className="inline-flex max-w-full align-text-top text-start will-change-transform"
               >
-                <span className="">Explore my work</span>
-                <motion.span
-                  initial={{ x: "-100%" }}
-                  animate={{
-                    x: "0",
-                    transition: {
-                      ease: [0.86, 0, 0.07, 1],
-                      duration: 0.65,
-                      delay: 1.3,
-                    },
-                  }}
-                  className="h-[1.5px] w-full bg-main-default block mt-2 group-hover:cursor-pointer group-hover:w-0 first-letter:
+                <button
+                  className="group float-left mt-5 text-main-default tracking-tighter leading-[0.9] align-text-top overflow-hidden
+                duration-300 max-w-max hover:cursor-pointer hover:opacity-25"
+                >
+                  <span className="inline-block align-text-top text-start">
+                    {PROJECT_DATA[PROJECT_DATA.length - 1]
+                      .name === p.name
+                      ? `${p.name}.`
+                      : `${p.name},`}
+                  </span>
+                </button>
+              </motion.span>
+            </span>
+          ))}
+        </div>
+        {/* <span className="relative inline-block overflow-hidden text-start">
+          <motion.span
+          variants={ITEM}
+          initial="hidden"
+          animate={go && "visible"}
+          custom={{ i: 33, a: "150%", d: true }}
+          className="inline-flex max-w-full align-text-top text-start will-change-transform"
+          >
+            <button
+              className="group float-left mt-5 text-main-default tracking-tighter leading-[0.9] align-text-top overflow-hidden
+                duration-150 max-w-max hover:cursor-pointer hover:opacity-25"
+            >
+              <span className="">Hush</span>
+              <motion.span
+                initial={{ x: "-100%" }}
+                animate={{
+                  x: "0",
+                  transition: {
+                    ease: [0.86, 0, 0.07, 1],
+                    duration: 0.65,
+                    delay: 1.3,
+                  },
+                }}
+                className="h-[1.5px] w-full bg-main-default block mt-2 group-hover:cursor-pointer group-hover:w-0 first-letter:
                   group-hover:ease-[cubic-bezier(0.86, 0, 0.07, 1)] duration-[0.65s]
                   "
-                />
-              </button>
-            </motion.span>
-          </span> */}
+              />
+            </button>
+          </motion.span>
+        </span> */}
       </header>
     </div>
   );

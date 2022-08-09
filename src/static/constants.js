@@ -24,6 +24,15 @@ export const WORK_DATA = [
   { name: "Method" },
   { name: "SoaR" },
 ];
+export const PROJECT_DATA = [
+  {
+    name: "Hush",
+    tech: ["React", "Node.js", "SASS"],
+  },
+  { name: "Viper", tech: ["React", "Node.js", "SASS"] },
+  { name: "Mograine", tech: ["React", "Node.js", "SASS"] },
+  { name: "Pigfingers", tech: ["React", "Node.js", "SASS"] },
+];
 
 export function getWindow() {
   return typeof window !== "undefined" ? window : null;
