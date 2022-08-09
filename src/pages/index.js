@@ -349,14 +349,21 @@ export default function Home() {
         <div className="inline-flex gap-3">
           {PROJECT_DATA.map((p, i) => (
             <span
-              className="relative inline-block overflow-hidden text-start"
+              content={`${p.tech.map((t) => t)}`}
+              className={`hover:after:opacity-100 after:opacity-0 relative inline-block group text-start 
+              after:top-[-3rem] after:left-0 after:bg-orange-500 after:absolute after:h-max after:w-max 
+              after:content-[attr(content)]
+              `}
               key={i}
             >
+              {/* <div className="opacity-0 group-hover:opacity-100 absolute top-[-2rem] w-max flex flex-row bg-orange-500">
+                {p.tech.map((item) => item).join(", ")}
+              </div> */}
               <motion.span
                 variants={ITEM}
                 initial="hidden"
                 animate={go && "visible"}
-                custom={{ i: 33, a: "150%", d: true }}
+                custom={{ i: 27 + i + 1, a: "150%", d: true }}
                 className="inline-flex max-w-full align-text-top text-start will-change-transform"
               >
                 <button
