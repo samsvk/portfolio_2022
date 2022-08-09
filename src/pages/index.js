@@ -349,14 +349,13 @@ export default function Home() {
         <div className="inline-flex gap-3">
           {PROJECT_DATA.map((p, i) => (
             <span
-              content={`${p.tech.map((t) => t)}`}
+              content={`${p.tech.map((t) => t).join(", ")}`}
               className={`hover:after:opacity-100 after:duration-200 after:opacity-0 relative inline-block group text-start 
-              after:top-[-.5rem] after:left-0 after:mr-auto after:bg-stone-100 after:rounded-lg after:border-main-default after:border
-               after:py-0.5 after:z-40 after:px-2 after:absolute after:h-max after:w-max 
+              after:top-[-.5rem] after:left-0 after:mr-auto after:bg-stone-100 after:rounded-lg 
+               after:py-1 after:z-40 after:px-2.5 after:absolute after:h-max after:w-max 
               after:content-[attr(content)]
-              after:drop-shadow-sm
+              after:drop-shadow-md
                after:tracking-tight after:text-[14px] after:font-[500] after:align-text-top after:text-start  after:list-none after:text-main-default after:leading-normal
-            
             </p>
               `}
               key={i}

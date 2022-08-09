@@ -27,11 +27,11 @@ export const WORK_DATA = [
 export const PROJECT_DATA = [
   {
     name: "Hush",
-    tech: ["React", "Node.js", "SASS"],
+    tech: ["Typescript", "SASS", "Node"],
   },
-  { name: "Viper", tech: ["React", "Node.js", "SASS"] },
-  { name: "Mograine", tech: ["React", "Node.js", "SASS"] },
-  { name: "Pigfingers", tech: ["React", "Node.js", "SASS"] },
+  { name: "Viper", tech: ["Next", "Stripe", "Tailwind"] },
+  { name: "Mograine", tech: ["Typescript", "BEM"] },
+  { name: "Pigfingers", tech: ["React", "SASS"] },
 ];
 
 export function getWindow() {
