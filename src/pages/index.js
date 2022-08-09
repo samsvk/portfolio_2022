@@ -28,7 +28,18 @@ export default function Home() {
     <div className="max-w-[1800px] px-5 md:px-5 w-full mx-auto py-8 h-full relative min-h-screen flex flex-col-reverse lg:flex-col">
       <Footer />
       <header className="flex flex-col flex-start lg:justify-end h-full flex-1 text-[26px] md:text-[44px] lg:text-[60px] text-main-default tracking-tighter leading-[0.9] align-text-top lg:max-w-[85%] max-w-[100%] font-[300]">
-        <div className="inline-flex mb-2 ml-1">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: {
+              delay: 1.5,
+              duration: 1,
+              ease: "easeInOut",
+            },
+          }}
+          className="inline-flex mb-2 ml-1"
+        >
           <h2 className="mr-3 text-[14px] font-[400] tracking-tight text-main-secondary  leading-normal align-text-top text-start mb-1">
             Selected Works:
           </h2>
@@ -68,7 +79,7 @@ export default function Home() {
               </span>
             ))}
           </ul>
-        </div>
+        </motion.div>
         <div className="self-start justify-self-start lg:self-end lg:justify-self-end">
           <span className="relative inline-block overflow-hidden text-start">
             <motion.span
