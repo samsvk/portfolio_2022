@@ -1,15 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import {
-  ITEM,
-  SOCIAL_DATA,
-  SLASH,
-  PROJECT_DATA,
-} from "../static/constants";
-// import SmoothScroll from "../components/hocs/SmoothScroll";
+import { motion } from "framer-motion";
+import { ITEM, PROJECT_DATA } from "../static/constants";
 import Footer from "../components/footer";
-import Intro from "../components/intro";
-import { BsArrowRight } from "react-icons/bs";
 import { GoPrimitiveDot } from "react-icons/go";
 
 export default function Home() {
@@ -52,8 +44,8 @@ export default function Home() {
                 after:py-1 after:z-40 after:px-2.5 after:absolute 
                 after:h-max after:w-max 
                 after:top-[-2rem]
-                after:left-[50%]
-                after:translate-x-[-50%]
+                after:left-[55%]
+                after:translate-x-[-55%]
                 after:content-[attr(content)]
                 after:drop-shadow-md
                 underline
