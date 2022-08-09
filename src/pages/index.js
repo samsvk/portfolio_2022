@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <SmoothScroll>
       {/* <Intro /> */}
-      <div className="max-w-[1850px] px-5 md:px-10 w-full mx-auto py-8 md:py-12 h-full relative min-h-screen flex flex-col-reverse lg:flex-col">
+      <div className="max-w-[1800px] px-5 md:px-5 w-full mx-auto py-8 h-full relative min-h-screen flex flex-col-reverse lg:flex-col">
         <Footer />
         <header className="flex flex-col flex-start lg:justify-end h-full flex-1 text-[26px] md:text-[44px] lg:text-[60px] text-main-default tracking-tighter leading-[0.9] align-text-top lg:max-w-[85%] max-w-[100%]">
           <div className="self-start justify-self-start lg:self-end lg:justify-self-end">

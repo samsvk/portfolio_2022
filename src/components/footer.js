@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="flex flex-col flex-1 font-[400] items-start lg:items-end mt-3 md:mt-0">
         <NowPlaying />
       </div>
-      <div className="flex flex-col flex-1 w-full">
+      <div className="flex flex-col w-full md:flex-1">
         <div className="flex w-full flex-col md:flex-row pt-5 gap-3 md:gap-0 md:py-3 font-[400]">
           <div className="flex-[0.6] md:flex-1">
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
