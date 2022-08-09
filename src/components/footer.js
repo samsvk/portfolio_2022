@@ -10,14 +10,14 @@ const Footer = () => {
       animate={{
         opacity: 1,
         transition: {
-          delay: 3.6,
+          delay: 1.5,
           duration: 1,
           ease: "easeInOut",
         },
       }}
-      className="flex flex-row-reverse gap-y-8 max-w-[100%]"
+      className="flex flex-1 flex-row-reverse gap-y-8 max-w-[100%]"
     >
-      <div className="flex flex-col flex-[2] py-3 font-[400] items-end">
+      <div className="flex flex-col flex-[2] py-31 font-[400] items-end">
         <NowPlaying />
       </div>
       <div className="flex-[1.5] flex flex-col w-full">
