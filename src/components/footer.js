@@ -34,7 +34,10 @@ const Footer = () => {
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
               Currently
             </h2>
-            <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
+            <p
+              className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal 1 max-w-[90%] md:max-w-[80%] 
+            lg:max-w-[65%]"
+            >
               Looking to continue my growth in a cultivating and
               creative environment - as such I&apos;m is open to
               full-time employment offers in the UK or US.
