@@ -46,7 +46,7 @@ export const Modal = ({ show, setShow }) => {
                 duration: 0.6,
               },
             }}
-            className="max-w-[65vw] w-full bg-black/10 left-0 fixed h-screen z-[10000]"
+            className="max-w-[65vw] w-full bg-white/90  left-0 fixed h-screen z-[10000]"
           />
 
           <motion.div
@@ -54,10 +54,14 @@ export const Modal = ({ show, setShow }) => {
             initial="hidden"
             animate="show"
             exit="invisible"
-            className="max-w-[45vw] w-full bg-orange-500 right-0 fixed h-screen z-[100000]"
+            className="will-change-transform max-w-[45vw] w-full bg-stone-100 right-0 fixed h-screen z-[100000] border-l border-main-default"
           >
-            {p.name}
-            <div onClick={() => setShow("")}>X</div>
+            <section
+              className="p-10"
+              onClick={() => setShow("")}
+            >
+              123123
+            </section>
           </motion.div>
         </>
       )}
