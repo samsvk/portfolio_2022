@@ -40,7 +40,8 @@ export const Modal = ({ show, setShow }) => {
 
   useEffect(() => {
     window.addEventListener("keydown", handleClose);
-    return () => window.removeEventListener("keydown", handleClose);
+    return () =>
+      window.removeEventListener("keydown", handleClose);
   }, []);
 
   return (
@@ -76,14 +77,14 @@ export const Modal = ({ show, setShow }) => {
             exit="invisible"
             className="max-w-[45vw] w-full bg-stone-100 right-0 fixed h-screen z-[100000] "
           >
-            <section className="p-10">
-              <header className="mb-[5rem] text-[26px] md:text-[44px] lg:text-[50px] text-main-default tracking-tighter leading-[0.9] align-text-top font-light">
+            <section>
+              <header className="p-12 text-[26px] md:text-[44px] lg:text-[50px] text-main-default tracking-tighter leading-[0.9] align-text-top font-light">
                 <h1>{p.name}</h1>
               </header>
 
               {<Swipe views={[1, 2, 3, 4, 5]} />}
 
-              <div className="flex gap-x-10">
+              <div className="flex p-12 gap-x-10">
                 <div className="w-[60%]">
                   <h2 className="text-[14px] font-normal tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
                     Overview
