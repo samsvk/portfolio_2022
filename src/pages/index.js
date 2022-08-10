@@ -84,7 +84,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 4, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start"
               >
                 Samuel{"\u00A0"}
               </motion.span>{" "}
@@ -95,7 +95,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 5, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 (23){"\u00A0"}
               </motion.span>{" "}
@@ -106,7 +106,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 6, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 is{"\u00A0"}
               </motion.span>{" "}
@@ -117,7 +117,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 7, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 a{"\u00A0"}
               </motion.span>{" "}
@@ -128,7 +128,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 8, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 freelance{"\u00A0"}
               </motion.span>{" "}
@@ -139,7 +139,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 9, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 front-end{"\u00A0"}
               </motion.span>{" "}
@@ -150,7 +150,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 10, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 engineer{"\u00A0"}
               </motion.span>{" "}
@@ -161,7 +161,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 11, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 with{"\u00A0"}
               </motion.span>{" "}
@@ -172,7 +172,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 12, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 a{"\u00A0"}
               </motion.span>{" "}
@@ -183,7 +183,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 13, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 strong{"\u00A0"}
               </motion.span>{" "}
@@ -194,7 +194,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 14, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 focus{"\u00A0"}
               </motion.span>{" "}
@@ -205,7 +205,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 15, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 on{"\u00A0"}
               </motion.span>{" "}
@@ -216,7 +216,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 16, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 creating{"\u00A0"}
               </motion.span>{" "}
@@ -227,7 +227,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 17, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 meaningful{"\u00A0"}
               </motion.span>{" "}
@@ -238,7 +238,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 18, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 visual{"\u00A0"}
               </motion.span>{" "}
@@ -249,7 +249,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 19, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 identities{"\u00A0"}
               </motion.span>{" "}
@@ -260,7 +260,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 20, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 and{"\u00A0"}
               </motion.span>{" "}
@@ -271,7 +271,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 21, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 timeless{"\u00A0"}
               </motion.span>{" "}
@@ -282,7 +282,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 22, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 scaleable{"\u00A0"}
               </motion.span>{" "}
@@ -293,7 +293,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 23, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 solutions{"\u00A0"}
               </motion.span>{" "}
@@ -304,7 +304,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 24, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 working{"\u00A0"}
               </motion.span>{" "}
@@ -315,7 +315,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 25, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 remotely{"\u00A0"}
               </motion.span>{" "}
@@ -326,7 +326,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 26, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 in{"\u00A0"}
               </motion.span>{" "}
@@ -337,7 +337,7 @@ export default function Home() {
                 initial="hidden"
                 animate={go && "visible"}
                 custom={{ i: 27, a: "150%", d: true }}
-                className="inline-flex max-w-full align-text-top text-start will-change-transform"
+                className="inline-flex max-w-full align-text-top text-start "
               >
                 Edinburgh.{"\u00A0"}
               </motion.span>{" "}
