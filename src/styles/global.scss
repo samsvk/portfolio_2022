@@ -6,6 +6,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
 @layer base {
   html,
   body {
@@ -13,5 +22,5 @@
   }
 }
 body {
-  @apply w-full h-full bg-stone-100 scroll-smooth;
+  @apply w-full h-full bg-stone-100 scroll-smooth no-scrollbar;
 }

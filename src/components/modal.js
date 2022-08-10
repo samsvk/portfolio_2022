@@ -76,32 +76,42 @@ export const Modal = ({ show, setShow }) => {
             initial="hidden"
             animate="show"
             exit="invisible"
-            className="max-w-[100vw] lg:max-w-[60vw] w-full bg-stone-100 right-0 fixed h-full z-[100000] rounded-xl"
+            className="max-w-[100vw] lg:max-w-[60vw] w-full max-h-max h-full bg-stone-100 right-0 top-0 bottom-0 mt-auto mb-auto fixed z-[100000] overflow-y-scroll rounded-xl flex no-scrollbar "
           >
-            <section>
+            <section className="">
               <div className="flex gap-10 py-10 mx-10">
-                <div className="flex flex-1">
-                  {/* <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
-                    Tech Stack
-                  </h2>
-                  <ul className="tracking-tight text-[14px] align-text-top text-start list-nonetext-main-default leading-normal  text-main-default">
-                    {p.tech.map((t, i) => (
-                      <li className="relative max-w-max" key={i}>
-                        {t}
-                      </li>
-                    ))}
-                  </ul> */}
-                  <div className="min-h-[82px] min-w-[82px] max-h-[82px] max-w-[82px] w-full h-full bg-main-secondary/5 rounded-lg"></div>
-                  <div className="relative ml-5">
-                    <h1
-                      className="font-[600] flex-1 text-[32px]
-                      mb-1
-                    text-main-default tracking-tight leading-[0.9] align-text-top max-w-[100%]"
-                    >
-                      {p.name}
-                    </h1>
-                    <p className="duration-500 tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal max-w-[300px]">
-                      {p.desc}
+                <div className="flex flex-col flex-1 max-h-max">
+                  <div className="flex ">
+                    <div className="relative mt-autoh-max">
+                      <h1 className="flex-1 text-[42px] text-main-default tracking-tighter leading-[0.9] align-text-top font-[500]">
+                        {p.name}
+                      </h1>
+                      <p className="duration-500 tracking-tight text-[14px] mt-2 align-text-top text-start list-none text-main-default leading-normal max-w-[300px]">
+                        {p.desc}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="items-end self-start mt-auto justify-self-end">
+                    <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
+                      Tech Stack
+                    </h2>
+                    <ul className="tracking-tight text-[14px] align-text-top text-start list-nonetext-main-default leading-normal  text-main-default flex gap-1">
+                      {p.tech.map((t, i) => (
+                        <li
+                          className="relative max-w-max"
+                          key={i}
+                        >
+                          {t}
+                        </li>
+                      ))}
+                    </ul>
+
+                    <h2 className="mt-5 text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
+                      Status
+                    </h2>
+                    <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal 1">
+                      {p.scope[0]} - {p.scope[1]}
                     </p>
                   </div>
                 </div>
@@ -120,7 +130,9 @@ export const Modal = ({ show, setShow }) => {
                   </p>
                 </div>
               </div>
-              {<Swipe views={[1, 2, 3, 4, 5]} />}
+              <div className="pb-8">
+                {<Swipe views={[1, 2, 3, 4, 5]} />}
+              </div>
             </section>
           </motion.div>
         </>
