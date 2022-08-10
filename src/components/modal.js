@@ -40,8 +40,7 @@ export const Modal = ({ show, setShow }) => {
 
   useEffect(() => {
     window.addEventListener("keydown", handleClose);
-    return () =>
-      window.removeEventListener("keydown", handleClose);
+    return () => window.removeEventListener("keydown", handleClose);
   }, []);
 
   return (
@@ -78,7 +77,7 @@ export const Modal = ({ show, setShow }) => {
             className="max-w-[45vw] w-full bg-stone-100 right-0 fixed h-screen z-[100000] "
           >
             <section className="p-10">
-              <header className="mb-[5rem] text-[26px] md:text-[44px] lg:text-[60px] text-main-default tracking-tighter leading-[0.9] align-text-top font-light">
+              <header className="mb-[5rem] text-[26px] md:text-[44px] lg:text-[50px] text-main-default tracking-tighter leading-[0.9] align-text-top font-light">
                 <h1>{p.name}</h1>
               </header>
 
@@ -99,7 +98,9 @@ export const Modal = ({ show, setShow }) => {
                   </h2>
                   <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
                     {p.tech.map((t, i) => (
-                      <span className="mr-1">{t}</span>
+                      <span className="mr-1" key={i}>
+                        {t}
+                      </span>
                     ))}
                   </p>
                   <h2 className="mt-5 text-[14px] font-normal tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">

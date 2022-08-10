@@ -23,7 +23,7 @@ export default function Home() {
       <Modal show={show.toLowerCase()} setShow={setShow} />
       <div className="max-w-[1800px] px-5 md:px-5 w-full mx-auto py-8 h-full relative min-h-screen flex flex-col-reverse lg:flex-col">
         <Footer />
-        <header className="flex flex-col flex-start lg:justify-end h-full flex-1 text-[26px] md:text-[44px] lg:text-[60px] text-main-default tracking-tighter leading-[0.9] align-text-top lg:max-w-[85%] max-w-[100%] font-[300]">
+        <header className="flex flex-col flex-start lg:justify-end h-full flex-1 text-[26px] md:text-[44px] lg:text-[50px] text-main-default tracking-tighter leading-[0.9] align-text-top lg:max-w-[85%] max-w-[100%] font-[300]">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{
@@ -61,8 +61,7 @@ export default function Home() {
                     className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:opacity-25 text-main-default flex items-center"
                     key={i}
                   >
-                    {PROJECT_DATA[PROJECT_DATA.length - 1]
-                      .name === p.name ? (
+                    {PROJECT_DATA[PROJECT_DATA.length - 1].name === p.name ? (
                       <>{p.name}</>
                     ) : (
                       <>
