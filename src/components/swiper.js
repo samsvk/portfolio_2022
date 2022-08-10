@@ -10,23 +10,24 @@ SwiperCore.use([FreeMode]);
 export const Swipe = ({ views }) => {
   return (
     <>
-      <div className="flex items-start justify-start w-full h-full mr-[3rem]">
+      <div className="flex items-start justify-start w-full h-full max-w-[100%]">
         <Swiper
           slidesPerView="auto"
           freeMode={true}
-          spaceBetween={35}
+          spaceBetween={45}
           className="w-full h-full overflow-hidden cursor-grab"
         >
           {views.map((item, i) => (
             <SwiperSlide
               key={i}
-              className="w-[55%!important] [&:nth-child(1)]:ml-[3rem] last:mr-[3rem]"
+              className="w-[80%!important] [&:nth-child(1)]:ml-10 last:mr-10"
             >
-              <div className="block relative pt-[56%]">
+              <div className="block relative pt-[55%]">
                 <Image
                   layout="fill"
                   objectFit="cover"
-                  src="https://i.imgur.com/JQ4oxAZ.png"
+                  className="rounded-xl"
+                  src="https://i.imgur.com/2MKClUm.png"
                 />
               </div>
             </SwiperSlide>

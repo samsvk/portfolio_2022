@@ -27,10 +27,11 @@ export const WORK_DATA = [
 export const PROJECT_DATA = [
   {
     name: "Viperino",
+    desc: `Complete full-stack build that allows Viperino to sell custom gaming guides.`,
     scope: ["Active", "1 Month"],
     brief: `Viperino is an online educational platform providing outstanding courses across various gaming titles. In 2021, Viperino began development with a heavy focus in Valorant. Providing users
     with unlimited guides through a one time payment model. My role in Viperino was to understand
-    the groups vision for Viperino's visual indetity and bridge that gap into full-scale web app using modern web technologies.
+    the groups vision for Viperino's visual indetity and bridge that gap creating a full-scale web app that reflects that identity using modern web technologies.
 `,
     strategy: `I began researching competitors and highly consider their brand strategies. After numerous refrences to other educational sites and internal conversations it became apparent Viperino
     required a design which emphasised guide content, improved filtering & navigation compared to competitors and most importantly a reliable payment collection method that remained faithful to Viperino's brand identity.`,
