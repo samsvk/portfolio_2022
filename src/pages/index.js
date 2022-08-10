@@ -34,7 +34,7 @@ export default function Home() {
                 ease: "easeInOut",
               },
             }}
-            className="inline-flex mb-2 ml-1"
+            className="inline-flex mt-2 mb-5 ml-1 lg:mt-0"
           >
             <h2 className="mr-3 text-[14px] font-[400] tracking-tight text-main-secondary  leading-normal align-text-top text-start mb-1">
               Selected Works:
@@ -61,7 +61,8 @@ export default function Home() {
                     className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:opacity-25 text-main-default flex items-center"
                     key={i}
                   >
-                    {PROJECT_DATA[PROJECT_DATA.length - 1].name === p.name ? (
+                    {PROJECT_DATA[PROJECT_DATA.length - 1]
+                      .name === p.name ? (
                       <>{p.name}</>
                     ) : (
                       <>
