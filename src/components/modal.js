@@ -76,7 +76,7 @@ export const Modal = ({ show, setShow }) => {
             initial="hidden"
             animate="show"
             exit="invisible"
-            className="max-w-[100vw] lg:max-w-[60vw] 
+            className="max-w-[100vw] lg:max-w-[65vw] 
             w-full h-full bg-stone-100 right-0 top-0 bottom-0 mt-auto mb-auto fixed z-[100000] overflow-y-scroll
              rounded-xl flex no-scrollbar items-center"
           >
