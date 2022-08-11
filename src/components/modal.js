@@ -6,21 +6,21 @@ import { VscChromeClose } from "react-icons/vsc";
 
 const MODAL = {
   hidden: {
-    x: "100%",
+    y: "100%",
     transition: {
       ease: [0.23, 1, 0.32, 1],
       duration: 0.6,
     },
   },
   show: {
-    x: 0,
+    y: 0,
     transition: {
       ease: [0.23, 1, 0.32, 1],
       duration: 0.6,
     },
   },
   invisible: {
-    x: "100%",
+    y: "100%",
     transition: {
       ease: [0.23, 1, 0.32, 1],
       duration: 0.6,
@@ -52,23 +52,22 @@ export const Modal = ({ show, setShow }) => {
           <motion.div
             onClick={() => setShow("")}
             variants={MODAL}
-            initial="hidden"
+            initial={{ opacity: 0 }}
             animate={{
-              x: 0,
+              opacity: 1,
               transition: {
                 ease: [0.23, 1, 0.32, 1],
                 duration: 0.1,
               },
             }}
             exit={{
-              x: "200%",
               opacity: 0,
               transition: {
                 ease: [0.23, 1, 0.32, 1],
                 duration: 0.1,
               },
             }}
-            className="max-w-[100vw] w-full bg-main-secondary/20 left-0 fixed h-full z-[10000]"
+            className="max-w-[100vw] w-full bg-main-secondary/40 left-0 fixed h-full z-[10000]"
           />
 
           <motion.div
@@ -80,7 +79,7 @@ export const Modal = ({ show, setShow }) => {
             w-full h-full  mx-auto right-0 left-0 mt-auto bottom-0 fixed z-[100000]
             flex no-scrollbar items-center"
           >
-            <section className="w-full mt-auto border border-r max-h-max bg-stone-100 rounded-tl-xl rounded-tr-xl border-main-default/30">
+            <section className="w-full mt-auto border border-r max-h-max bg-stone-100 rounded-tl-xl rounded-tr-xl border-main-default/60">
               <div className="flex flex-col gap-10 p-12 md:flex-row ">
                 <div className="flex flex-col flex-1 max-h-max">
                   <div className="relative h-max">
