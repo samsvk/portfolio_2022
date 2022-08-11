@@ -20,7 +20,7 @@ export const Swipe = ({ views }) => {
           {views.map((item, i) => (
             <SwiperSlide
               key={i}
-              className="w-[80%!important] [&:nth-child(1)]:ml-10 last:mr-10"
+              className="w-[75%!important] [&:nth-child(1)]:ml-10 last:mr-10"
             >
               <div className="block relative pt-[55%]">
                 <Image

@@ -76,11 +76,11 @@ export const Modal = ({ show, setShow }) => {
             initial="hidden"
             animate="show"
             exit="invisible"
-            className="max-w-[100vw] lg:max-w-[65vw] 
-            w-full h-full bg-stone-100 right-0 top-0 bottom-0 mt-auto mb-auto fixed z-[100000] overflow-y-scroll
-             rounded-xl flex no-scrollbar items-center"
+            className="max-w-[100vw] lg:max-w-[55vw] 
+            w-full h-full  right-0 top-0 bottom-0 mt-auto mb-auto fixed z-[100000] overflow-y-scroll
+            flex no-scrollbar items-center"
           >
-            <section className="w-full h-full mt-auto mb-auto">
+            <section className="w-full mt-auto mb-auto max-h-max bg-stone-100 lg:rounded-xl ">
               <div className="flex flex-col gap-10 p-10 py-10 md:flex-row ">
                 <div className="flex flex-col flex-1 max-h-max">
                   <div className="relative h-max">
@@ -130,7 +130,7 @@ export const Modal = ({ show, setShow }) => {
                   </p>
                 </div>
               </div>
-              <div className="pb-8">
+              <div className="pb-10">
                 {<Swipe views={[1, 2, 3, 4, 5]} />}
               </div>
             </section>
