@@ -68,7 +68,7 @@ export const Modal = ({ show, setShow }) => {
                 duration: 0.1,
               },
             }}
-            className="max-w-[100vw] w-full bg-main-secondary/20 left-0 fixed h-full z-[10000] overflow-y-scroll"
+            className="max-w-[100vw] w-full bg-main-secondary/20 left-0 fixed h-full z-[10000]"
           />
 
           <motion.div
@@ -77,11 +77,11 @@ export const Modal = ({ show, setShow }) => {
             animate="show"
             exit="invisible"
             className="max-w-[100vw] lg:max-w-[55vw] 
-            w-full h-full  right-0 top-0 bottom-0 mt-auto mb-auto fixed z-[100000] overflow-y-scroll
+            w-full h-full  mx-auto right-0 left-0 mt-auto bottom-0 fixed z-[100000]
             flex no-scrollbar items-center"
           >
-            <section className="w-full mt-auto mb-auto max-h-max bg-stone-100 lg:rounded-xl ">
-              <div className="flex flex-col gap-10 p-10 py-10 md:flex-row ">
+            <section className="w-full mt-auto border border-r max-h-max bg-stone-100 rounded-tl-xl rounded-tr-xl border-main-default/30">
+              <div className="flex flex-col gap-10 p-12 md:flex-row ">
                 <div className="flex flex-col flex-1 max-h-max">
                   <div className="relative h-max">
                     <h1 className="flex-1 text-[42px] text-main-default tracking-tighter leading-[0.9] align-text-top font-[500]">
