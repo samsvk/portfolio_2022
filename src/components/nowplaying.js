@@ -1,16 +1,15 @@
 import useSWR, { SWRConfig } from "swr";
 import fetcher from "../static/constants";
-import { motion, AnimatePresence } from "framer-motion";
-import { ITEM } from "../static/constants";
 import { GrSpotify } from "react-icons/gr";
+import Toptracks from "./toptracks";
+import { useState } from "react";
 
 export default function NowPlaying() {
+  const [show, setShow] = useState(false);
   const { data } = useSWR("/api/now-playing", fetcher, {
     loadingTimeout: 5000,
     errorRetryCount: 30000,
   });
-
-  // const [data, setData] = useState({});
 
   // useEffect(() => {
   //   const timeout = setTimeout(async () => {
@@ -27,11 +26,13 @@ export default function NowPlaying() {
 
   return (
     <>
-      {data?.data?.isPlaying ? (
-        <>
-          <div className="flex flex-col items-start justify-center lg:items-end">
+      <div className="relative flex flex-col justify-center it ems-start lg:items-end">
+        <Toptracks show={show} setShow={setShow} />
+        {data?.data?.isPlaying ? (
+          <>
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start flex items-center justify-center">
               <GrSpotify
+                onClick={() => setShow((p) => !p)}
                 style={{
                   verticalAlign: "middle",
                 }}
@@ -47,11 +48,9 @@ export default function NowPlaying() {
                 {data?.data?.title} - {data?.data?.artist}
               </a>
             </p>
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="flex flex-col items-end justify-center">
+          </>
+        ) : (
+          <>
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start flex items-center justify-center">
               <GrSpotify
                 style={{
@@ -61,9 +60,9 @@ export default function NowPlaying() {
               {"\u00A0"}Not Playing{"\u00A0"}
             </h2>
             <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal"></p>
-          </div>
-        </>
-      )}
+          </>
+        )}
+      </div>
     </>
   );
 }
