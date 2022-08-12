@@ -101,7 +101,9 @@ export const Modal = ({ show, setShow }) => {
                           className="relative max-w-max"
                           key={i}
                         >
-                          {t}
+                          {t === p.tech[p.tech.length - 1]
+                            ? `${t}`
+                            : `${t},`}
                         </li>
                       ))}
                     </ul>
