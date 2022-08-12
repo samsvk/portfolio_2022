@@ -30,7 +30,7 @@ export default function NowPlaying() {
         <Toptracks show={show} setShow={setShow} />
         {data?.data?.isPlaying ? (
           <>
-            <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start flex items-center justify-center">
+            <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start flex items-center justify-start">
               <GrSpotify
                 onClick={() => setShow((p) => !p)}
                 style={{

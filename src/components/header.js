@@ -39,7 +39,7 @@ const Header = ({ setShow }) => {
               after:h-max after:w-max 
               after:top-[-2rem]
               after:left-[55%]
-              after:translate-x-[-55%]
+            after:translate-x-[-55%]
               after:content-[attr(content)]
               after:drop-shadow-md
               underline
