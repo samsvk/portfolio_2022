@@ -77,9 +77,15 @@ export const Modal = ({ show, setShow }) => {
             exit="invisible"
             className="max-w-[100vw] lg:max-w-[55vw] 
             w-full h-full  mx-auto right-0 left-0 mt-auto bottom-0 fixed z-[100000]
-            flex no-scrollbar items-center"
+            flex no-scrollbar items-center overflow-y-scroll"
           >
-            <section className="w-full mt-auto border border-r max-h-max bg-stone-100 rounded-tl-xl rounded-tr-xl border-main-default/60">
+            <section className="relative w-full mt-auto overflow-y-scroll border border-r max-h-max bg-stone-100 rounded-tl-xl rounded-tr-xl border-main-default/60 no-scrollbar">
+              <button
+                onClick={() => setShow("")}
+                className="absolute p-1.5 rounded-full right-3.5 top-3 bg-main-secondary/5"
+              >
+                <VscChromeClose className="text-main-secondary" />
+              </button>
               <div className="flex flex-col gap-10 p-12 md:flex-row ">
                 <div className="flex flex-col flex-1 max-h-max">
                   <div className="relative h-max">
