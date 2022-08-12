@@ -53,11 +53,12 @@ export default function NowPlaying() {
           <>
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start flex items-center justify-center">
               <GrSpotify
+                onClick={() => setShow((p) => !p)}
                 style={{
                   verticalAlign: "middle",
                 }}
               />
-              {"\u00A0"}Not Playing{"\u00A0"}
+              {"\u00A0"}My Songs{"\u00A0"}
             </h2>
             <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal"></p>
           </>

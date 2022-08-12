@@ -36,7 +36,7 @@ export const container = {
     opacity: 1,
     transition: {
       staggerChildren: 0.05,
-      delayChildren: i * 0.15,
+      delayChildren: i * 0.18,
     },
   }),
 };

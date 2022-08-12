@@ -2,6 +2,7 @@ import React from "react";
 import { SOCIAL_DATA, WORK_DATA } from "../static/constants";
 import { motion } from "framer-motion";
 import NowPlaying from "./nowplaying";
+import { container, item } from "./modal";
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
       animate={{
         opacity: 1,
         transition: {
-          delay: 1.5,
+          delay: 1.3,
           duration: 1,
           ease: "easeInOut",
         },

@@ -10,7 +10,7 @@ export const container = {
     opacity: 1,
     transition: {
       staggerChildren: 0.05,
-      delayChildren: i * 0,
+      delayChildren: i * 0.18,
     },
   }),
 };
@@ -45,7 +45,7 @@ export default function Toptracks({ show, setShow }) {
     <AnimatePresence>
       {show && (
         <motion.div
-          className="absolute flex flex-col w-full overflow-hidden rounded-lg bg-stone-100 top-[5rem] no-wrap whitespace-nowrap min-w-max"
+          className="absolute flex flex-col w-full overflow-hidden rounded-lg top-[3rem] no-wrap whitespace-nowrap min-w-max"
           variants={container}
           initial="hidden"
           exit="hidden"

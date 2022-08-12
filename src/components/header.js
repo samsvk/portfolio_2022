@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 import { ITEM, PROJECT_DATA } from "../static/constants";
 import { GoPrimitiveDot } from "react-icons/go";
 const Header = ({ setShow }) => {
-  const [go, setGo] = useState(false);
-  useEffect(() => {
-    let x = setTimeout(() => {
-      setGo(true);
-    }, 1000);
-    return () => {
-      clearTimeout(x);
-    };
-  }, []);
+  // const [go, setGo] = useState(false);
+  // useEffect(() => {
+  //   let x = setTimeout(() => {
+  //     setGo(true);
+  //   }, 1000);
+  //   return () => {
+  //     clearTimeout(x);
+  //   };
+  // }, []);
   return (
     <header className="flex flex-col flex-start lg:justify-end h-full flex-1 text-[26px] md:text-[44px] lg:text-[50px] text-main-default tracking-tighter leading-[0.9] align-text-top lg:max-w-[85%] max-w-[100%] font-[300]">
       <motion.div
@@ -19,7 +19,7 @@ const Header = ({ setShow }) => {
         animate={{
           opacity: 1,
           transition: {
-            delay: 1.5,
+            delay: 1,
             duration: 1,
             ease: "easeInOut",
           },
@@ -67,7 +67,24 @@ const Header = ({ setShow }) => {
           ))}
         </ul>
       </motion.div>
-      <div className="self-start justify-self-start lg:self-end lg:justify-self-end">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: {
+            delay: 1,
+            duration: 1,
+            ease: "easeInOut",
+          },
+        }}
+        className="self-start leading-tight justify-self-start lg:self-end lg:justify-self-end"
+      >
+        Samuel (23) is a freelance front-end engineer with a
+        strong focus on creating meaningful visual identities and
+        timeless scaleable solutions working remotely in
+        Edinburgh.
+      </motion.div>
+      {/* <div className="self-start justify-self-start lg:self-end lg:justify-self-end">
         <span className="relative inline-block overflow-hidden text-start">
           <motion.span
             variants={ITEM}
@@ -332,7 +349,7 @@ const Header = ({ setShow }) => {
             Edinburgh.{"\u00A0"}
           </motion.span>{" "}
         </span>
-      </div>
+      </div> */}
     </header>
   );
 };
