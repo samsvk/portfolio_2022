@@ -40,14 +40,20 @@ const Header = ({ setShow }) => {
       variants={container}
       initial="hidden"
       animate={"visible"}
-      className="flex flex-col flex-start lg:justify-end h-full flex-1 text-[26px] md:text-[44px] lg:text-[50px] text-main-default tracking-tighter leading-[0.9] align-text-top lg:max-w-[85%] max-w-[100%] font-[300]"
+      className="
+      justify-end
+      lg:justify-end
+      lg:flex-col
+      flex-col-reverse
+      flex h-full flex-1 text-[26px] 
+      md:text-[44px] lg:text-[50px] text-main-default tracking-tighter leading-[0.9] align-text-top lg:max-w-[85%] max-w-[100%] font-[300]"
     >
       <motion.div
         variants={child}
         data="2"
         className="inline-flex mt-2 mb-5 ml-1 lg:mt-0"
       >
-        <h2 className="mr-3 text-[14px] font-[400] tracking-tight text-main-secondary  leading-normal align-text-top text-start mb-1">
+        <h2 className="mr-3 text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
           Selected Works:
         </h2>
         <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal flex gap-1.5">
