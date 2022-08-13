@@ -3,6 +3,7 @@ import { SOCIAL_DATA, WORK_DATA } from "../static/constants";
 import { motion } from "framer-motion";
 import NowPlaying from "./nowplaying";
 import { child } from "./modal";
+import Link from "next/link";
 
 export const container = {
   hidden: {
@@ -99,7 +100,8 @@ const Footer = () => {
             >
               Looking to continue my growth in a cultivating and
               creative environment - as such I&apos;m is open to
-              full-time employment offers in the UK or US.
+              full-time employment offers in the UK or US.{" "}
+              <Link href="resume">See my CV/Resume</Link>
             </p>
           </div>
           <div data="2">
