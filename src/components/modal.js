@@ -102,7 +102,7 @@ export const Modal = ({ show, setShow }) => {
             w-full h-full  mx-auto right-0 left-0 mt-auto bottom-0 fixed z-[100000]
             flex no-scrollbar items-center overflow-y-scroll"
           >
-            <section className="relative w-full mt-auto overflow-y-scroll border border-r max-h-max bg-stone-100 rounded-tl-xl rounded-tr-xl border-main-default/60 no-scrollbar">
+            <section className="relative w-full mt-auto overflow-y-scroll border border-r max-h-max bg-main-bg rounded-tl-xl rounded-tr-xl border-main-default/60 no-scrollbar">
               <motion.div
                 variants={container}
                 initial="hidden"

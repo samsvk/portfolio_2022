@@ -2,36 +2,38 @@ import React from "react";
 import { SOCIAL_DATA, WORK_DATA } from "../static/constants";
 import { motion } from "framer-motion";
 import NowPlaying from "./nowplaying";
+import { child } from "./modal";
+
 export const container = {
   hidden: {
-    opacity: 0,
+    opacity: 1,
   },
   visible: (i = 1) => ({
     opacity: 1,
     transition: {
       staggerChildren: 0.05,
-      delayChildren: i * 0.18,
+      delayChildren: 0.6,
     },
   }),
 };
-export const child = {
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      ease: [0.34, 0.53, 0.37, 1.02],
-      duration: 0.5,
-    },
-  },
-  hidden: {
-    opacity: 0,
-    y: 20,
-    transition: {
-      ease: [0.34, 0.53, 0.37, 1.02],
-      duration: 0.5,
-    },
-  },
-};
+// export const child = {
+//   visible: {
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       ease: [0.34, 0.53, 0.37, 1.02],
+//       duration: 0.5,
+//     },
+//   },
+//   hidden: {
+//     opacity: 0,
+//     y: 20,
+//     transition: {
+//       ease: [0.34, 0.53, 0.37, 1.02],
+//       duration: 0.5,
+//     },
+//   },
+// };
 const Footer = () => {
   return (
     <div className="flex w-full">
@@ -60,11 +62,14 @@ const Footer = () => {
           </motion.div>
           <motion.div variants={child} data="3">
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
-              Previously
+              Socials
             </h2>
-            <ul className="tracking-tight text-[14px] align-text-top text-start list-nonetext-main-default leading-normal  text-main-default">
-              {WORK_DATA.map(({ name }, i) => (
-                <li className="relative max-w-max" key={i}>
+            <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal">
+              {SOCIAL_DATA.map(({ name }, i) => (
+                <li
+                  className="relative underline duration-500 max-w-max hover:cursor-pointer hover:opacity-25 text-main-default"
+                  key={i}
+                >
                   {name}
                 </li>
               ))}
