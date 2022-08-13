@@ -27,7 +27,7 @@ export const child = {
   },
   hidden: {
     opacity: 0,
-    y: 50,
+    y: 100,
     transition: {
       ease: [0.34, 0.53, 0.37, 1.02],
       duration: 0.5,
@@ -41,10 +41,10 @@ const Header = ({ setShow }) => {
       initial="hidden"
       animate={"visible"}
       className="
-      justify-end
-      lg:justify-end
-      lg:flex-col
-      flex-col-reverse
+      justify-start
+      md:justify-end
+      md:flex-col
+      flex-col
       flex h-full flex-1 text-[26px] 
       md:text-[44px] lg:text-[50px] text-main-default tracking-tighter leading-[0.9] align-text-top lg:max-w-[85%] max-w-[100%] font-[300]"
     >

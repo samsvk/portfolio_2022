@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Modal show={show.toLowerCase()} setShow={setShow} />
-      <div className="max-w-[1800px] px-5 md:px-5 w-full mx-auto py-8 h-full relative min-h-screen flex flex-col-reverse lg:flex-col">
+      <div className="max-w-[1800px] px-5 md:px-5 w-full mx-auto py-8 h-full relative min-h-screen flex flex-col-reverse md:flex-col">
         <Footer />
         <Header setShow={setShow} />
       </div>

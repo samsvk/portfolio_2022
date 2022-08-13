@@ -36,34 +36,31 @@ export const container = {
 // };
 const Footer = () => {
   return (
-    <motion.div
-      variants={container}
-      initial="hidden"
-      animate={"visible"}
-      className="flex flex-col w-full md:flex-row"
-    >
-      <div className="flex flex-col flex-1 md:flex-row">
+    <div className="flex flex-col w-full md:flex-row">
+      <div className="flex flex-col flex-1 md:flex-row ">
         <motion.aside
+          variants={container}
+          initial="hidden"
+          animate={"visible"}
           className="w-[100%] flex flex-col gap-8 md:gap-12"
-          variants={child}
         >
-          <div data="1">
+          <motion.div variants={child} data="1">
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
               Who
             </h2>
             <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
               Samuel Campbell
             </p>
-          </div>
-          <div data="2">
+          </motion.div>
+          <motion.div variants={child} data="2">
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
               Email
             </h2>
             <p className=" duration-500 max-w-max hover:cursor-pointer hover:opacity-25 tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
               Hello@samsvk.com
             </p>
-          </div>
-          <div data="3">
+          </motion.div>
+          <motion.div variants={child} data="3">
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
               Socials
             </h2>
@@ -77,13 +74,15 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         </motion.aside>
         <motion.aside
-          variants={child}
+          variants={container}
+          initial="hidden"
+          animate={"visible"}
           className="flex flex-col w-full gap-8 my-8 md:gap-12 md:my-0"
         >
-          <div data="1">
+          <motion.div variants={child} data="1">
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
               Currently
             </h2>
@@ -95,8 +94,8 @@ const Footer = () => {
               creative environment - as such I&apos;m is open to
               full-time employment offers in the UK or US.
             </p>
-          </div>
-          <div data="2">
+          </motion.div>
+          <motion.div variants={child} data="2">
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
               Previously
             </h2>
@@ -107,19 +106,21 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         </motion.aside>
       </div>
 
       <motion.aside
-        variants={child}
+        variants={container}
+        initial="hidden"
+        animate={"visible"}
         className="flex flex-col w-full gap-12 flex-[0.5] lg:flex-1 "
       >
-        <div data="1">
+        <motion.div variants={child} data="1">
           <NowPlaying />
-        </div>
+        </motion.div>
       </motion.aside>
-    </motion.div>
+    </div>
   );
 };
 export default Footer;

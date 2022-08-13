@@ -26,7 +26,7 @@ export default function NowPlaying() {
 
   return (
     <>
-      <div className="relative flex flex-col justify-center it ems-start lg:items-end">
+      <div className="relative flex flex-col justify-center it ems-start md:items-end lg:items-end ">
         <Toptracks show={show} setShow={setShow} />
         {data?.data?.isPlaying ? (
           <>
