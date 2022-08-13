@@ -68,12 +68,18 @@ const Footer = () => {
               Socials
             </h2>
             <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal">
-              {SOCIAL_DATA.map(({ name }, i) => (
+              {SOCIAL_DATA.map(({ name, url }, i) => (
                 <li
                   className="relative underline duration-500 max-w-max hover:cursor-pointer hover:opacity-25 text-main-default"
                   key={i}
                 >
-                  {name}
+                  <a
+                    href={`${url}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {name}
+                  </a>
                 </li>
               ))}
             </ul>
