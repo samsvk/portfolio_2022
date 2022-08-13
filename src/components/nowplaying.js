@@ -11,19 +11,6 @@ export default function NowPlaying() {
     errorRetryCount: 30000,
   });
 
-  // useEffect(() => {
-  //   const timeout = setTimeout(async () => {
-  //     const x = await getData();
-  //     setData(x);
-  //   }, 3000);
-  //   async function getData() {
-  //     const x = await fetch("/api/now-playing");
-  //     const z = await x.json();
-  //     return z;
-  //   }
-  //   return () => clearTimeout(timeout);
-  // }, []);
-
   return (
     <>
       <div className="relative flex flex-col justify-center it ems-start md:items-end lg:items-end ">
