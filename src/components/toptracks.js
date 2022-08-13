@@ -67,6 +67,9 @@ export default function Toptracks({ show, setShow }) {
                 >
                   {track.title} - {track.artist}
                 </a>
+                <span>
+                  <span className="px-1">/</span>(#{i + 1})
+                </span>
               </motion.li>
             ))}
           </ul>

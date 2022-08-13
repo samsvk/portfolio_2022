@@ -15,15 +15,15 @@ const Header = ({ setShow }) => {
   return (
     <header className="flex flex-col flex-start lg:justify-end h-full flex-1 text-[26px] md:text-[44px] lg:text-[50px] text-main-default tracking-tighter leading-[0.9] align-text-top lg:max-w-[85%] max-w-[100%] font-[300]">
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: {
-            delay: 1,
-            duration: 1,
-            ease: "easeInOut",
-          },
-        }}
+        // initial={{ opacity: 0 }}
+        // animate={{
+        //   opacity: 1,
+        //   transition: {
+        //     delay: 1,
+        //     duration: 1,
+        //     ease: "easeInOut",
+        //   },
+        // }}
         className="inline-flex mt-2 mb-5 ml-1 lg:mt-0"
       >
         <h2 className="mr-3 text-[14px] font-[400] tracking-tight text-main-secondary  leading-normal align-text-top text-start mb-1">
@@ -39,7 +39,7 @@ const Header = ({ setShow }) => {
               after:h-max after:w-max 
               after:top-[-2rem]
               after:left-[55%]
-            after:translate-x-[-55%]
+              after:translate-x-[-55%]
               after:content-[attr(content)]
               after:drop-shadow-md
               underline
@@ -58,7 +58,9 @@ const Header = ({ setShow }) => {
                   <>
                     {p.name}
                     {
-                      <GoPrimitiveDot className="ml-1.5 text-center align-middle scale-50" />
+                      <span className="mt-[4px]">
+                        <GoPrimitiveDot className="ml-1.5 text-center align-middle scale-50" />
+                      </span>
                     }
                   </>
                 )}
