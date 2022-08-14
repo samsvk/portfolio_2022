@@ -17,7 +17,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body>
+      <body className="selection:bg-transparent">
         <Main />
         <NextScript />
       </body>
