@@ -45,6 +45,27 @@ export const WORK_DATA = [
     type: "Remote, Edinburgh",
   },
 ];
+export const AWARD_DATA = [
+  {
+    title: "Codegrid",
+    when: 2019,
+    url: "#",
+    from: "Site of the Day: Awwwards",
+  },
+  {
+    title: "Viperino",
+    when: 2022,
+    url: "#",
+    from: "Honorable Mention: Awwwards",
+  },
+  {
+    title: "Svk",
+    when: 2019,
+    url: "#",
+    from: "25 of the Best Personal Websites: Akram",
+  },
+];
+
 export const PROJECT_DATA = [
   {
     name: "Viperino",

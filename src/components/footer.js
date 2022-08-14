@@ -92,7 +92,7 @@ const Footer = () => {
               Previously
             </h2>
             <ul className="tracking-tight text-[14px] align-text-top text-start list-nonetext-main-default leading-normal  text-main-default">
-              {WORK_DATA.map(({ name }, i) => (
+              {WORK_DATA.slice(1, 4).map(({ name }, i) => (
                 <li className="relative max-w-max" key={i}>
                   {name}
                 </li>
