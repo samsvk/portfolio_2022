@@ -96,7 +96,7 @@ const Header = ({ setShow }) => {
       >
         Samuel (23) is a freelance front-end engineer with a
         strong focus on creating meaningful visual identities and
-        timeless scaleable solutions working remotely in
+        timeless scaleable solutions working remotely from
         Edinburgh.
       </motion.div>
     </motion.header>

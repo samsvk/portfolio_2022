@@ -17,24 +17,7 @@ export const container = {
     },
   }),
 };
-// export const child = {
-//   visible: {
-//     opacity: 1,
-//     y: 0,
-//     transition: {
-//       ease: [0.34, 0.53, 0.37, 1.02],
-//       duration: 0.5,
-//     },
-//   },
-//   hidden: {
-//     opacity: 0,
-//     y: 20,
-//     transition: {
-//       ease: [0.34, 0.53, 0.37, 1.02],
-//       duration: 0.5,
-//     },
-//   },
-// };
+
 const Footer = () => {
   return (
     <motion.div
