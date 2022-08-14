@@ -20,7 +20,7 @@ const Resume = () => {
           Contact me:
         </h2>
         <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal flex gap-2">
-          {SOCIAL_DATA.map(({ name, url }, i) => (
+          {SOCIAL_DATA.slice(0, 2).map(({ name, url }, i) => (
             <li
               className="relative underline duration-500 max-w-max hover:cursor-pointer hover:opacity-25 text-main-default"
               key={i}
