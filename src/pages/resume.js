@@ -15,6 +15,32 @@ const Resume = () => {
       animate={"visible"}
       className="max-w-[500px] w-full mx-auto py-12 flex flex-col gap-10"
     >
+      <motion.div variants={child} className="flex gap-2">
+        <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
+          Contact me:
+        </h2>
+        <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal flex gap-2">
+          {SOCIAL_DATA.map(({ name, url }, i) => (
+            <li
+              className="relative underline duration-500 max-w-max hover:cursor-pointer hover:opacity-25 text-main-default"
+              key={i}
+            >
+              <a
+                href={`${url}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {name}
+              </a>
+            </li>
+          ))}
+          <li className="relative underline duration-500 max-w-max hover:cursor-pointer hover:opacity-25 text-main-default">
+            <a href={`#`} target="_blank" rel="noreferrer">
+              Hello@samsvk.com
+            </a>
+          </li>
+        </ul>
+      </motion.div>
       <motion.div variants={child}>
         <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
           About
@@ -103,33 +129,6 @@ const Resume = () => {
               </div>
             </li>
           ))}
-        </ul>
-      </motion.div>
-
-      <motion.div variants={child} className="flex gap-2">
-        <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
-          Contact me:
-        </h2>
-        <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal flex gap-2">
-          {SOCIAL_DATA.map(({ name, url }, i) => (
-            <li
-              className="relative underline duration-500 max-w-max hover:cursor-pointer hover:opacity-25 text-main-default"
-              key={i}
-            >
-              <a
-                href={`${url}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {name}
-              </a>
-            </li>
-          ))}
-          <li className="relative underline duration-500 max-w-max hover:cursor-pointer hover:opacity-25 text-main-default">
-            <a href={`#`} target="_blank" rel="noreferrer">
-              Hello@samsvk.com
-            </a>
-          </li>
         </ul>
       </motion.div>
     </motion.div>
