@@ -61,10 +61,10 @@ const Resume = () => {
           I have spent building industry experience design and
           development strategy. All that empowered by my passion
           and ambition drives me to grow brands and products to
-          it's full potential. With that said, I am now looking
-          to continue my growth in a cultivating and creative
-          environment - as such I'm is open to full-time
-          employment offers in the UK or US.
+          it&apos;s full potential. With that said, I am now
+          looking to continue my growth in a cultivating and
+          creative environment - as such I&apos;m is open to
+          full-time employment offers in the UK or US.
         </p>
       </motion.div>
       <motion.ul
