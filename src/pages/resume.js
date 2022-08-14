@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { child } from "../components/modal";
 import { container } from "../components/footer";
+import { WORK_DATA } from "../static/constants";
+import { TbArrowNarrowRight } from "react-icons/tb";
 const Resume = () => {
   return (
     <motion.div
@@ -25,7 +27,7 @@ const Resume = () => {
         <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
           Work Experience / Freelance
         </h2>
-        <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
+        <p className="tracking-tight text-[14px] align-text-top text-start  font-normal list-none text-main-default leading-normal">
           As a passionate creative individual the past few years
           I have spent building industry experience design and
           development strategy. All that empowered by my passion
@@ -36,6 +38,29 @@ const Resume = () => {
           employment offers in the UK or US.
         </p>
       </motion.div>
+      <motion.ul
+        variants={child}
+        className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal"
+      >
+        {WORK_DATA.map(({ name, url, time, type }, i) => (
+          <li
+            className="relative flex font-normal max-w-max text-main-default"
+            key={i}
+          >
+            <span className="flex items-center gap-1 font-normal text-main-default/70 min-w-[120px]">
+              {time.from} <TbArrowNarrowRight /> {time.to}
+            </span>
+            <a
+              href={`${url}`}
+              target="_blank"
+              rel="noreferrer"
+              className="underline duration-500 hover:cursor-pointer hover:opacity-25 "
+            >
+              {name}
+            </a>
+          </li>
+        ))}
+      </motion.ul>
     </motion.div>
   );
 };

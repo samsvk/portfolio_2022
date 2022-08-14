@@ -20,9 +20,30 @@ export const SOCIAL_DATA = [
   { name: "Spotify" },
 ];
 export const WORK_DATA = [
-  { name: "Twitch" },
-  { name: "Method" },
-  { name: "SoaR" },
+  {
+    name: "Freelance",
+    time: { from: "2016", to: "Now" },
+    url: "https://samsvk.com/",
+    type: "Remote, Edinburgh",
+  },
+  {
+    name: "Method",
+    time: { from: "2018", to: "2019" },
+    url: "https://method.gg/",
+    type: "Remote + Scotland, UK",
+  },
+  {
+    name: "SoaR",
+    time: { from: "2017", to: "2018" },
+    url: "https://soar.gg/",
+    type: "Remote + Atlanta, Georgia",
+  },
+  {
+    name: "Twitch",
+    time: { from: "2016", to: "2018" },
+    url: "https://twitch.tv/",
+    type: "Remote, Edinburgh",
+  },
 ];
 export const PROJECT_DATA = [
   {
