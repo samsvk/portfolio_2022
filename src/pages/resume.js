@@ -6,6 +6,7 @@ import { AWARD_DATA, WORK_DATA } from "../static/constants";
 import { BsSlash } from "react-icons/bs";
 import { IoMdArrowForward } from "react-icons/io";
 import { SOCIAL_DATA } from "../static/constants";
+import { GoPrimitiveDot } from "react-icons/go";
 
 const Resume = () => {
   return (
@@ -15,31 +16,46 @@ const Resume = () => {
       animate={"visible"}
       className="max-w-[500px] w-full mx-auto py-12 flex flex-col gap-10"
     >
-      <motion.div variants={child} className="flex gap-2">
-        <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
-          Contact me:
-        </h2>
-        <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal flex gap-2">
-          {SOCIAL_DATA.slice(0, 2).map(({ name, url }, i) => (
-            <li
-              className="relative underline duration-500 max-w-max hover:cursor-pointer hover:opacity-25 text-main-default"
-              key={i}
-            >
-              <a
-                href={`${url}`}
-                target="_blank"
-                rel="noreferrer"
+      <motion.div
+        variants={child}
+        className="flex items-end gap-5"
+      >
+        <div>
+          <div className="rounded-full h-[95px] w-[95px] bg-main-secondary"></div>
+        </div>
+        <div className="flex flex-col gap-0.5">
+          <h1 className="flex-1 text-[22px] text-main-default text-start tracking-tighter leading-[0.9] align-text-top font-[400]">
+            Samuel Campbell
+          </h1>
+          <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
+            Developer based in Edinburgh, Scotland.
+          </p>
+          <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-secondary leading-normal flex gap-1.5 mt-1.5">
+            {SOCIAL_DATA.slice(0, 2).map(({ name, url }, i) => (
+              <li
+                className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:opacity-25 text-main-secondary flex items-center"
+                key={i}
               >
-                {name}
-              </a>
+                {SOCIAL_DATA[SOCIAL_DATA.length - 1].name ===
+                name ? (
+                  <>{name}</>
+                ) : (
+                  <>
+                    {name}
+                    {
+                      <span className="mt-[2px]">
+                        <GoPrimitiveDot className="ml-1.5 text-center align-middle scale-50" />
+                      </span>
+                    }
+                  </>
+                )}
+              </li>
+            ))}
+            <li className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:opacity-25 text-main-secondary flex items-center">
+              Hello@Samsvk.com
             </li>
-          ))}
-          <li className="relative underline duration-500 max-w-max hover:cursor-pointer hover:opacity-25 text-main-default">
-            <a href={`#`} target="_blank" rel="noreferrer">
-              Hello@samsvk.com
-            </a>
-          </li>
-        </ul>
+          </ul>
+        </div>
       </motion.div>
       <motion.div variants={child}>
         <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">

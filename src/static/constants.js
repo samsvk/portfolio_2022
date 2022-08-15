@@ -47,6 +47,12 @@ export const WORK_DATA = [
 ];
 export const AWARD_DATA = [
   {
+    title: "Svk",
+    when: 2019,
+    url: "#",
+    from: "25 of the Best Personal Websites: Akram",
+  },
+  {
     title: "Codegrid",
     when: 2019,
     url: "#",
@@ -57,12 +63,6 @@ export const AWARD_DATA = [
     when: 2022,
     url: "#",
     from: "Honorable Mention: Awwwards",
-  },
-  {
-    title: "Svk",
-    when: 2019,
-    url: "#",
-    from: "25 of the Best Personal Websites: Akram",
   },
 ];
 
