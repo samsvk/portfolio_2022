@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
         }}
         variants={{
           initialState: {
-            y: 50,
+            y: 0,
             opacity: 0,
           },
           animateState: {
