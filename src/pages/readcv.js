@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import { child } from "../components/modal";
 import { container } from "../components/footer";
 import { AWARD_DATA, WORK_DATA } from "../static/constants";
-import { BsSlash } from "react-icons/bs";
 import { IoMdArrowForward } from "react-icons/io";
 import { SOCIAL_DATA } from "../static/constants";
-import { AiFillGithub } from "react-icons/ai";
 import { GoPrimitiveDot } from "react-icons/go";
+import { AiOutlineHome } from "react-icons/ai";
+import Image from "next/image";
 
 const Resume = () => {
   return (
@@ -21,8 +21,14 @@ const Resume = () => {
         variants={child}
         className="flex items-end gap-5 mb-5"
       >
-        <div>
-          <div className="rounded-full h-[92px] w-[92px] bg-main-secondary"></div>
+        <div className="relative">
+          <div className="rounded-full relative h-[92px] w-[92px] overflow-hidden border border-main-secondary/20 drop-shadow-md">
+            <Image
+              src="/me.jpeg"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
         </div>
         <div className="flex flex-col gap-0.5">
           <h1 className="flex-1 text-[22px] text-main-default text-start tracking-tighter leading-[0.9] align-text-top font-[400]">
@@ -55,10 +61,9 @@ const Resume = () => {
             <li className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:opacity-25 text-main-secondary flex items-center">
               Hello@Samsvk.com
             </li>
-          </ul>
+          </ul>{" "}
         </div>
       </motion.div>
-
       <motion.div variants={child}>
         <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
           Work Experience / Freelance
