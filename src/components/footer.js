@@ -84,7 +84,7 @@ const Footer = () => {
               Looking to continue my growth in a cultivating and
               creative environment - as such I&apos;m is open to
               full-time employment offers in the UK or US.{" "}
-              <Link href="resume">See my CV/Resume</Link>
+              <Link href="readcv">See my CV/Resume</Link>
             </p>
           </div>
           <div data="2">
