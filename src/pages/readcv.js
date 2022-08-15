@@ -66,21 +66,6 @@ const Resume = () => {
       </motion.div>
       <motion.div variants={child}>
         <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
-          Work Experience / Freelance
-        </h2>
-        <p className="tracking-tight text-[14px] align-text-top text-start  font-normal list-none text-main-default leading-normal">
-          As a passionate creative individual the past few years
-          I have spent building industry experience design and
-          development strategy. All that empowered by my passion
-          and ambition drives me to grow brands and products to
-          it&apos;s full potential. With that said, I am now
-          looking to continue my growth in a cultivating and
-          creative environment - as such I&apos;m is open to
-          full-time employment offers.
-        </p>
-      </motion.div>
-      <motion.div variants={child}>
-        <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
           About
         </h2>
         <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
