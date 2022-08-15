@@ -14,11 +14,11 @@ const Resume = () => {
       variants={container}
       initial="hidden"
       animate={"visible"}
-      className="max-w-[500px] w-full mx-auto py-12 flex flex-col gap-10"
+      className="max-w-[500px] w-full mx-auto py-12 flex flex-col gap-10 font-normal"
     >
       <motion.div
         variants={child}
-        className="flex items-end gap-5"
+        className="flex items-end gap-5 mb-5"
       >
         <div>
           <div className="rounded-full h-[95px] w-[95px] bg-main-secondary"></div>
