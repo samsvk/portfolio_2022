@@ -36,19 +36,19 @@ const Resume = () => {
                 className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:opacity-25 text-main-secondary flex items-center"
                 key={i}
               >
-                {SOCIAL_DATA[SOCIAL_DATA.length - 1].name ===
-                name ? (
-                  <>{name}</>
-                ) : (
-                  <>
+                <>
+                  <a
+                    href={`${url}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {name}
-                    {
-                      <span className="mt-[2px]">
-                        <GoPrimitiveDot className="ml-1.5 text-center align-middle scale-50" />
-                      </span>
-                    }
-                  </>
-                )}
+                  </a>
+
+                  <span className="mt-[2px]">
+                    <GoPrimitiveDot className="ml-1.5 text-center align-middle scale-50" />
+                  </span>
+                </>
               </li>
             ))}
             <li className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:opacity-25 text-main-secondary flex items-center">
@@ -80,7 +80,7 @@ const Resume = () => {
           it&apos;s full potential. With that said, I am now
           looking to continue my growth in a cultivating and
           creative environment - as such I&apos;m is open to
-          full-time employment offers in the UK or US.
+          full-time employment offers.
         </p>
       </motion.div>
       <motion.ul
