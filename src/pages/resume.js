@@ -6,6 +6,7 @@ import { AWARD_DATA, WORK_DATA } from "../static/constants";
 import { BsSlash } from "react-icons/bs";
 import { IoMdArrowForward } from "react-icons/io";
 import { SOCIAL_DATA } from "../static/constants";
+import { AiFillGithub } from "react-icons/ai";
 import { GoPrimitiveDot } from "react-icons/go";
 
 const Resume = () => {
@@ -21,7 +22,7 @@ const Resume = () => {
         className="flex items-end gap-5 mb-5"
       >
         <div>
-          <div className="rounded-full h-[95px] w-[95px] bg-main-secondary"></div>
+          <div className="rounded-full h-[92px] w-[92px] bg-main-secondary"></div>
         </div>
         <div className="flex flex-col gap-0.5">
           <h1 className="flex-1 text-[22px] text-main-default text-start tracking-tighter leading-[0.9] align-text-top font-[400]">
@@ -56,6 +57,22 @@ const Resume = () => {
             </li>
           </ul>
         </div>
+      </motion.div>
+
+      <motion.div variants={child}>
+        <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
+          Work Experience / Freelance
+        </h2>
+        <p className="tracking-tight text-[14px] align-text-top text-start  font-normal list-none text-main-default leading-normal">
+          As a passionate creative individual the past few years
+          I have spent building industry experience design and
+          development strategy. All that empowered by my passion
+          and ambition drives me to grow brands and products to
+          it&apos;s full potential. With that said, I am now
+          looking to continue my growth in a cultivating and
+          creative environment - as such I&apos;m is open to
+          full-time employment offers.
+        </p>
       </motion.div>
       <motion.div variants={child}>
         <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
