@@ -42,6 +42,7 @@ const Header = ({ setShow }) => {
       initial="hidden"
       animate={"visible"}
       className="
+      mt-0 md:mt-10
       justify-start
       md:justify-end
       md:flex-col

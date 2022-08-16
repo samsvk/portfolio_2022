@@ -24,7 +24,7 @@ const Footer = () => {
       variants={container}
       initial="hidden"
       animate={"visible"}
-      className="flex flex-col w-full md:flex-row"
+      className="flex flex-col w-full mt-10 md:mt-0 md:flex-row"
     >
       <div className="flex flex-col flex-1 md:flex-row">
         <motion.aside
