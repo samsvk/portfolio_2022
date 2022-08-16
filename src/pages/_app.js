@@ -1,9 +1,17 @@
 import "../styles/global.scss";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      return () => clearTimeout(timeout);
+    }, 200);
+  }, []);
 
   return (
     <AnimatePresence exitBeforeEnter>
