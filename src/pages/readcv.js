@@ -15,7 +15,7 @@ const Resume = () => {
       variants={container}
       initial="hidden"
       animate={"visible"}
-      className="max-w-[500px] w-full mx-auto py-12 flex flex-col gap-10 font-normal"
+      className="max-w-[500px] w-full mx-auto my-12 flex flex-col gap-10 font-normal bg-orange-500"
     >
       <motion.div
         variants={child}
