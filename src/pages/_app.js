@@ -1,7 +1,6 @@
 import "../styles/global.scss";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
