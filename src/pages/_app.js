@@ -6,10 +6,6 @@ import { useEffect } from "react";
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <AnimatePresence exitBeforeEnter>
       <motion.div
