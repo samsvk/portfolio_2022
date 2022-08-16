@@ -6,7 +6,11 @@ import { AWARD_DATA, WORK_DATA } from "../static/constants";
 import { IoMdArrowForward } from "react-icons/io";
 import { SOCIAL_DATA } from "../static/constants";
 import { GoPrimitiveDot } from "react-icons/go";
-import { AiOutlineHome } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiOutlineTwitter,
+  AiOutlineMail,
+} from "react-icons/ai";
 import Image from "next/image";
 
 const Resume = () => {
@@ -22,7 +26,7 @@ const Resume = () => {
         className="flex items-end gap-5 mb-5"
       >
         <div className="relative">
-          <div className="rounded-full relative h-[92px] w-[92px] overflow-hidden border border-main-secondary/20 drop-shadow-md">
+          <div className="rounded-full relative h-[92px] w-[92px] overflow-hidden border border-main-secondary/20 drop-shadow-sm">
             <Image
               src="/me.jpeg"
               layout="fill"
@@ -61,7 +65,7 @@ const Resume = () => {
             <li className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:opacity-25 text-main-secondary flex items-center">
               Hello@Samsvk.com
             </li>
-          </ul>{" "}
+          </ul>
         </div>
       </motion.div>
       <motion.div variants={child}>

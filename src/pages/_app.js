@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
             opacity: 1,
           },
           exitState: {
-            y: 50,
+            y: 30,
             opacity: 0,
           },
         }}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ITEM, PROJECT_DATA } from "../static/constants";
 import { GoPrimitiveDot } from "react-icons/go";
+import Link from "next/link";
 
 export const container = {
   hidden: {
@@ -54,7 +55,7 @@ const Header = ({ setShow }) => {
         className="inline-flex mt-2 mb-5 ml-1 lg:mt-0"
       >
         <h2 className="mr-3 text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
-          Selected Works:
+          Selected:
         </h2>
         <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal flex gap-1.5">
           {PROJECT_DATA.map((p, i) => (
@@ -71,22 +72,28 @@ const Header = ({ setShow }) => {
                 className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:opacity-25 text-main-default flex items-center"
                 key={i}
               >
-                {PROJECT_DATA[PROJECT_DATA.length - 1].name ===
-                p.name ? (
-                  <>{p.name}</>
-                ) : (
-                  <>
-                    {p.name}
-                    {
-                      <span className="mt-[4px]">
-                        <GoPrimitiveDot className="ml-1.5 text-center align-middle scale-50" />
-                      </span>
-                    }
-                  </>
-                )}
+                {p.name}
+
+                <span className="mt-[4px]">
+                  <GoPrimitiveDot className="ml-1.5 text-center align-middle scale-50" />
+                </span>
               </li>
             </span>
           ))}
+
+          <span
+            content={`CV / Résumé`}
+            className={`hover:after:opacity-100 after:duration-200 after:opacity-0 relative inline-block group text-start 
+              after:bg-stone-50 after:rounded-lg after:py-1 after:z-40 after:px-2.5 after:absolute after:h-max after:w-max 
+              after:top-[-2rem] after:left-[55%] after:translate-x-[-55%] after:content-[attr(content)] after:drop-shadow-sm
+              underline after:tracking-tight after:text-[14px] after:font-[400] after:align-text-top after:text-start after:list-none after:text-main-default after:leading-normal`}
+          >
+            <Link href="readcv">
+              <li className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:opacity-25 text-main-default flex items-center">
+                Curriculum Vitae
+              </li>
+            </Link>
+          </span>
         </ul>
       </motion.div>
       <motion.div
