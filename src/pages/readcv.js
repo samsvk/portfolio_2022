@@ -35,8 +35,8 @@ const Resume = () => {
             duration: 0.5,
           },
         }}
-        className="text-[12px] font-[500] tracking-tight text-main-secondary leading-normal align-text-top text-start pr-3 pl-2.5
-        w-max absolute top-5 hover:cursor-pointer left-5 uppercase rounded-full border border-main-default/10 flex items-center"
+        className="text-[12px] left-3  top-3 font-[500] absolute tracking-tight text-main-secondary leading-normal align-text-top text-start pr-5 pl-3 py-2
+        w-max  hover:cursor-pointer uppercase rounded-full border border-main-default/10 flex items-center"
       >
         <Link href="/">
           <span className="flex items-center">
@@ -167,6 +167,15 @@ const Resume = () => {
           variants={child}
           className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal flex-col flex gap-8"
         >
+          <p className="tracking-tight text-[14px] align-text-top text-start  font-normal list-none text-main-default leading-normal">
+            Below is four projects that range from creative
+            front-end applications, to fullstack industrial
+            solutions. I chose these projects as they provide a
+            highlevel overview of my progression as a developer
+            but most importantly each codebase includes different
+            technologies and functionalities that are often used
+            in todays progressive web applications.
+          </p>
           {CV_PROJECTS.map(({ name, url, time, tech }, i) => (
             <li
               className="relative flex font-normal max-w-max text-main-default"
@@ -190,7 +199,7 @@ const Resume = () => {
                 </span>
 
                 <div
-                  className="mt-1 relative rounded-lg h-[63px] w-[106px] bg-black/5 overflow-hidden hover:cursor-pointer grayscale hover:grayscale-0 duration-300"
+                  className="mt-2 relative rounded-lg h-[63px] w-[106px] bg-black/5 overflow-hidden hover:cursor-pointer grayscale"
                   onClick={() => setImg(`${url}`)}
                 >
                   <Image

@@ -1,13 +1,14 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { IoMdArrowForward } from "react-icons/io";
 
 const Lightroom = (props) => {
   if (typeof props.img !== "string") return null;
   return (
     <div className="fixed top-0 min-w-full min-h-full max-h-screen bg-[#edeceb] z-[100]">
       <div className="max-w-[1280px] items-center  mx-auto mt-10 flex flex-col">
-        <div className="mt-1 relative rounded-lg pt-[55%] w-[100%] bg-black/5 overflow-hidden">
+        <div className="mt-1 relative rounded-lg pt-[55%] w-[100%] bg-black/5 overflow-hidden drop-shadow-md">
           <Image
             src={props.img}
             objectFit="cover"
@@ -18,9 +19,14 @@ const Lightroom = (props) => {
           />
         </div>
         <button
-          className="mt-10"
+          className="text-[12px] mt-10 font-[500] tracking-tight text-main-secondary leading-normal align-text-top text-start pr-5 pl-3 py-2
+        w-max  hover:cursor-pointer uppercase rounded-full border border-main-default/10 flex items-center hover:bg-main-bg duration-200"
           onClick={() => props.setImg(null)}
         >
+          <IoMdArrowForward
+            size={14}
+            className="mr-[4px] rotate-[-180deg]"
+          />
           Close
         </button>
       </div>
