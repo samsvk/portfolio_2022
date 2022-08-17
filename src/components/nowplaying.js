@@ -24,7 +24,7 @@ export default function NowPlaying() {
               />
               {"\u00A0"}Now Playing:{"\u00A0"}
             </h2>
-            <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
+            <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal max-w-[28ch] text-ellipsis  overflow-hidden whitespace-nowrap">
               <a
                 href={`${data?.data?.songUrl}`}
                 target="_blank"
