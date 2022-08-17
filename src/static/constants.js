@@ -51,21 +51,25 @@ export const CV_PROJECTS = [
     name: "Viperino",
     time: { from: "2022" },
     tech: ["Next", "Stripe", "Tailwind"],
+    url: "/projects/viperino/main.jpg",
   },
   {
     name: "Nextflix",
     time: { from: "2021" },
     tech: ["Typescript", "SASS", "Node", "Socket.io"],
+    url: "/projects/nextflix/main.jpg",
   },
   {
     name: "Mograine",
     time: { from: "2020" },
     tech: ["Typescript", "BEM"],
+    url: "/projects/mograine/main.jpg",
   },
   {
     name: "Pigfingers",
     time: { from: "2022" },
     tech: ["React", "SASS"],
+    url: "/projects/pigfingers/main.jpg",
   },
 ];
 
@@ -97,8 +101,11 @@ export const PROJECT_DATA = [
     scope: ["Active", "1 Month"],
     brief: `Viperino is an online educational platform providing outstanding courses across various gaming titles. Providing users
     with unlimited guides through a one time payment model Viperino aims to provide high quality guides with a highly functional interactive web app. 
-    My role in Viperino was to understand the groups vision for Viperino's visual indetity and bridge that gap creating a full-scale web app that reflects that identity using modern web technologies.
-`,
+    My role in Viperino was to understand the groups vision for Viperino's visual indetity and bridge that gap creating a full-scale web app that reflects that identity using modern web technologies.`,
+    imgs: [
+      "/projects/viperino/1.jpg",
+      "/projects/viperino/2.jpg",
+    ],
     strategy: `I began researching competitors and highly consider their brand strategies. After numerous refrences to other educational sites and internal conversations it became apparent Viperino
     required a design which emphasised guide content with an easy to use navigation and filtering system.`,
     tech: ["Next", "Stripe", "Tailwind"],
@@ -113,6 +120,10 @@ export const PROJECT_DATA = [
 quickly and subsequently serving appropriate results with as minimal steps as possible was going to be a fundamental to Nextflix's 
 success. By creating a simple webflow chart, I was able to translate that directly into the application.`,
     tech: ["Typescript", "SASS", "Node", "Socket.io"],
+    imgs: [
+      "/projects/nextflix/1.jpg",
+      "/projects/nextflix/2.jpg",
+    ],
   },
   {
     name: "Mograine",
@@ -123,6 +134,7 @@ success. By creating a simple webflow chart, I was able to translate that direct
     strategy:
       "Taking into consideration Warcraft's RPG value and Blizzard Ent's unique design patterns I felt it was necessary to emulate that fantasy feeling.",
     tech: ["Typescript", "BEM"],
+    imgs: ["/projects/mograine/1.jpg"],
   },
   {
     name: "Pigfingers",
@@ -133,6 +145,10 @@ success. By creating a simple webflow chart, I was able to translate that direct
     strategy:
       "Typing has become a modern aesthetic - building a visually appealing site to match that was the baseline for Pigfingers. By using a mono font and vscode theming we were able to quickly achieve an eye-candy aesthetic that translated throughout the entire Pigfingers site.",
     tech: ["React", "SASS"],
+    imgs: [
+      "/projects/pigfingers/3.jpg",
+      "/projects/pigfingers/2.jpg",
+    ],
   },
 ];
 

@@ -172,7 +172,7 @@ export const Modal = ({ show, setShow }) => {
                   </motion.div>
                 </div>
                 <motion.div variants={child} className="pb-10">
-                  {<Swipe views={[1, 2, 3, 4, 5]} />}
+                  {<Swipe views={p.imgs} />}
                 </motion.div>
               </motion.div>
             </section>

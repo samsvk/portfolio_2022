@@ -182,7 +182,16 @@ const Resume = () => {
                   {tech.map((t) => t).join(", ")}
                 </span>
 
-                <div className="mt-1 rounded-lg h-[60px] w-[100px] bg-black/5"></div>
+                <div className="mt-1 relative rounded-lg h-[63px] w-[106px] bg-black/5 overflow-hidden">
+                  <Image
+                    src={url}
+                    objectFit="cover"
+                    layout="fill"
+                    height="100%"
+                    quality={100}
+                    width="100%"
+                  />
+                </div>
               </div>
             </li>
           ))}
