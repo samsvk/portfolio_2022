@@ -13,10 +13,17 @@ import { GoPrimitiveDot } from "react-icons/go";
 import Link from "next/link";
 import Image from "next/image";
 import { RiExternalLinkLine } from "react-icons/ri";
+import Lightroom from "../components/lightroom";
+import { useState } from "react";
 
 const Resume = () => {
+  const [img, setImg] = useState(null);
+
+  console.log(img);
+
   return (
     <>
+      <Lightroom img={img} setImg={setImg} />
       <motion.div
         initial={{ y: -35, opacity: 0 }}
         animate={{
@@ -170,19 +177,22 @@ const Resume = () => {
               </span>
               <div className="flex flex-col pl-10">
                 <a
-                  href={`${url}`}
+                  href={`https://github.com/samsvk`}
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center duration-500 hover:cursor-pointer hover:opacity-25"
                 >
-                  {name}{" "}
+                  {name}
                   <RiExternalLinkLine className="ml-[4px]" />
                 </a>
                 <span className="font-normal text-main-secondary">
                   {tech.map((t) => t).join(", ")}
                 </span>
 
-                <div className="mt-1 relative rounded-lg h-[63px] w-[106px] bg-black/5 overflow-hidden">
+                <div
+                  className="mt-1 relative rounded-lg h-[63px] w-[106px] bg-black/5 overflow-hidden hover:cursor-pointer grayscale hover:grayscale-0 duration-300"
+                  onClick={() => setImg(`${url}`)}
+                >
                   <Image
                     src={url}
                     objectFit="cover"
