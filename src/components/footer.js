@@ -24,7 +24,7 @@ const Footer = () => {
       variants={container}
       initial="hidden"
       animate={"visible"}
-      className="flex flex-col w-full mt-10 md:mt-0 md:flex-row"
+      className="flex flex-col w-full md:mt-0 md:flex-row"
     >
       <div className="flex flex-col flex-1 md:flex-row">
         <motion.aside
@@ -71,7 +71,7 @@ const Footer = () => {
         </motion.aside>
         <motion.aside
           variants={child}
-          className="flex flex-col w-full gap-8 my-8 md:gap-12 md:my-0"
+          className="flex flex-col flex-col-reverse w-full gap-8 my-8 md: md:gap-12 md:my-0"
         >
           <div data="1">
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">

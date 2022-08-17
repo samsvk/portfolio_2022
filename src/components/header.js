@@ -42,10 +42,8 @@ const Header = ({ setShow }) => {
       initial="hidden"
       animate={"visible"}
       className="
-      mt-0 md:mt-10
-      justify-start
-      md:justify-end
-      md:flex-col
+      mt-10
+      justify-end
       flex-col
       flex h-full flex-1 text-[26px] 
       md:text-[44px] lg:text-[50px] text-main-default tracking-tighter leading-[0.9] align-text-top lg:max-w-[85%] max-w-[100%] font-[300]"

@@ -35,16 +35,20 @@ export default function NowPlaying() {
             </p>
           </>
         ) : (
-          <>
-            <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start flex items-center justify-center">
+          <div className="flex-row">
+            <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start flex items-center justify-start flex-1">
               <GrSpotify
-                className="align-middle hover:cursor-pointer"
                 onClick={() => setShow((p) => !p)}
+                className="align-middle hover:cursor-pointer"
               />
-              {"\u00A0"}Not playing{"\u00A0"}
+              {"\u00A0"}Not Playing{"\u00A0"}
             </h2>
-            <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal"></p>
-          </>
+            <p className="flex-1 tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
+              <a href={`#`} target="_blank" rel="noreferrer">
+                Spotify
+              </a>
+            </p>
+          </div>
         )}
       </div>
     </>
