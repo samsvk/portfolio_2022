@@ -13,7 +13,7 @@ export default function NowPlaying() {
 
   return (
     <>
-      <div className="relative flex flex-col justify-center it ems-start md:items-end lg:items-end ">
+      <div className="relative flex-col items-start justify-center hidden md:flex md:items-end lg:items-end ">
         <Toptracks show={show} setShow={setShow} />
         {data?.data?.isPlaying ? (
           <>
@@ -35,13 +35,13 @@ export default function NowPlaying() {
             </p>
           </>
         ) : (
-          <div className="flex-row">
-            <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start flex items-center justify-start flex-1">
+          <div className="flex">
+            <h2 className="w-full whitespace-nowrap text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start flex items-center justify-start flex-1">
               <GrSpotify
                 onClick={() => setShow((p) => !p)}
                 className="align-middle hover:cursor-pointer"
               />
-              {"\u00A0"}Not Playing{"\u00A0"}
+              {"\u00A0"}Not Playing:{"\u00A0"}
             </h2>
             <p className="flex-1 tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
               <a href={`#`} target="_blank" rel="noreferrer">

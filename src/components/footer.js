@@ -71,7 +71,7 @@ const Footer = () => {
         </motion.aside>
         <motion.aside
           variants={child}
-          className="flex flex-col flex-col-reverse w-full gap-8 my-8 md: md:gap-12 md:my-0"
+          className="flex flex-col-reverse w-full gap-8 my-8 md:flex-col md: md:gap-12 md:my-0"
         >
           <div data="1">
             <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
