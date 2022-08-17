@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { ITEM, PROJECT_DATA } from "../static/constants";
+import { PROJECT_DATA } from "../static/constants";
 import { GoPrimitiveDot } from "react-icons/go";
 import Link from "next/link";
 

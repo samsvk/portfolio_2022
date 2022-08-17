@@ -2,7 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { child } from "../components/modal";
 import { container } from "../components/footer";
-import { AWARD_DATA, WORK_DATA } from "../static/constants";
+import {
+  AWARD_DATA,
+  CV_PROJECTS,
+  WORK_DATA,
+} from "../static/constants";
 import { IoMdArrowForward } from "react-icons/io";
 import { SOCIAL_DATA } from "../static/constants";
 import { GoPrimitiveDot } from "react-icons/go";
@@ -47,7 +51,7 @@ const Resume = () => {
           className="flex items-end gap-5 mb-5"
         >
           <div className="relative">
-            <div className="rounded-full relative h-[92px] w-[92px] overflow-hidden border border-main-secondary/20 drop-shadow-sm">
+            <div className="rounded-full relative h-[92px] w-[92px] overflow-hidden border border-main-secondary/5 drop-shadow-sm">
               <Image
                 src="/me.jpeg"
                 layout="fill"
@@ -175,6 +179,42 @@ const Resume = () => {
                   </a>
                   <span className="font-normal text-main-secondary">
                     {from}
+                  </span>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+
+        <motion.div variants={child}>
+          <h2 className="mb-5 text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start">
+            Projects
+          </h2>
+          <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal flex-col flex gap-8">
+            {CV_PROJECTS.map(({ name, url, time, type }, i) => (
+              <li
+                className="relative flex font-normal max-w-max text-main-default"
+                key={i}
+              >
+                <span className="flex justify-evenly items-start gap-1 font-normal text-main-secondary min-w-[90px] max-h-[23px]">
+                  <span className="flex-1">{time.from}</span>
+                  <span className="block bg-main-secondary w-[11px] h-[0.05rem] mx-1 self-center" />
+                  <span className="flex-1 text-right justify-self-end ">
+                    {time.to}
+                  </span>
+                </span>
+                <div className="flex flex-col pl-10">
+                  <a
+                    href={`${url}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center duration-500 hover:cursor-pointer hover:opacity-25"
+                  >
+                    {name}{" "}
+                    <IoMdArrowForward className="ml-[4px] rotate-[-45deg]" />
+                  </a>
+                  <span className="font-normal text-main-secondary">
+                    {type}
                   </span>
                 </div>
               </li>

@@ -45,6 +45,34 @@ export const WORK_DATA = [
     type: "Remote, Edinburgh",
   },
 ];
+
+export const CV_PROJECTS = [
+  {
+    name: "Viperino",
+    time: { from: "2016", to: "Now" },
+    url: "https://samsvk.com/",
+    type: "Remote, Edinburgh",
+  },
+  {
+    name: "Nextflix",
+    time: { from: "2018", to: "2019" },
+    url: "https://method.gg/",
+    type: "Remote + Scotland, UK",
+  },
+  {
+    name: "Mograine",
+    time: { from: "2017", to: "2018" },
+    url: "https://soar.gg/",
+    type: "Remote + Atlanta, Georgia",
+  },
+  {
+    name: "Pigfingers",
+    time: { from: "2016", to: "2018" },
+    url: "https://twitch.tv/",
+    type: "Remote, Edinburgh",
+  },
+];
+
 export const AWARD_DATA = [
   {
     title: "Svk",
