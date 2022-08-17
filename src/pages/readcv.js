@@ -12,6 +12,7 @@ import { SOCIAL_DATA } from "../static/constants";
 import { GoPrimitiveDot } from "react-icons/go";
 import Link from "next/link";
 import Image from "next/image";
+import { RiExternalLinkLine } from "react-icons/ri";
 
 const Resume = () => {
   return (
@@ -154,6 +155,39 @@ const Resume = () => {
             </li>
           ))}
         </motion.ul>
+
+        <motion.ul
+          variants={child}
+          className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal flex-col flex gap-8"
+        >
+          {CV_PROJECTS.map(({ name, url, time, tech }, i) => (
+            <li
+              className="relative flex font-normal max-w-max text-main-default"
+              key={i}
+            >
+              <span className="flex justify-evenly items-start gap-1 font-normal text-main-secondary min-w-[90px] max-h-[23px]">
+                <span className="flex-1">{time.from}</span>
+              </span>
+              <div className="flex flex-col pl-10">
+                <a
+                  href={`${url}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center duration-500 hover:cursor-pointer hover:opacity-25"
+                >
+                  {name}{" "}
+                  <RiExternalLinkLine className="ml-[4px]" />
+                </a>
+                <span className="font-normal text-main-secondary">
+                  {tech.map((t) => t).join(", ")}
+                </span>
+
+                <div className="mt-1 rounded-lg h-[60px] w-[100px] bg-black/5"></div>
+              </div>
+            </li>
+          ))}
+        </motion.ul>
+
         <motion.div variants={child}>
           <h2 className="mb-5 text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start">
             Awards
@@ -168,53 +202,9 @@ const Resume = () => {
                   <span className="flex-1">{when}</span>
                 </span>
                 <div className="flex flex-col pl-10">
-                  <a
-                    href={`${url}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center duration-500 hover:cursor-pointer hover:opacity-25"
-                  >
-                    {title}{" "}
-                    <IoMdArrowForward className="ml-[4px] rotate-[-45deg]" />
-                  </a>
+                  {title}
                   <span className="font-normal text-main-secondary">
                     {from}
-                  </span>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </motion.div>
-
-        <motion.div variants={child}>
-          <h2 className="mb-5 text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start">
-            Projects
-          </h2>
-          <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal flex-col flex gap-8">
-            {CV_PROJECTS.map(({ name, url, time, type }, i) => (
-              <li
-                className="relative flex font-normal max-w-max text-main-default"
-                key={i}
-              >
-                <span className="flex justify-evenly items-start gap-1 font-normal text-main-secondary min-w-[90px] max-h-[23px]">
-                  <span className="flex-1">{time.from}</span>
-                  <span className="block bg-main-secondary w-[11px] h-[0.05rem] mx-1 self-center" />
-                  <span className="flex-1 text-right justify-self-end ">
-                    {time.to}
-                  </span>
-                </span>
-                <div className="flex flex-col pl-10">
-                  <a
-                    href={`${url}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center duration-500 hover:cursor-pointer hover:opacity-25"
-                  >
-                    {name}{" "}
-                    <IoMdArrowForward className="ml-[4px] rotate-[-45deg]" />
-                  </a>
-                  <span className="font-normal text-main-secondary">
-                    {type}
                   </span>
                 </div>
               </li>

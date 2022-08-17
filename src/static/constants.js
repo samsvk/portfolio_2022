@@ -49,27 +49,23 @@ export const WORK_DATA = [
 export const CV_PROJECTS = [
   {
     name: "Viperino",
-    time: { from: "2016", to: "Now" },
-    url: "https://samsvk.com/",
-    type: "Remote, Edinburgh",
+    time: { from: "2022" },
+    tech: ["Next", "Stripe", "Tailwind"],
   },
   {
     name: "Nextflix",
-    time: { from: "2018", to: "2019" },
-    url: "https://method.gg/",
-    type: "Remote + Scotland, UK",
+    time: { from: "2021" },
+    tech: ["Typescript", "SASS", "Node", "Socket.io"],
   },
   {
     name: "Mograine",
-    time: { from: "2017", to: "2018" },
-    url: "https://soar.gg/",
-    type: "Remote + Atlanta, Georgia",
+    time: { from: "2020" },
+    tech: ["Typescript", "BEM"],
   },
   {
     name: "Pigfingers",
-    time: { from: "2016", to: "2018" },
-    url: "https://twitch.tv/",
-    type: "Remote, Edinburgh",
+    time: { from: "2022" },
+    tech: ["React", "SASS"],
   },
 ];
 
