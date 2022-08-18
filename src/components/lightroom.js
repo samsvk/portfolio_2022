@@ -29,7 +29,7 @@ const Lightroom = (props) => {
               </div>
               <button
                 className="text-[12px] mt-10 font-[500] tracking-tight text-main-secondary leading-normal align-text-top text-start pr-5 pl-3 py-2
-            w-max  hover:cursor-pointer uppercase rounded-full border border-main-default/10 flex items-center hover:bg-main-bg duration-200"
+            w-max  hover:cursor-pointer uppercase rounded-full border border-main-default/10 flex items-center"
                 onClick={() => props.setImg(null)}
               >
                 <IoMdArrowForward

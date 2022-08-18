@@ -35,8 +35,8 @@ const Resume = () => {
             duration: 0.5,
           },
         }}
-        className="text-[12px] left-3  top-3 font-[500] absolute tracking-tight text-main-secondary leading-normal align-text-top text-start pr-5 pl-3 py-2
-        w-max  hover:cursor-pointer uppercase rounded-full border border-main-default/10 flex items-center"
+        className="text-[12px] left-3  top-3 absolute tracking-tight text-main-secondary leading-normal align-text-top text-start
+        w-max  hover:cursor-pointer underline duration-500 max-w-max hover:opacity-25 text-main-default flex items-center font-normal "
       >
         <Link href="/">
           <span className="flex items-center">
