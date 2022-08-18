@@ -22,14 +22,13 @@ export const Swipe = ({ views }) => {
               key={i}
               className="w-[75%!important] [&:nth-child(1)]:ml-12 last:mr-12"
             >
-              <div className="block relative pt-[55%]">
+              <div className="block relative pt-[55%] bg-black/5 rounded-xl overflow-hidden">
                 <Image
                   quality={100}
                   loading={"eager"}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-xl"
-                  src={item || "https://i.imgur.com/2MKClUm.png"}
+                  src={item}
                 />
               </div>
             </SwiperSlide>
