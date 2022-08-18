@@ -55,13 +55,13 @@ export const CV_PROJECTS = [
   },
   {
     name: "Nextflix",
-    time: { from: "2021" },
+    time: { from: "2022" },
     tech: ["Typescript", "SASS", "Node", "Socket.io"],
     url: "/projects/nextflix/main.jpg",
   },
   {
     name: "Mograine",
-    time: { from: "2020" },
+    time: { from: "2021" },
     tech: ["Typescript", "BEM"],
     url: "/projects/mograine/main.jpg",
   },
@@ -76,15 +76,21 @@ export const CV_PROJECTS = [
 export const AWARD_DATA = [
   {
     title: "Svk",
-    when: 2019,
+    when: 2021,
     url: "#",
-    from: "25 of the Best Personal Websites: Akram",
+    from: "25 of the best personal porfolios: Akram",
   },
   {
-    title: "Codegrid",
-    when: 2019,
+    title: "Mograine",
+    when: 2021,
     url: "#",
-    from: "Site of the Day: Awwwards",
+    from: "Creative Community Design Winner: Blizzard",
+  },
+  {
+    title: "Viperino",
+    when: 2022,
+    url: "#",
+    from: "Creative Typography & Whitespace: Codegrid",
   },
   {
     title: "Viperino",
