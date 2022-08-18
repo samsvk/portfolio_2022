@@ -25,7 +25,8 @@ export const Swipe = ({ views }) => {
               <div className="block relative pt-[55%] bg-[#edeceb] rounded-xl overflow-hidden">
                 <Image
                   quality={100}
-                  loading={"eager"}
+                  loading="eager"
+                  priority={true}
                   layout="fill"
                   objectFit="cover"
                   src={item}
