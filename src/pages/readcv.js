@@ -52,7 +52,7 @@ const Resume = () => {
         variants={container}
         initial="hidden"
         animate={"visible"}
-        className="max-w-[500px] w-full mx-auto my-[4rem] flex flex-col gap-10 font-normal"
+        className="max-w-[550px] px-5 w-full mx-auto my-[4rem] flex flex-col gap-10 font-normal"
       >
         <motion.div
           variants={child}
@@ -162,7 +162,6 @@ const Resume = () => {
             </li>
           ))}
         </motion.ul>
-
         <motion.ul
           variants={child}
           className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal flex-col flex gap-8"
@@ -215,7 +214,6 @@ const Resume = () => {
             </li>
           ))}
         </motion.ul>
-
         <motion.div variants={child}>
           <h2 className="mb-5 text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start">
             Awards
