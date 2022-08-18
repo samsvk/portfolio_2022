@@ -169,11 +169,11 @@ const Resume = () => {
           <p className="tracking-tight text-[14px] align-text-top text-start  font-normal list-none text-main-default leading-normal">
             Below is a few projects that range from creative
             front-end applications to fullstack industrial
-            solutions. I chose these projects as they provide a
-            highlevel overview of my progression as a developer
-            but most importantly each codebase highlights
-            different technologies and functionalities that are
-            often used in todays progressive web applications.
+            solutions. These projects provide a highlevel
+            overview of my progression as a developer but most
+            importantly each codebase shows different
+            technologies and functionalities that are often used
+            in todays progressive web applications.
           </p>
           {CV_PROJECTS.map(({ name, url, time, tech }, i) => (
             <li
