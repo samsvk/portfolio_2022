@@ -1,10 +1,11 @@
 ## About the Project
 
 > This is my personal portfolio that I have decided to build
-> using Next, Tailwind and Node. The overall goal was to provide
-> myself a centralised location whereby customers/employers can
-> quickly have an overview of my highlighted projects through a
-> clean and performant porfolio website.
+> using Next, Tailwind, Node and Framer Motion. The overall goal
+> was to provide myself a centralised location whereby
+> customers/employers can quickly have an overview of my
+> highlighted projects through a clean and performant porfolio
+> website.
 
 #### Overview:
 
