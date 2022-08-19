@@ -136,7 +136,7 @@ success. By creating a simple webflow chart, I was able to translate that direct
     scope: ["Active", "On-Going"],
     desc: "Fullstack app that large groups of movie fans to vote on their next flix.",
     brief:
-      "Svk is my personal slice of the internet. I wanted to use Svk to translate my personality via code - driven by simplistic and bold aesthetics with a focus on typography and whitespace I knew I could achieve that goal.",
+      "Svk is my personal slice of the internet. I wanted to use Svk to translate my personality via code - driven by simplistic and bold aesthetics with a focus on typography and whitespace I knew I could achieve that goal. I wanted to add a bit of everyday Sam, so I felt adding my current playing Spotify song as well as my top 10 most played would help achieve that.",
     strategy: `There wasn't much strategy in my portfolio, I honestly... just winged it. In past iterations of my portfolio I felt I tried too hard to make 
     an industry standard design and I wanted to achieve a different outcome with Svk.`,
     tech: ["Next", "Tailwind", "Node"],
