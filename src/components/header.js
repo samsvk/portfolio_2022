@@ -51,7 +51,7 @@ const Header = ({ setShow }) => {
       <motion.div
         variants={child}
         data="2"
-        className="inline-flex mt-2 mb-5 ml-1 lg:mt-0"
+        className="inline-flex flex-col mt-2 mb-5 ml-1 md:flex-row lg:mt-0"
       >
         <h2 className="mr-3 text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
           Recent Projects:
