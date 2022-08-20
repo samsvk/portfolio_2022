@@ -25,14 +25,14 @@ const Resume = () => {
     <>
       <Lightroom img={img} setImg={setImg} />
       <motion.div
-        initial={{ y: -35, opacity: 0 }}
+        initial={{ opacity: 0 }}
         animate={{
           y: 0,
           opacity: 1,
           transition: {
-            delay: 1,
-            ease: [0.34, 0.53, 0.37, 1.02],
-            duration: 0.5,
+            delay: 0.5,
+            ease: "easeInOut",
+            duration: 1,
           },
         }}
         className="text-[12px] left-3  top-3 absolute tracking-tight text-main-secondary leading-normal align-text-top text-start
