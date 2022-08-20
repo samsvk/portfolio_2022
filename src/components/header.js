@@ -81,7 +81,7 @@ const Header = ({ setShow }) => {
           ))}
 
           <span
-            content={`For more Projects see my CV`}
+            content={`For more projects see my CV`}
             className={`hover:after:opacity-100 after:duration-200 after:opacity-0 relative inline-block group text-start 
               after:bg-stone-50 after:rounded-lg after:py-1 after:z-40 after:px-2.5 after:absolute after:h-max after:w-max 
               after:top-[-2rem] after:left-[55%] after:translate-x-[-55%] after:content-[attr(content)] after:drop-shadow-sm
