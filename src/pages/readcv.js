@@ -108,10 +108,10 @@ const Resume = () => {
             About
           </h2>
           <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
-            Samuel (23) is a freelance front-end engineer with a
-            strong focus on creating meaningful visual identities
-            and timeless scaleable solutions working remotely
-            from Edinburgh.
+            Samuel (23) is a freelance digital design and
+            developer with a strong focus on creating meaningful
+            visual identities and timeless scaleable solutions
+            working remotely from Edinburgh.
           </p>
         </motion.div>
         <motion.div variants={child}>

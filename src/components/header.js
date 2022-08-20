@@ -100,10 +100,10 @@ const Header = ({ setShow }) => {
         data="2"
         className="self-start leading-tight justify-self-start lg:self-end lg:justify-self-end"
       >
-        Samuel (23) is a freelance front-end engineer with a
-        strong focus on creating meaningful visual identities and
-        timeless scaleable solutions working remotely from
-        Edinburgh.
+        Samuel (23) is a freelance digital design and developer
+        with a strong focus on creating meaningful visual
+        identities and timeless scaleable solutions working
+        remotely from Edinburgh.
       </motion.div>
     </motion.header>
   );
