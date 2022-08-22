@@ -90,7 +90,7 @@ export const Modal = ({ show, setShow }) => {
             exit={{
               opacity: 0,
             }}
-            className="max-w-[100vw] w-full bg-main-secondary/40 left-0 fixed h-full z-[10000]"
+            className="max-w-[100vw] w-full bg-[rgba(0,0,0,0.5)] left-0 fixed h-full z-[10000]"
           />
 
           <motion.div
@@ -102,7 +102,7 @@ export const Modal = ({ show, setShow }) => {
             w-full h-full  mx-auto right-0 left-0 mt-auto bottom-0 fixed z-[100000]
             flex no-scrollbar items-center overflow-y-scroll"
           >
-            <section className="relative w-full mt-auto overflow-y-scroll border border-r max-h-max bg-main-bg rounded-tl-xl rounded-tr-xl border-main-default/60 no-scrollbar">
+            <section className="relative w-full mt-auto overflow-y-scroll border border-r max-h-max bg-new-bg rounded-tl-xl rounded-tr-xl border-new-border no-scrollbar">
               <motion.div
                 variants={container}
                 initial="hidden"
@@ -112,7 +112,7 @@ export const Modal = ({ show, setShow }) => {
                   onClick={() => setShow("")}
                   className="absolute p-1.5 rounded-full right-3.5 top-3 bg-main-secondary/5"
                 >
-                  <VscChromeClose className="text-main-secondary" />
+                  <VscChromeClose className="text-new-grey3" />
                 </button>
                 <div className="flex flex-col gap-10 p-12 md:flex-row ">
                   <motion.div
@@ -120,19 +120,19 @@ export const Modal = ({ show, setShow }) => {
                     className="flex flex-col flex-1 max-h-max"
                   >
                     <div className="relative h-max">
-                      <h1 className="flex-1 text-[42px] text-main-default tracking-tighter leading-[0.9] align-text-top font-[500]">
+                      <h1 className="flex-1 text-[42px] text-new-grey1 tracking-tighter leading-[0.9] align-text-top font-[500]">
                         {p.name}
                       </h1>
-                      <p className="duration-500 tracking-tight text-[14px] mt-2 align-text-top text-start list-none text-main-default leading-normal max-w-[300px]">
+                      <p className="duration-500 tracking-tight text-[14px] mt-2 align-text-top text-start list-none text-new-grey2 leading-normal max-w-[300px]">
                         {p.desc}
                       </p>
                     </div>
 
                     <div className="items-end self-start mt-10 justify-self-end md:mt-auto">
-                      <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
+                      <h2 className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
                         Tech Stack
                       </h2>
-                      <ul className="tracking-tight text-[14px] align-text-top text-start list-nonetext-main-default leading-normal  text-main-default flex gap-1">
+                      <ul className="tracking-tight text-[14px] align-text-top text-start list-nonetext-new-grey2 leading-normal  text-new-grey2 flex gap-1">
                         {p.tech.map((t, i) => (
                           <li
                             className="relative max-w-max"
@@ -144,10 +144,10 @@ export const Modal = ({ show, setShow }) => {
                           </li>
                         ))}
                       </ul>
-                      <h2 className="mt-5 text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
+                      <h2 className="mt-5 text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
                         Status
                       </h2>
-                      <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal 1">
+                      <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal 1">
                         {p.scope[0]} - {p.scope[1]}
                       </p>
                     </div>
@@ -157,16 +157,16 @@ export const Modal = ({ show, setShow }) => {
                     variants={child}
                     className="flex-[1.5]"
                   >
-                    <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
+                    <h2 className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
                       Brief
                     </h2>
-                    <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal 1 w-[100%]">
+                    <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal 1 w-[100%]">
                       {p.brief}
                     </p>
-                    <h2 className="mt-10 text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
+                    <h2 className="mt-10 text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
                       Strategy
                     </h2>
-                    <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal 1 w-[100%]">
+                    <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal 1 w-[100%]">
                       {p.strategy}
                     </p>
                   </motion.div>

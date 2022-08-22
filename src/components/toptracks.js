@@ -53,11 +53,11 @@ export default function Toptracks({ show, setShow }) {
         >
           <motion.h2
             variants={child}
-            className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top md:text-right mb-1"
+            className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top md:text-right mb-1"
           >
             Most played this month:
           </motion.h2>
-          <ul className="tracking-tight text-[14px] align-text-top md:text-right list-nonetext-main-default leading-normal  text-main-default ">
+          <ul className="tracking-tight text-[14px] align-text-top md:text-right list-none leading-normal  text-new-grey2 ">
             {data.data.tracks.map((track, i) => (
               <motion.li key={i} variants={child}>
                 <a

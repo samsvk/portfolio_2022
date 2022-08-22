@@ -17,14 +17,14 @@ export default function NowPlaying() {
         <Toptracks show={show} setShow={setShow} />
         {data?.data?.isPlaying ? (
           <>
-            <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start flex items-center justify-start">
+            <h2 className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start flex items-center justify-start">
               <GrSpotify
                 onClick={() => setShow((p) => !p)}
                 className="align-middle hover:cursor-pointer"
               />
               {"\u00A0"}Now Playing:{"\u00A0"}
             </h2>
-            <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal max-w-[28ch] text-ellipsis  overflow-hidden whitespace-nowrap">
+            <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal max-w-[28ch] text-ellipsis  overflow-hidden whitespace-nowrap">
               <a
                 href={`${data?.data?.songUrl}`}
                 target="_blank"
@@ -36,14 +36,14 @@ export default function NowPlaying() {
           </>
         ) : (
           <div className="flex">
-            <h2 className="w-full whitespace-nowrap text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start flex items-center justify-start flex-1">
+            <h2 className="w-full whitespace-nowrap text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start flex items-center justify-start flex-1">
               <GrSpotify
                 onClick={() => setShow((p) => !p)}
                 className="align-middle hover:cursor-pointer"
               />
               {"\u00A0"}Not Playing:{"\u00A0"}
             </h2>
-            <p className="flex-1 tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
+            <p className="flex-1 tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal">
               <a href={`#`} target="_blank" rel="noreferrer">
                 Spotify
               </a>

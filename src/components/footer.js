@@ -32,29 +32,29 @@ const Footer = () => {
           variants={child}
         >
           <div data="1">
-            <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
+            <h2 className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
               Who
             </h2>
-            <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
+            <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal">
               Samuel Campbell
             </p>
           </div>
           <div data="2">
-            <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
+            <h2 className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
               Email
             </h2>
-            <p className=" duration-500 max-w-max hover:cursor-pointer hover:opacity-25 tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
+            <p className=" duration-500 max-w-max hover:cursor-pointer hover:text-new-grey1 tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal">
               Hello@samsvk.com
             </p>
           </div>
           <div data="3">
-            <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
+            <h2 className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
               Socials
             </h2>
-            <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal">
+            <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-new-grey2 leading-normal">
               {SOCIAL_DATA.map(({ name, url }, i) => (
                 <li
-                  className="relative underline duration-500 max-w-max hover:cursor-pointer hover:opacity-25 text-main-default"
+                  className="relative underline duration-500 max-w-max hover:cursor-pointer hover:text-new-grey1 text-new-grey2"
                   key={i}
                 >
                   <a
@@ -74,11 +74,11 @@ const Footer = () => {
           className="flex flex-col-reverse w-full gap-8 my-8 md:flex-col md: md:gap-12 md:my-0"
         >
           <div data="1">
-            <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
+            <h2 className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
               Currently
             </h2>
             <p
-              className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal 1 max-w-[90%] md:max-w-[80%] 
+              className="tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal 1 max-w-[90%] md:max-w-[80%] 
             lg:max-w-[65%]"
             >
               Looking to continue my growth in a cultivating and
@@ -87,10 +87,10 @@ const Footer = () => {
             </p>
           </div>
           <div data="2">
-            <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
+            <h2 className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
               Previously
             </h2>
-            <ul className="tracking-tight text-[14px] align-text-top text-start list-nonetext-main-default leading-normal  text-main-default">
+            <ul className="tracking-tight text-[14px] align-text-top text-start list-nonetext-new-grey2 leading-normal  text-new-grey2">
               {WORK_DATA.slice(1, 4).map(({ name }, i) => (
                 <li className="relative max-w-max" key={i}>
                   {name}

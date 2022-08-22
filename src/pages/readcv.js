@@ -35,8 +35,8 @@ const Resume = () => {
             duration: 1,
           },
         }}
-        className="text-[12px] left-3  top-3 absolute tracking-tight text-main-secondary leading-normal align-text-top text-start
-        w-max  hover:cursor-pointer underline duration-500 max-w-max hover:opacity-25 text-main-default flex items-center font-normal "
+        className="text-[12px] left-3  top-3 absolute tracking-tight text-new-grey3 leading-normal align-text-top text-start
+        w-max  hover:cursor-pointer underline duration-500 max-w-max hover:text-new-grey1  flex items-center font-normal "
       >
         <Link href="/">
           <span className="flex items-center">
@@ -59,7 +59,7 @@ const Resume = () => {
           className="flex items-end gap-5 mb-5"
         >
           <div className="relative">
-            <div className="rounded-full relative h-[92px] w-[92px] overflow-hidden border border-main-secondary/5 drop-shadow-sm">
+            <div className="rounded-full relative h-[92px] w-[92px] overflow-hidden border border-new-border drop-shadow-md">
               <Image
                 src="/me.jpeg"
                 layout="fill"
@@ -68,17 +68,17 @@ const Resume = () => {
             </div>
           </div>
           <div className="flex flex-col gap-0.5">
-            <h1 className="flex-1 text-[22px] text-main-default text-start tracking-tighter leading-[0.9] align-text-top font-[400]">
+            <h1 className="flex-1 text-[22px] text-new-grey1 text-start tracking-tighter leading-[0.9] align-text-top font-[400]">
               Samuel Campbell
             </h1>
-            <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
+            <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal">
               Developer based in Edinburgh, Scotland.
             </p>
-            <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-secondary leading-normal flex gap-1.5 mt-1.5">
+            <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-new-grey3 leading-normal flex gap-1.5 mt-1.5">
               {SOCIAL_DATA.slice(0, 2).map(
                 ({ name, url }, i) => (
                   <li
-                    className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:opacity-25 text-main-secondary flex items-center"
+                    className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:text-new-grey1 text-new-grey3 flex items-center"
                     key={i}
                   >
                     <>
@@ -97,17 +97,17 @@ const Resume = () => {
                   </li>
                 )
               )}
-              <li className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:opacity-25 text-main-secondary flex items-center">
+              <li className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:text-new-grey1 text-new-grey3 flex items-center">
                 Hello@Samsvk.com
               </li>
             </ul>
           </div>
         </motion.div>
         <motion.div variants={child}>
-          <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
+          <h2 className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
             About
           </h2>
-          <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-main-default leading-normal">
+          <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal">
             Samuel (23) is a freelance digital design and
             developer with a strong focus on creating meaningful
             visual identities and timeless scaleable solutions
@@ -115,10 +115,10 @@ const Resume = () => {
           </p>
         </motion.div>
         <motion.div variants={child}>
-          <h2 className="text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start mb-1">
+          <h2 className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
             Work Experience / Freelance
           </h2>
-          <p className="tracking-tight text-[14px] align-text-top text-start  font-normal list-none text-main-default leading-normal">
+          <p className="tracking-tight text-[14px] align-text-top text-start  font-normal list-none text-new-grey2 leading-normal">
             As a passionate creative individual the past few
             years I have spent building industry experience
             design and development strategy. All that empowered
@@ -131,16 +131,16 @@ const Resume = () => {
         </motion.div>
         <motion.ul
           variants={child}
-          className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal flex-col flex gap-8"
+          className="tracking-tight text-[14px] align-text-top text-start list-none text-new-grey2 leading-normal flex-col flex gap-8"
         >
           {WORK_DATA.map(({ name, url, time, type }, i) => (
             <li
-              className="relative flex font-normal max-w-max text-main-default"
+              className="relative flex font-normal max-w-max text-new-grey2"
               key={i}
             >
-              <span className="flex justify-evenly items-start gap-1 font-normal text-main-secondary min-w-[90px] max-h-[23px]">
+              <span className="flex justify-evenly items-start gap-1 font-normal text-new-grey3 min-w-[90px] max-h-[23px]">
                 <span className="flex-1">{time.from}</span>
-                <span className="block bg-main-secondary w-[11px] h-[0.05rem] mx-1 self-center" />
+                <span className="block bg-new-grey3 w-[11px] h-[0.05rem] mx-1 self-center" />
                 <span className="flex-1 text-right justify-self-end ">
                   {time.to}
                 </span>
@@ -150,12 +150,12 @@ const Resume = () => {
                   href={`${url}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center duration-500 hover:cursor-pointer hover:opacity-25"
+                  className="flex items-center duration-500 hover:cursor-pointer hover:text-new-grey1"
                 >
                   {name}{" "}
                   <IoMdArrowForward className="ml-[4px] rotate-[-45deg]" />
                 </a>
-                <span className="font-normal text-main-secondary">
+                <span className="font-normal text-new-grey3">
                   {type}
                 </span>
               </div>
@@ -164,9 +164,9 @@ const Resume = () => {
         </motion.ul>
         <motion.ul
           variants={child}
-          className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal flex-col flex gap-8"
+          className="tracking-tight text-[14px] align-text-top text-start list-none text-new-grey2 leading-normal flex-col flex gap-8"
         >
-          <p className="tracking-tight text-[14px] align-text-top text-start  font-normal list-none text-main-default leading-normal">
+          <p className="tracking-tight text-[14px] align-text-top text-start  font-normal list-none text-new-grey2 leading-normal">
             Below is a few projects that range from creative
             front-end applications to fullstack industrial
             solutions. These projects provide a highlevel
@@ -177,10 +177,10 @@ const Resume = () => {
           </p>
           {CV_PROJECTS.map(({ name, url, time, tech }, i) => (
             <li
-              className="relative flex font-normal max-w-max text-main-default"
+              className="relative flex font-normal max-w-max text-new-grey2"
               key={i}
             >
-              <span className="flex justify-evenly items-start gap-1 font-normal text-main-secondary min-w-[90px] max-h-[23px]">
+              <span className="flex justify-evenly items-start gap-1 font-normal text-new-grey3 min-w-[90px] max-h-[23px]">
                 <span className="flex-1">{time.from}</span>
               </span>
               <div className="flex flex-col pl-10">
@@ -188,17 +188,17 @@ const Resume = () => {
                   href={`https://github.com/samsvk`}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center duration-500 hover:cursor-pointer hover:opacity-25"
+                  className="flex items-center duration-500 hover:cursor-pointer hover:text-new-grey1"
                 >
                   {name}
                   <RiExternalLinkLine className="ml-[4px]" />
                 </a>
-                <span className="font-normal text-main-secondary">
+                <span className="font-normal text-new-grey3">
                   {tech.map((t) => t).join(", ")}
                 </span>
 
                 <div
-                  className="mt-2 relative rounded-lg h-[63px] w-[106px] bg-black/5 overflow-hidden hover:cursor-pointer grayscale"
+                  className="mt-2 relative rounded-lg h-[63px] w-[106px] bg-new-offset border border-new-border drop-shadow-sm overflow-hidden hover:cursor-pointer grayscale"
                   onClick={() => setImg(`${url}`)}
                 >
                   <Image
@@ -215,21 +215,21 @@ const Resume = () => {
           ))}
         </motion.ul>
         <motion.div variants={child}>
-          <h2 className="mb-5 text-[14px] font-[400] tracking-tight text-main-secondary leading-normal align-text-top text-start">
+          <h2 className="mb-5 text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start">
             Awards
           </h2>
-          <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-main-default leading-normal flex-col flex gap-8">
+          <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-new-grey2 leading-normal flex-col flex gap-8">
             {AWARD_DATA.map(({ title, when, url, from }, i) => (
               <li
-                className="relative flex font-normal max-w-max text-main-default"
+                className="relative flex font-normal max-w-max text-new-grey2"
                 key={i}
               >
-                <span className="flex justify-evenly items-start gap-1 font-normal text-main-secondary min-w-[90px] max-h-[23px]">
+                <span className="flex justify-evenly items-start gap-1 font-normal text-new-grey3 min-w-[90px] max-h-[23px]">
                   <span className="flex-1">{when}</span>
                 </span>
                 <div className="flex flex-col pl-10">
                   {title}
-                  <span className="font-normal text-main-secondary">
+                  <span className="font-normal text-new-grey3">
                     {from}
                   </span>
                 </div>
