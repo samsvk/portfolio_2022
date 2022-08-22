@@ -99,7 +99,7 @@ const Header = ({ setShow }) => {
         variants={child}
         data="2"
         className=" text-[26px] 
-        md:text-[44px] lg:text-[50px] self-start tracking-tight text-new-grey1 font-[300] leading-[1.1] justify-self-start lg:self-end lg:justify-self-end"
+        md:text-[44px] lg:text-[50px] self-start tracking-tight text-new-grey1 font-[300] leading-[1.15] justify-self-start lg:self-end lg:justify-self-end"
       >
         Samuel (23) is a freelance digital design and developer
         with a strong focus on creating meaningful visual

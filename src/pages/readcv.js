@@ -61,8 +61,9 @@ const Resume = () => {
           <div className="relative">
             <div className="rounded-full relative h-[92px] w-[92px] overflow-hidden border border-new-border drop-shadow-md">
               <Image
-                src="/me.jpeg"
+                src="/me.jpg"
                 layout="fill"
+                objectPosition={"20%"}
                 objectFit="cover"
               />
             </div>
