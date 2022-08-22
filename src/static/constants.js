@@ -54,6 +54,12 @@ export const CV_PROJECTS = [
     url: "/projects/viperino/main.jpg",
   },
   {
+    name: "Fontaine",
+    time: { from: "2022" },
+    tech: ["React", "SASS", "BEM"],
+    url: "/projects/fontaine/main.jpg",
+  },
+  {
     name: "Nextflix",
     time: { from: "2022" },
     tech: ["Typescript", "SASS", "Node", "Socket.io"],
@@ -130,6 +136,17 @@ success. By creating a simple webflow chart, I was able to translate that direct
       "/projects/nextflix/1.jpg",
       "/projects/nextflix/2.jpg",
     ],
+  },
+  {
+    name: "Fontaine Studios",
+    desc: `Front-end design for Fontaine Studio for displaying their latest products.`,
+    scope: ["Active", "2 Weeks"],
+    brief: `Fontaine is is a global brand focusing on great designed Playing Cards. Through cardistry and digital art, Fontaine has become the 'Supreme'
+    of Cardistry.  As a card fan I felt that Fontaine would greatly benefit from simplistic one-page studio landing page that displayed their latest releases
+    and restocked decks. `,
+    imgs: ["/projects/fontaine/1.jpg"],
+    strategy: `Fontaine thrives through simplicity I used that approach throughout this entire design trying to create a hands off experience. Using minimal elements, and automatic transitions allowed me to create a flow that not only the user can control but the website can dictate the users experience. `,
+    tech: ["React", "SASS", "BEM"],
   },
   {
     name: "Svk",
