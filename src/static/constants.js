@@ -66,6 +66,12 @@ export const CV_PROJECTS = [
     url: "/projects/nextflix/main.jpg",
   },
   {
+    name: "vivixstar",
+    time: { from: "2022" },
+    tech: ["Next", "Tailwind"],
+    url: "/projects/vi/main.jpg",
+  },
+  {
     name: "Mograine",
     time: { from: "2021" },
     tech: ["Typescript", "BEM"],
