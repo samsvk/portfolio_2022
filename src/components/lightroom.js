@@ -17,7 +17,7 @@ const Lightroom = (props) => {
             className="fixed top-0 min-w-full min-h-full max-h-screen bg-[#111111] z-[100]"
           >
             <div className="max-w-[1280px] items-center  mx-auto mt-10 flex flex-col">
-              <div className="mt-1 relative rounded-lg pt-[55%] w-[100%] bg-black/5 overflow-hidden drop-shadow-md">
+              <div className="mt-1 relative rounded-lg pt-[55%] w-[100%] bg-black/5 overflow-hidden drop-shadow-sm">
                 <Image
                   src={props.img}
                   objectFit="cover"
