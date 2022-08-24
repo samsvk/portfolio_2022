@@ -63,8 +63,8 @@ const Resume = () => {
               <Image
                 src="/me.jpg"
                 layout="fill"
-                objectPosition={"20%"}
                 objectFit="cover"
+                className="absolute top-0 bottom-0"
               />
             </div>
           </div>

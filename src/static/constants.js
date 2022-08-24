@@ -152,7 +152,7 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
     tech: ["React", "SASS", "BEM"],
   },
   {
-    name: "Svk",
+    name: "Svk 1.0",
     scope: ["Active", "On-Going"],
     desc: "Fullstack app that large groups of movie fans to vote on their next flix.",
     brief:
