@@ -121,13 +121,13 @@ const Resume = () => {
           </h2>
           <p className="tracking-tight text-[14px] align-text-top text-start  font-normal list-none text-new-grey2 leading-normal">
             As a passionate creative individual the past few
-            years I have spent building industry experience
-            design and development strategy. All that empowered
-            by my passion and ambition drives me to grow brands
-            and products to it&apos;s full potential. With that
-            said, I am now looking to continue my growth in a
-            cultivating and creative environment - as such
-            I&apos;m is open to full-time employment offers.
+            years I spent building industry experience in design
+            and development strategy. All that empowered by my
+            passion and ambition drives me to grow brands and
+            products to their full potential. With that said, I
+            am now looking to continue my growth in a cultivating
+            and creative environment - as such I&apos;m open to
+            full-time employment offers.
           </p>
         </motion.div>
         <motion.ul
@@ -168,13 +168,13 @@ const Resume = () => {
           className="tracking-tight text-[14px] align-text-top text-start list-none text-new-grey2 leading-normal flex-col flex gap-8"
         >
           <p className="tracking-tight text-[14px] align-text-top text-start  font-normal list-none text-new-grey2 leading-normal">
-            Below is a few projects that range from creative
-            front-end applications to fullstack industrial
-            solutions. These projects provide a highlevel
-            overview of my progression as a developer but most
-            importantly each codebase shows different
-            technologies and functionalities that are often used
-            in todays progressive web applications.
+            Below lists some recent projects such as creative
+            front-end applications to full-stack industrial
+            solutions. These projects provide a high-level
+            overview of my progression as a developer, as each
+            codebase shows different technologies and
+            functionalities that are often used in today&apos;s
+            web applications.
           </p>
           {CV_PROJECTS.map(({ name, url, time, tech }, i) => (
             <li
