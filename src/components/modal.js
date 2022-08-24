@@ -110,9 +110,9 @@ export const Modal = ({ show, setShow }) => {
               >
                 <button
                   onClick={() => setShow("")}
-                  className="absolute p-1.5 rounded-full right-3.5 top-3 bg-main-secondary/5"
+                  className="absolute p-1.5 rounded-full text-new-grey3 right-3.5 top-3 bg-new-offset border border-new-border hover:cursor-pointer hover:text-new-grey1 duration-200"
                 >
-                  <VscChromeClose className="text-new-grey3" />
+                  <VscChromeClose className="text-inherit" />
                 </button>
                 <div className="flex flex-col gap-10 p-12 md:flex-row ">
                   <motion.div
