@@ -46,7 +46,7 @@ const Header = ({ setShow }) => {
       mt-10
       justify-end
       flex-col
-      flex h-full flex-1 text-new-grey2 tracking-tighter leading-[0.9] align-text-top lg:max-w-[85%] max-w-[100%] font-[300]"
+      flex h-full flex-1 text-new-grey2 tracking-tighter leading-[0.9] align-text-top w-full lg:max-w-[85%] max-w-[100%] font-[300]"
     >
       <motion.div
         variants={child}
@@ -56,7 +56,7 @@ const Header = ({ setShow }) => {
         <h2 className="mr-3 text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
           Recent Projects:
         </h2>
-        <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-new-grey2 leading-normal flex gap-1.5">
+        <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-new-grey2 leading-normal flex gap-1.5 flex-wrap">
           {PROJECT_DATA.slice(0, 5).map((p, i) => (
             <Link
               href={`/?project=${p.name
