@@ -120,7 +120,7 @@ export const Modal = () => {
                 >
                   <VscChromeClose className="text-inherit" />
                 </button>
-                <div className="flex flex-col gap-10 p-12 md:flex-row ">
+                <div className="flex flex-col gap-10 p-6 md:p-12 md:flex-row ">
                   <motion.div
                     variants={child}
                     className="flex flex-col flex-1 max-h-max"

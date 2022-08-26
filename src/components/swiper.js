@@ -4,7 +4,6 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import Image from "next/image";
 import SwiperCore, { FreeMode } from "swiper";
-
 SwiperCore.use([FreeMode]);
 
 export const Swipe = ({ views }) => {
@@ -14,13 +13,13 @@ export const Swipe = ({ views }) => {
         <Swiper
           slidesPerView="auto"
           freeMode={true}
-          spaceBetween={45}
+          spaceBetween={30}
           className="w-full h-full overflow-hidden cursor-grab"
         >
           {views.map((item, i) => (
             <SwiperSlide
               key={i}
-              className="w-[75%!important] [&:nth-child(1)]:ml-12 last:mr-12"
+              className="w-[88%!important] md:w-[75%!important] [&:nth-child(1)]:ml-6 md:[&:nth-child(1)]:ml-12  last:mr-12"
             >
               <div className="block relative pt-[55%] bg-new-offset rounded-xl overflow-hidden">
                 <Image

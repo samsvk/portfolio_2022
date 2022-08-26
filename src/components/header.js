@@ -67,7 +67,7 @@ const Header = ({ setShow }) => {
               <span
                 content={`${p.tech.map((t) => t).join(", ")}`}
                 className={`hover:after:opacity-100 after:duration-200 after:opacity-0 relative inline-block group text-start 
-              after:bg-new-offset after:border after:border-new-border after:rounded-lg after:py-1 after:z-40 after:px-2.5 after:absolute after:h-max after:w-max 
+              after:invisible md:after:visible after:bg-new-offset after:border after:border-new-border after:rounded-lg after:py-1 after:z-40 after:px-2.5 after:absolute after:h-max after:w-max 
               after:top-[-2rem] after:left-[55%] after:translate-x-[-55%] after:content-[attr(content)] after:drop-shadow-sm
               after:tracking-tight after:text-[14px] after:font-[400] after:align-text-top after:text-start after:list-none after:leading-normal after:text-new-grey-1 underline`}
               >
@@ -84,7 +84,7 @@ const Header = ({ setShow }) => {
 
           <span
             content={`For more projects see my CV`}
-            className={`hover:after:opacity-100 after:duration-200 after:opacity-0 relative inline-block group text-start 
+            className={` after:invisible md:after:visible hover:after:opacity-100 after:duration-200 after:opacity-0 relative inline-block group text-start 
               after:bg-new-offset after:border after:border-new-border after:rounded-lg after:py-1 after:z-40 after:px-2.5 after:absolute after:h-max after:w-max 
               after:top-[-2rem] after:left-[55%] after:translate-x-[-55%] after:content-[attr(content)] after:drop-shadow-sm
                after:tracking-tight after:text-[14px] after:font-[400] after:align-text-top after:text-start after:list-none after:leading-normal after:text-new-grey-1`}
