@@ -116,7 +116,7 @@ export const PROJECT_DATA = [
   {
     name: "Viperino",
     desc: `Complete full-stack build that allows Viperino to sell custom gaming guides.`,
-    scope: ["Active", "1 Month"],
+    scope: ["Active", "4 Weeks"],
     brief: `Viperino is an online educational platform providing outstanding courses across various gaming titles. Providing users with unlimited guides through a one-time payment model Viperino aims to provide high-quality guides with a highly functional interactive web app. My role in Viperino was to understand the groups' vision for Viperino's visual identity and bridge that gap by creating a full-scale web app that reflects that identity using modern web technologies`,
     imgs: [
       "/projects/viperino/1.jpg",
@@ -127,7 +127,7 @@ export const PROJECT_DATA = [
   },
   {
     name: "Nextflix",
-    scope: ["Active", "2 Months"],
+    scope: ["Active", "8 Weeks"],
     desc: "Fullstack app that large groups of movie fans to vote on their next flix.",
     brief:
       "Spending countless hours trying to find what's next in a world of digital entertainment we often find that we're spoiled by choice. Making the right decision can be a tedious task. The benefits of Nextflix become apparent when considering a large group of people trying to decide what to watch. Nextflix allows multiple users to vote on what they'd like to watch and present the appropriate selection to the group of users once everyone is ready.",
@@ -163,7 +163,7 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
   },
   {
     name: "Svk 1.0",
-    scope: ["Active", "On-Going"],
+    scope: ["Closed", "8 Weeks"],
     desc: "Fullstack app that large groups of movie fans to vote on their next flix.",
     brief:
       "Svk is my personal slice of the internet. I wanted to use Svk to translate my personality via code - driven by simplistic and bold aesthetics with a focus on typography and whitespace I knew I could achieve that goal. I wanted to add a bit of everyday Sam, so I felt adding my current playing Spotify song as well as my top 10 most played would help achieve that.",
@@ -174,7 +174,7 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
   },
   {
     name: "Mograine",
-    scope: ["Closed", "4 Months"],
+    scope: ["Closed", "24 Weeks"],
     desc: "Front-end app that provides Warcraft players all PvP statistics.",
     brief:
       "Blizzard Entertainment's re-release of its most popular franchises allowed me to take advantage of outdated technology. Mograine is a lightweight application built to provide World of Warcraft players the opportunity to complete complex calculations in a few steps that previously required google docs and tedious formulas.",
@@ -185,7 +185,7 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
   },
   {
     name: "Pigfingers",
-    scope: ["Active", "2 Weeks"],
+    scope: ["Closed", "4 Weeks"],
     desc: "Fully fledged front-end typeracer with tons of custom settings.",
     brief:
       "As a typing enthusiast with record-breaking scores, I felt that the typist community deserved a modern take. It's no secret that a lot of typing applications are simply outdated and restrictive. I gained motivation to build Pigfingers a minimalistic typing application with tons of custom settings, modifiers, game types, custom keybinds, and a smooth caret.",

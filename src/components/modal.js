@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { PROJECT_DATA } from "../static/constants";
 import { Swipe } from "./swiper";
 import { VscChromeClose } from "react-icons/vsc";
+import { useRouter } from "next/router";
 
 const MODAL = {
   hidden: {
@@ -60,29 +61,34 @@ export const child = {
   },
 };
 
-export const Modal = ({ show, setShow }) => {
-  const p = PROJECT_DATA.find(
-    (item) => item.name.toLowerCase() === show.toLowerCase()
-  );
-
-  function handleClose(e) {
-    if (e.keyCode === 27) {
-      setShow("");
-    }
-  }
-
+export const Modal = () => {
   useEffect(() => {
     window.addEventListener("keydown", handleClose);
     return () =>
       window.removeEventListener("keydown", handleClose);
   }, []);
 
+  const router = useRouter();
+  if (!router.isReady) return null;
+
+  const p = PROJECT_DATA.find(
+    (item) =>
+      item.name.replace(/\s/g, "").toLowerCase() ===
+      router?.query?.project
+  );
+
+  function handleClose(e) {
+    if (e.keyCode === 27) {
+      router.push("/");
+    }
+  }
+
   return (
     <AnimatePresence exitBeforeEnter>
       {p && (
         <>
           <motion.div
-            onClick={() => setShow("")}
+            onClick={() => router.push("/")}
             initial={{ opacity: 0 }}
             animate={{
               opacity: 1,
@@ -109,7 +115,7 @@ export const Modal = ({ show, setShow }) => {
                 animate={"visible"}
               >
                 <button
-                  onClick={() => setShow("")}
+                  onClick={() => router.push("/")}
                   className="absolute p-1.5 rounded-full text-new-grey3 right-3.5 top-3 bg-new-offset border border-new-border hover:cursor-pointer hover:text-new-grey1 duration-200"
                 >
                   <VscChromeClose className="text-inherit" />

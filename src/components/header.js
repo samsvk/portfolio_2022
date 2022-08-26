@@ -58,26 +58,28 @@ const Header = ({ setShow }) => {
         </h2>
         <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-new-grey2 leading-normal flex gap-1.5">
           {PROJECT_DATA.slice(0, 5).map((p, i) => (
-            <span
-              content={`${p.tech.map((t) => t).join(", ")}`}
-              className={`hover:after:opacity-100 after:duration-200 after:opacity-0 relative inline-block group text-start 
-              after:bg-new-offset after:border after:border-new-border after:rounded-lg after:py-1 after:z-40 after:px-2.5 after:absolute after:h-max after:w-max 
-              after:top-[-2rem] after:left-[55%] after:translate-x-[-55%] after:content-[attr(content)] after:drop-shadow-sm
-               after:tracking-tight after:text-[14px] after:font-[400] after:align-text-top after:text-start after:list-none after:leading-normal after:text-new-grey-1 underline`}
+            <Link
+              href={`/?project=${p.name
+                .toLowerCase()
+                .replace(/\s/g, "")}`}
               key={i}
             >
-              <li
-                onClick={() => setShow(p.name)}
-                className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:text-new-grey1 text-new-grey2 flex items-center"
-                key={i}
+              <span
+                content={`${p.tech.map((t) => t).join(", ")}`}
+                className={`hover:after:opacity-100 after:duration-200 after:opacity-0 relative inline-block group text-start 
+              after:bg-new-offset after:border after:border-new-border after:rounded-lg after:py-1 after:z-40 after:px-2.5 after:absolute after:h-max after:w-max 
+              after:top-[-2rem] after:left-[55%] after:translate-x-[-55%] after:content-[attr(content)] after:drop-shadow-sm
+              after:tracking-tight after:text-[14px] after:font-[400] after:align-text-top after:text-start after:list-none after:leading-normal after:text-new-grey-1 underline`}
               >
-                {p.name}
+                <li className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:text-new-grey1 text-new-grey2 flex items-center">
+                  {p.name}
 
-                <span className="mt-[4px]">
-                  <GoPrimitiveDot className="ml-1.5 text-center align-middle scale-50" />
-                </span>
-              </li>
-            </span>
+                  <span className="mt-[4px]">
+                    <GoPrimitiveDot className="ml-1.5 text-center align-middle scale-50" />
+                  </span>
+                </li>
+              </span>
+            </Link>
           ))}
 
           <span
