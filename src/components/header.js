@@ -57,7 +57,7 @@ const Header = ({ setShow }) => {
           Recent Projects:
         </h2>
         <ul className="tracking-tight text-[14px] align-text-top text-start list-none text-new-grey2 leading-normal flex gap-1.5">
-          {PROJECT_DATA.slice(0, 4).map((p, i) => (
+          {PROJECT_DATA.slice(0, 5).map((p, i) => (
             <span
               content={`${p.tech.map((t) => t).join(", ")}`}
               className={`hover:after:opacity-100 after:duration-200 after:opacity-0 relative inline-block group text-start 

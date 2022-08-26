@@ -141,6 +141,16 @@ success. By creating a simple wirefream and webflow, I was able to translate tha
     ],
   },
   {
+    name: "Vivixstar",
+    desc: `Front-end studio display to display their latest art with an interactive fluid-grid.`,
+    scope: ["Active", "5 Weeks"],
+    brief: `Vivi is a digital artist creating unique designs for leading industry streamers on all social medias. As Vivi became more successful, she realised it was important to have a centralised location to display her art and also have a terms of service that users have to agree to before being able to contact her.`,
+    imgs: ["/projects/vi/1.jpg", "/projects/vi/2.jpg"],
+    strategy: `I understood that I wanted to have large bold design using imagery to catch the user's eye. Using a fluid-grid layout I was able
+    to present each image in its own unique way and relative to its aspect ratio. Using Puppeteer, I was able to web-scrape Vivi's Twitch Channel to display her commission status.`,
+    tech: ["Next", "Puppeteer", "Tailwind"],
+  },
+  {
     name: "Fontaine Studios",
     desc: `Front-end design for Fontaine Studio for displaying their latest products.`,
     scope: ["Active", "2 Weeks"],
