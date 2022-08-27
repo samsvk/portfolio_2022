@@ -50,19 +50,19 @@ export default function Index({ articles }) {
         </div>
       </motion.div>
       <motion.div variants={child}>
-        <h2 className="flex-1 text-[22px] text-new-grey1 text-start tracking-tighter leading-[0.9] align-text-top font-[400]">
+        <h2 className="mb-5 flex-1 text-[22px] text-new-grey1 text-start tracking-tighter leading-[0.9] align-text-top font-[400]">
           Most Recent
         </h2>
         {articles.map((article, index) => (
-          <div>
-            <h1>
-              <Link
-                href={`/blog/${article.fields.slug}`}
-                key={index}
-              >
-                {article.fields.title}
-              </Link>
-            </h1>
+          <div key={index}>
+            <div>
+              <h1>
+                <Link href={`/blog/${article.fields.slug}`}>
+                  {article.fields.title}
+                </Link>
+              </h1>
+            </div>
+            <aside>{article.fields.info}</aside>
           </div>
         ))}
       </motion.div>

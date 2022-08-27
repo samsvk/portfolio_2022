@@ -104,7 +104,7 @@ export const Modal = () => {
             initial="hidden"
             animate="show"
             exit="invisible"
-            className="max-w-[100vw] lg:max-w-[55vw] 
+            className="max-w-[100vw] md:max-w-[990px]
             w-full h-full  mx-auto right-0 left-0 mt-auto bottom-0 fixed z-[100000]
             flex no-scrollbar items-center overflow-y-scroll"
           >
