@@ -14,26 +14,24 @@ export async function getStaticProps() {
 }
 
 export default function Index({ articles }) {
+  console.log(articles);
   return (
     <motion.div
       variants={container}
       initial="hidden"
       animate={"visible"}
-      className="max-w-[550px] px-5 w-full mx-auto my-[4rem] flex flex-col gap-10 font-normal"
+      className="max-w-[550px] px-5 w-full mx-auto my-[4rem] flex flex-col gap-8 font-normal"
     >
       <motion.div
         variants={child}
         className="flex items-end gap-5 mb-5"
       >
         <div className="flex flex-col gap-0.5">
-          <h1 className="flex-1 text-[42px] text-new-grey1 tracking-tighter leading-[0.9] align-text-top font-[500] relative">
-            <span
-              className="absolute block tracking-tight text-[9px] align-text-top text-start list-none text-new-grey2 leading-normal rounded-md bg-new-offset border border-new-border
-            top-[-1.55rem]   px-1 py-0.5"
-            >
+          <h1 className="flex items-end gap-2 flex-1 text-[42px] text-new-grey1 tracking-tighter leading-[0.9] align-text-top font-[500] relative">
+            Blog
+            <span className="block tracking-wide text-[9px] align-text-top text-start list-none text-new-grey2 leading-normal rounded-md bg-new-offset border border-new-border max-h-max px-1 py-0.5 uppercase">
               currently in development
             </span>
-            Blog
           </h1>
           <p className="tracking-tight text-[14px] align-text-top text-start list-none text-new-grey2 leading-normal mt-2">
             Interested in a collection of my thoughts? From
@@ -52,13 +50,20 @@ export default function Index({ articles }) {
         </div>
       </motion.div>
       <motion.div variants={child}>
+        <h2 className="flex-1 text-[22px] text-new-grey1 text-start tracking-tighter leading-[0.9] align-text-top font-[400]">
+          Most Recent
+        </h2>
         {articles.map((article, index) => (
-          <Link
-            href={`/blog/${article.fields.slug}`}
-            key={index}
-          >
-            {article.fields.title}
-          </Link>
+          <div>
+            <h1>
+              <Link
+                href={`/blog/${article.fields.slug}`}
+                key={index}
+              >
+                {article.fields.title}
+              </Link>
+            </h1>
+          </div>
         ))}
       </motion.div>
     </motion.div>
