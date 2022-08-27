@@ -18,9 +18,6 @@ import { useState } from "react";
 
 const Resume = () => {
   const [img, setImg] = useState(null);
-
-  console.log(img);
-
   return (
     <>
       <Lightroom img={img} setImg={setImg} />

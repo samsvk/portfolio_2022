@@ -24,3 +24,6 @@
 body {
   @apply w-full h-full bg-new-bg text-new-grey1 scroll-smooth no-scrollbar;
 }
+p {
+  @apply tracking-tight text-[14px] align-text-top text-start list-none text-new-grey2 leading-normal;
+}
