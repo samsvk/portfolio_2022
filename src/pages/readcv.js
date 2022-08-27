@@ -96,7 +96,7 @@ const Resume = () => {
                 )
               )}
               <li className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:text-new-grey1 text-new-grey3 flex items-center">
-                Hello@Samsvk.com
+                samsvk00@gmail.com
               </li>
             </ul>
           </div>
