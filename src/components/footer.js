@@ -44,7 +44,7 @@ const Footer = () => {
               Email
             </h2>
             <p className=" duration-500 max-w-max hover:cursor-pointer hover:text-new-grey1 tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal">
-              Hello@samsvk.com
+              samsvk00@gmail.com
             </p>
           </div>
           <div data="3">
