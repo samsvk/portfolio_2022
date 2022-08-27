@@ -99,7 +99,7 @@ const Resume = () => {
                 )
               )}
               <li className="hover:cursor-pointer relative duration-500 font-[400] max-w-max hover:text-new-grey1 text-new-grey3 flex items-center">
-                samsvk00@gmail.com
+                <a href="mailto:samsvk00@gmail.com">Email</a>
               </li>
             </ul>
           </div>
