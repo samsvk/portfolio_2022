@@ -100,6 +100,7 @@ const Resume = () => {
               </li>
             </ul>
           </div>
+          vvvv{" "}
         </motion.div>
         <motion.div variants={child}>
           <h2 className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
