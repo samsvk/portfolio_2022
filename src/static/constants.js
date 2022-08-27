@@ -17,7 +17,10 @@ export const ITEM = {
 export const SOCIAL_DATA = [
   { name: "Github", url: "https://github.com/samsvk" },
   { name: "Twitter", url: "https://twitter.com/samsvk_" },
-  { name: "Spotify" },
+  {
+    name: "Spotify",
+    url: "https://open.spotify.com/user/31vclgiz4oelzmvxh5wsc3tpu3oe",
+  },
 ];
 export const WORK_DATA = [
   {
