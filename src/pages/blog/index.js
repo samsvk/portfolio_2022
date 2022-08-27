@@ -5,6 +5,13 @@ import { child } from "../../components/modal";
 import { container } from "../../components/footer";
 import { AiOutlineSearch } from "react-icons/ai";
 
+function convertDate(param) {
+  const date = new Date(param);
+  return `${
+    date.getMonth() + 1
+  }/${date.getDate()}/${date.getFullYear()}`;
+}
+
 export async function getStaticProps() {
   const client = getClient();
   let data = await client.getEntries({
@@ -53,23 +60,28 @@ export default function Index({ articles }) {
         <h2 className="mb-5 flex-1 text-[22px] text-new-grey1 text-start tracking-tighter leading-[0.9] align-text-top font-[400]">
           Most Recent
         </h2>
-        {articles.map((article, index) => (
-          <div key={index}>
-            <div>
-              <h1
-                className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1 underline hover:cursor-pointer
-               hover:text-new-grey1 duration-150"
-              >
-                <Link href={`/blog/${article.fields.slug}`}>
-                  {article.fields.title}
-                </Link>
-              </h1>
+        {articles.map((article, index) => {
+          return (
+            <div key={index}>
+              <div className="flex">
+                <h1
+                  className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1 underline hover:cursor-pointer
+               hover:text-new-grey1 duration-150 w-full"
+                >
+                  <Link href={`/blog/${article.fields.slug}`}>
+                    {article.fields.title}
+                  </Link>
+                </h1>
+                <span className="whitespace-nowrap text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
+                  {convertDate(article.fields.date)}
+                </span>
+              </div>
+              <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal">
+                {article.fields.info}
+              </p>
             </div>
-            <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal">
-              {article.fields.info}
-            </p>
-          </div>
-        ))}
+          );
+        })}
       </motion.div>
     </motion.div>
   );
