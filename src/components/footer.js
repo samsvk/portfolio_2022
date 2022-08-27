@@ -88,15 +88,14 @@ const Footer = () => {
           </div>
           <div data="2">
             <h2 className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
-              Previously
+              Interested in me?
             </h2>
-            <ul className="tracking-tight text-[14px] align-text-top text-start list-nonetext-new-grey2 leading-normal  text-new-grey2">
-              {WORK_DATA.slice(1, 4).map(({ name }, i) => (
-                <li className="relative max-w-max" key={i}>
-                  {name}
-                </li>
-              ))}
-            </ul>
+            <span
+              className="tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal 1 md:max-w-[80%] 
+            lg:max-w-[65%] relative underline duration-500 max-w-max hover:cursor-pointer hover:text-new-grey1"
+            >
+              <Link href="/blog">See my blog</Link>
+            </span>
           </div>
         </motion.aside>
       </div>
