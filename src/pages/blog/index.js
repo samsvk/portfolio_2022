@@ -26,7 +26,13 @@ export default function Index({ articles }) {
         className="flex items-end gap-5 mb-5"
       >
         <div className="flex flex-col gap-0.5">
-          <h1 className="flex-1 text-[42px] text-new-grey1 tracking-tighter leading-[0.9] align-text-top font-[500]">
+          <h1 className="flex-1 text-[42px] text-new-grey1 tracking-tighter leading-[0.9] align-text-top font-[500] relative">
+            <span
+              className="absolute block tracking-tight text-[9px] align-text-top text-start list-none text-new-grey2 leading-normal rounded-md bg-new-offset border border-new-border
+            top-[-1.55rem]   px-1 py-0.5"
+            >
+              currently in development
+            </span>
             Blog
           </h1>
           <p className="tracking-tight text-[14px] align-text-top text-start list-none text-new-grey2 leading-normal mt-2">
@@ -35,7 +41,10 @@ export default function Index({ articles }) {
             search filter and find what you're looking for!
           </p>
           <div className="flex mt-2 rounded-md bg-new-offset max-h-max">
-            <input className="w-full px-3 py-1.5 bg-transparent rounded-md focus:border-0 focus:outline-none tracking-tight text-[14px] align-text-top text-start list-none text-new-grey2 leading-normal" />
+            <input
+              placeholder="Search articles..."
+              className="placeholder-new-grey2 placeholder:tracking-tight placeholder:text-[14px] w-full px-3 py-1.5 bg-transparent rounded-md focus:border-0 focus:outline-none tracking-tight text-[14px] align-text-top text-start list-none text-new-grey2 leading-normal"
+            />
             <button className="min-w-[40px] flex justify-center items-center">
               <AiOutlineSearch />{" "}
             </button>
