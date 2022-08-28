@@ -19,10 +19,15 @@ import { useState } from "react";
 const Resume = () => {
   const [img, setImg] = useState(null);
 
-  console.log(img);
-
   return (
     <>
+      <Head>
+        <title>Samuel | Curriculum Vitae</title>
+        <meta
+          name="description"
+          content="Samuel Campbell is a freelance developer building scalable web solutions. Focusing on serverless React / Next.js."
+        />
+      </Head>
       <Lightroom img={img} setImg={setImg} />
       <motion.div
         initial={{ opacity: 0 }}
