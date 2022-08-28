@@ -15,6 +15,7 @@ import Image from "next/image";
 import { RiExternalLinkLine } from "react-icons/ri";
 import Lightroom from "../components/lightroom";
 import { useState } from "react";
+import Head from "next/head";
 
 const Resume = () => {
   const [img, setImg] = useState(null);
