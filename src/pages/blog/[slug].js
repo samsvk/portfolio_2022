@@ -33,7 +33,7 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Article({ article }) {
-  if (!article) return <div>404</div>;
+  if (!article) return 404;
   return (
     <div>
       <h1>{article.fields.title}</h1>

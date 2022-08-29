@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { child } from "../../components/modal";
 import { container } from "../../components/footer";
 import { AiOutlineSearch } from "react-icons/ai";
+import { useState } from "react";
 
 function convertDate(param) {
   const date = new Date(param);
@@ -21,6 +22,12 @@ export async function getStaticProps() {
 }
 
 export default function Index({ articles }) {
+  const [searchValue, setSearchValue] = useState("");
+  const filteredBlogPosts = articles.filter((article) =>
+    article.fields.title
+      .toLowerCase()
+      .includes(searchValue.toLowerCase())
+  );
   return (
     <motion.div
       variants={container}
@@ -46,6 +53,7 @@ export default function Index({ articles }) {
           </p>
           <div className="flex mt-2 rounded-md bg-new-offset max-h-max">
             <input
+              onChange={(e) => setSearchValue(e.target.value)}
               placeholder="Search articles..."
               className="placeholder-new-grey2 placeholder:tracking-tight placeholder:text-[14px] w-full px-3 py-1.5 bg-transparent rounded-md focus:border-0 focus:outline-none tracking-tight text-[14px] align-text-top text-start list-none text-new-grey2 leading-normal"
             />
@@ -57,10 +65,11 @@ export default function Index({ articles }) {
       </motion.div>
       <motion.div variants={child}>
         <h2 className="underline mb-5 flex-1 text-[22px] text-new-grey1 text-start tracking-tighter leading-[0.9] align-text-top font-[400]">
-          Most Recent
+          {!searchValue && `Most Recent`}
+          {searchValue && `All Posts`}
         </h2>
         <div className="flex flex-col gap-7">
-          {articles.reverse().map((article, index) => {
+          {filteredBlogPosts.reverse().map((article, index) => {
             return (
               <div key={index}>
                 <div className="flex">
