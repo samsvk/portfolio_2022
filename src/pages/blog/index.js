@@ -87,28 +87,37 @@ export default function Index({ articles }) {
           {searchValue && `All Posts`}
         </h2>
         <div className="flex flex-col gap-7">
-          {filteredBlogPosts.reverse().map((article, index) => {
-            return (
-              <div key={index}>
-                <div className="flex">
-                  <h1
-                    className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1 underline hover:cursor-pointer
+          {filteredBlogPosts
+            .sort((a, b) => {
+              return (
+                b.fields.date.split("/")[0] -
+                a.fields.date.split("/")[0]
+              );
+            })
+            .map((article, index) => {
+              return (
+                <div key={index}>
+                  <div className="flex">
+                    <h1
+                      className="text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1 underline hover:cursor-pointer
                   hover:text-new-grey1 duration-150 w-full"
-                  >
-                    <Link href={`/blog/${article.fields.slug}`}>
-                      {article.fields.title}
-                    </Link>
-                  </h1>
-                  <span className="whitespace-nowrap text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
-                    {article.fields.date}
-                  </span>
+                    >
+                      <Link
+                        href={`/blog/${article.fields.slug}`}
+                      >
+                        {article.fields.title}
+                      </Link>
+                    </h1>
+                    <span className="whitespace-nowrap text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
+                      {article.fields.date}
+                    </span>
+                  </div>
+                  <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal">
+                    {article.fields.info}
+                  </p>
                 </div>
-                <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal">
-                  {article.fields.info}
-                </p>
-              </div>
-            );
-          })}
+              );
+            })}
         </div>
       </motion.div>
     </motion.div>
