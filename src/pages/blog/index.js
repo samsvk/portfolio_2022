@@ -18,7 +18,25 @@ export async function getStaticProps() {
   let data = await client.getEntries({
     content_type: "article",
   });
-  return { props: { articles: data.items } };
+  // console.log(
+  //   data.items.map((item) => ({
+  //     ...item,
+  //     fields: {
+  //       ...item.fields,
+  //       date: convertDate(item.fields.date),
+  //     },
+  //   }))
+  // );
+
+  data = data.items.map((item) => ({
+    ...item,
+    fields: {
+      ...item.fields,
+      date: convertDate(item.fields.date),
+    },
+  }));
+
+  return { props: { articles: data } };
 }
 
 export default function Index({ articles }) {
@@ -82,7 +100,7 @@ export default function Index({ articles }) {
                     </Link>
                   </h1>
                   <span className="whitespace-nowrap text-[14px] font-[400] tracking-tight text-new-grey3 leading-normal align-text-top text-start mb-1">
-                    {convertDate(article.fields.date)}
+                    {article.fields.date}
                   </span>
                 </div>
                 <p className="tracking-tight text-[14px] align-text-top text-start  list-none text-new-grey2 leading-normal">
