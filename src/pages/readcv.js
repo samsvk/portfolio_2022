@@ -66,17 +66,11 @@ const Resume = () => {
         >
           <div className="relative">
             <div className="rounded-full relative h-[92px] w-[92px] overflow-hidden border border-new-border drop-shadow-md">
-              {/* <Image
-                src="/pic.jpg"
-                layout="fill"
-                objectFit="cover"
-                className="absolute top-[3.8rem!important] bottom-0 scale-[1.7]"
-              /> */}
               <Image
                 src="/pic.jpg"
                 layout="fill"
                 objectFit="cover"
-                className="absolute top-[3rem!important] bottom-0 scale-[1.7]"
+                className="absolute top-[3.9rem!important] bottom-0 scale-[1.75]"
               />
             </div>
           </div>
