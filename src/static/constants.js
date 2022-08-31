@@ -18,7 +18,7 @@ export const SOCIAL_DATA = [
   { name: "Github", url: "https://github.com/samsvk" },
   {
     name: "LinkedIn",
-    url: "www.linkedin.com/in/samsvk000",
+    url: "https://linkedin.com/in/samsvk000",
   },
   { name: "Twitter", url: "https://twitter.com/svkxo" },
   {
